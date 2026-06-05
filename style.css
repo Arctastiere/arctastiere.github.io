@@ -1,0 +1,200 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Font pulito come il logo */
+}
+
+body {
+    background-color: #ffffff; /* Sfondo Bianco */
+    color: #000000; /* Testo Nero */
+    line-height: 1.6;
+}
+
+/* MENU DI NAVIGAZIONE */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #000000;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #000000;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* COPERTINA (STILE LOGO) */
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-simbolo {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#hero h1 {
+    font-size: 48px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.linea-decorativa {
+    width: 150px;
+    height: 2px;
+    background-color: #000000;
+    margin: 15px auto;
+}
+
+#hero h2 {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+#hero p {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    color: #555555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 2px solid #000000;
+}
+
+/* SEZIONI CONTENUTO */
+section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+section h2 {
+    color: #000000;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+}
+
+section p {
+    color: #333333;
+    font-size: 15px;
+}
+
+/* SCHEDE SERVIZI */
+.servizio-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+}
+
+.servizio-card h3 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* PIE DI PAGINA E CONTATTI */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 20px 30px 20px;
+    margin-top: 60px;
+}
+
+footer h2 {
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contatti-container {
+    margin-bottom: 40px;
+}
+
+.info-blocco {
+    margin-bottom: 25px;
+}
+
+.info-blocco h3 {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    border-left: 3px solid #ffffff;
+    padding-left: 8px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #cccccc;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.dati-regolamentari {
+    text-align: center;
+    font-size: 12px;
+    color: #888888;
+    border-top: 1px solid #333333;
+    padding-top: 25px;
