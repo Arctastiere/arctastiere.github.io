@@ -63,6 +63,13 @@ nav ul li a {
     border-bottom: 1px solid #e0e0e0;
 }
 
+.logo-hero {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
 .logo-simbolo {
     font-size: 50px;
     margin-bottom: 10px;
@@ -198,3 +205,4 @@ footer a {
     color: #888888;
     border-top: 1px solid #333333;
     padding-top: 25px;
+}
