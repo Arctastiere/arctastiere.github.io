@@ -26,7 +26,7 @@ body::before {
     background:
         linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
         url("sfondo.jpg") center / cover no-repeat;
-    filter: blur(3px);
+    filter: blur(2px);
     transform: scale(1.05);
 }
 
