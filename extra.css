@@ -2,7 +2,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
 body { min-height: 100vh; display: flex; flex-direction: column; }
 footer { margin-top: auto; }
 img { max-width: 100%; height: auto; display: block; }
-.logo-hero { margin-left: auto; margin-right: auto; }
+.logo a { display: inline-block; line-height: 0; }
+.logo-header { height: 55px; width: auto; max-width: none; }
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
