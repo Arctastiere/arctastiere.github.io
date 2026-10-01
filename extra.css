@@ -8,7 +8,7 @@ body {
 footer { margin-top: auto; }
 img { max-width: 100%; height: auto; display: block; }
 .logo a { display: inline-block; line-height: 0; }
-.logo-header { height: 55px; width: auto; max-width: none; }
+.logo-header { height: 90px; width: auto; max-width: none; }
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -26,7 +26,7 @@ body::before {
     background:
         linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
         url("sfondo.jpg") center / cover no-repeat;
-    filter: blur(2px);
+    filter: blur(3px);
     transform: scale(1.05);
 }
 
