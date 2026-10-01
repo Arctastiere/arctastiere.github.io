@@ -11,3 +11,16 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .gallery-item { min-width: 0; overflow: hidden; }
 .gallery-item img { width: 100%; }
+
+/* SFONDO FOTO SU TUTTO IL SITO */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("sfondo.jpg") center / cover no-repeat;
+    filter: blur(4px);
+    transform: scale(1.05);
+}
