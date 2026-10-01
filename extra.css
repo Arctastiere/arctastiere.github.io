@@ -1,5 +1,6 @@
-html, body { max-width: 100%; overflow-x: hidden; }
+html { max-width: 100%; overflow-x: hidden; }
 body {
+    max-width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,8 +31,11 @@ body::before {
     transform: scale(1.05);
 }
 
-/* RENDE TRASPARENTI GLI SFONDI BIANCHI DI style.css */
+/* HEADER FISSO IN ALTO + SFONDI TRASPARENTI */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background-color: rgba(255, 255, 255, 0.85);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
