@@ -1,4 +1,6 @@
 html, body { max-width: 100%; overflow-x: hidden; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+footer { margin-top: auto; }
 img { max-width: 100%; height: auto; display: block; }
 .logo-hero { margin-left: auto; margin-right: auto; }
 .gallery-grid {
