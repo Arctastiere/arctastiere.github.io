@@ -10,12 +10,26 @@
     <script src="header.js" defer></script>
     <style>
         section p + p { margin-top: 12px; }
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html"><img src="logo.png" alt="Logo A.R.C." class="logo-header"></a></div>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo A.R.C." class="logo-header"></a>
+                <a href="index.html" class="link-home">Home</a>
+            </div>
             <ul>
                 <li><a href="chi-siamo.html">Chi Siamo</a></li>
                 <li><a href="servizi.html">Servizi</a></li>
