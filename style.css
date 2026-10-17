@@ -206,3 +206,35 @@ footer a {
     border-top: 1px solid #333333;
     padding-top: 25px;
 }
+
+/* MENU: voci ordinate, senza andare a capo */
+nav ul {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin-top: 12px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    white-space: nowrap;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom-color: #000000;
+}
+
+/* LINK HOME sotto il logo: più discreto */
+.logo .link-home {
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #555555;
+    margin-top: 6px;
+}
