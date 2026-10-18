@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galleria | A.R.C. S.n.c.</title>
+    <title>Galleria | A.R.C. S.n.c. Costruzione e Restauro Tastiere</title>
+    <meta name="description" content="Le nostre tastiere per organi, pianoforti, clavicembali e spinette: costruzione e restauro, immagini dei lavori A.R.C.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="extra.css">
     <script src="header.js" defer></script>
@@ -19,6 +20,53 @@
             text-decoration: none;
         }
         .logo .link-home:hover { text-decoration: underline; }
+
+        figure.gallery-item { margin: 0; background-color: rgba(255, 255, 255, 0.88); border: 1px solid #000000; }
+        figure.gallery-item img { cursor: zoom-in; }
+        figure.gallery-item figcaption {
+            padding: 10px 12px;
+            font-size: 14px;
+            color: #111111;
+        }
+
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.94);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        #lightbox.aperto { display: flex; }
+        #lightbox img {
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        #lightbox-didascalia {
+            color: #ffffff;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 14px;
+            max-width: 600px;
+        }
+        #lightbox-chiudi {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 36px;
+            line-height: 1;
+            cursor: pointer;
+            padding: 8px;
+        }
     </style>
 </head>
 <body>
@@ -41,11 +89,23 @@
     <section id="gallery">
         <h2>Galleria</h2>
         <div class="gallery-grid">
-            <div class="gallery-item"><img src="Bosso.jpg" alt="Bosso"></div>
-            <div class="gallery-item"><img src="Bosso2.jpg" alt="Bosso 2"></div>
-            <div class="gallery-item"><img src="Coda.jpg" alt="Coda"></div>
+            <figure class="gallery-item">
+                <img src="Bosso.jpg" alt="Tastiera con coperture in bosso">
+            </figure>
+            <figure class="gallery-item">
+                <img src="Bosso2.jpg" alt="Dettaglio di una tastiera con coperture in bosso">
+            </figure>
+            <figure class="gallery-item">
+                <img src="Coda.jpg" alt="Tastiera di pianoforte a coda">
+            </figure>
         </div>
     </section>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto a schermo intero">
+        <button id="lightbox-chiudi" aria-label="Chiudi">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-didascalia"></p>
+    </div>
 
     <footer id="contatti">
         <h2>Contatti e Sedi</h2>
@@ -68,5 +128,43 @@
             <p>&copy; 2026 A.R.C. Tutti i diritti riservati.</p>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            var box = document.getElementById('lightbox');
+            var img = document.getElementById('lightbox-img');
+            var did = document.getElementById('lightbox-didascalia');
+
+            function apri(foto) {
+                var fig = foto.closest('figure');
+                var cap = fig ? fig.querySelector('figcaption') : null;
+                img.src = foto.src;
+                img.alt = foto.alt;
+                did.textContent = cap ? cap.textContent : '';
+                did.style.display = cap ? 'block' : 'none';
+                box.classList.add('aperto');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function chiudi() {
+                box.classList.remove('aperto');
+                document.body.style.overflow = '';
+                img.src = '';
+            }
+
+            document.querySelectorAll('.gallery-item img').forEach(function (f) {
+                f.addEventListener('click', function () { apri(f); });
+            });
+
+            box.addEventListener('click', function (e) {
+                if (e.target === img) return;
+                chiudi();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') chiudi();
+            });
+        })();
+    </script>
 </body>
 </html>
