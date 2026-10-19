@@ -10,6 +10,8 @@
     <script src="header.js" defer></script>
     <style>
         section p + p { margin-top: 12px; }
+        section figure + p { margin-top: 12px; }
+        #chi-siamo { display: flow-root; }
         .logo .link-home {
             display: block;
             margin-top: 4px;
@@ -22,6 +24,35 @@
         }
         .logo .link-home:hover { text-decoration: underline; }
 
+        /* Foto di Andrea Colina */
+        .foto-andrea {
+            width: 100%;
+            max-width: 340px;
+            margin: 20px auto;
+        }
+        .foto-andrea img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-andrea figcaption {
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #111111;
+        }
+        @media (min-width: 700px) {
+            .foto-andrea {
+                float: right;
+                width: 300px;
+                margin: 4px 0 16px 24px;
+            }
+        }
+
+        /* Foto laboratorio dei fratelli Barra */
         .foto-barra { margin: 0 auto; max-width: 1000px; }
         .foto-barra .griglia-foto {
             display: grid;
@@ -43,6 +74,7 @@
             font-style: italic;
             font-size: 15px;
             line-height: 1.4;
+            color: #111111;
         }
         @media (min-width: 700px) {
             .foto-barra .griglia-foto { grid-template-columns: 1fr 1fr; }
@@ -64,6 +96,7 @@
         .lb-overlay img {
             max-width: 100%;
             max-height: calc(100vh - 110px);
+            width: auto;
             object-fit: contain;
             border-radius: 2px;
             touch-action: pan-y;
@@ -124,13 +157,18 @@
 
         <p>Il nostro percorso inizia nel 2006, quando Andrea Colina entra in bottega per imparare il mestiere di accordatore e tecnico del pianoforte. Negli anni lavora sia come dipendente sia in società, collaborando con molte aziende del territorio nel servizio concerti, nel restauro e nell'accordatura.</p>
 
+        <figure class="foto-andrea foto-zoom">
+            <img src="andrea-colina.jpg" width="810" height="1800" loading="lazy" alt="Andrea Colina al lavoro nel nuovo laboratorio di A.R.C.">
+            <figcaption>Andrea Colina, terza generazione di costruttori di tastiere, nel nuovo laboratorio di A.R.C.</figcaption>
+        </figure>
+
         <p>Nel 2023 raccoglie l'eredità di Gandolfo Tastiere: Carlo Gandolfo, laboratorio a cui si era affidato per anni, gli trasmette il mestiere della costruzione di tastiere. Da allora A.R.C. si dedica quasi esclusivamente alla costruzione e al restauro di tastiere per pianoforti, organi, clavicembali, spinette e altri strumenti.</p>
 
         <p>A.R.C. è così la terza generazione di una linea di costruttori che parte dai fratelli Barra e passa per Gandolfo. Lavoriamo con legni pregiati, osso e materiali della tradizione, per dare a ogni musicista un tocco preciso e una meccanica sempre reattiva.</p>
     </section>
 
     <section class="foto-barra">
-        <figure>
+        <figure class="foto-zoom">
             <div class="griglia-foto">
                 <img src="barra1.jpg" width="1200" height="752" loading="lazy" alt="Laboratorio dei fratelli Barra: operai al lavoro tra i banchi">
                 <img src="barra2.jpg" width="1200" height="792" loading="lazy" alt="Laboratorio dei fratelli Barra: la sega a nastro e le cataste di legno">
@@ -174,22 +212,31 @@
 
     <script>
     (function () {
-        var foto = Array.prototype.slice.call(document.querySelectorAll('.foto-barra img'));
         var lb = document.getElementById('lb');
         var lbImg = document.getElementById('lbImg');
         var lbDida = document.getElementById('lbDida');
         var lbConta = document.getElementById('lbConta');
-        var didascalia = document.querySelector('.foto-barra figcaption').textContent;
+        var btnPrec = document.getElementById('lbPrec');
+        var btnSucc = document.getElementById('lbSucc');
+
+        var lista = [];
+        var didascalia = '';
         var indice = 0;
 
         function mostra(i) {
-            indice = (i + foto.length) % foto.length;
-            lbImg.src = foto[indice].getAttribute('src');
-            lbImg.alt = foto[indice].alt;
+            indice = (i + lista.length) % lista.length;
+            lbImg.src = lista[indice].getAttribute('src');
+            lbImg.alt = lista[indice].alt;
             lbDida.textContent = didascalia;
-            lbConta.textContent = (indice + 1) + ' / ' + foto.length;
+            lbConta.textContent = lista.length > 1 ? (indice + 1) + ' / ' + lista.length : '';
         }
-        function apri(i) {
+        function apri(figura, i) {
+            lista = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            var cap = figura.querySelector('figcaption');
+            didascalia = cap ? cap.textContent : '';
+            var piu = lista.length > 1;
+            btnPrec.style.display = piu ? 'flex' : 'none';
+            btnSucc.style.display = piu ? 'flex' : 'none';
             mostra(i);
             lb.classList.add('aperto');
             document.body.style.overflow = 'hidden';
@@ -199,13 +246,16 @@
             document.body.style.overflow = '';
         }
 
-        foto.forEach(function (img, i) {
-            img.addEventListener('click', function () { apri(i); });
+        Array.prototype.slice.call(document.querySelectorAll('.foto-zoom')).forEach(function (figura) {
+            var imgs = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            imgs.forEach(function (img, i) {
+                img.addEventListener('click', function () { apri(figura, i); });
+            });
         });
 
         document.getElementById('lbChiudi').addEventListener('click', chiudi);
-        document.getElementById('lbPrec').addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
-        document.getElementById('lbSucc').addEventListener('click', function (e) { e.stopPropagation(); mostra(indice + 1); });
+        btnPrec.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
+        btnSucc.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice + 1); });
         lb.addEventListener('click', function (e) {
             if (e.target === lb) chiudi();
         });
@@ -213,8 +263,8 @@
         document.addEventListener('keydown', function (e) {
             if (!lb.classList.contains('aperto')) return;
             if (e.key === 'Escape') chiudi();
-            if (e.key === 'ArrowLeft') mostra(indice - 1);
-            if (e.key === 'ArrowRight') mostra(indice + 1);
+            if (lista.length > 1 && e.key === 'ArrowLeft') mostra(indice - 1);
+            if (lista.length > 1 && e.key === 'ArrowRight') mostra(indice + 1);
         });
 
         var startX = null;
@@ -222,7 +272,7 @@
         lbImg.addEventListener('touchend', function (e) {
             if (startX === null) return;
             var diff = e.changedTouches[0].clientX - startX;
-            if (Math.abs(diff) > 50) mostra(diff > 0 ? indice - 1 : indice + 1);
+            if (lista.length > 1 && Math.abs(diff) > 50) mostra(diff > 0 ? indice - 1 : indice + 1);
             startX = null;
         });
     })();
