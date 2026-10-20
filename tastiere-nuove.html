@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="extra.css">
     <script src="header.js" defer></script>
     <style>
+        section#tastiere-nuove {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         section p + p { margin-top: 12px; }
         section h3 { margin-top: 28px; margin-bottom: 8px; text-transform: uppercase; font-size: 18px; }
         section ul { list-style: disc; padding-left: 22px; margin-top: 8px; }
@@ -25,12 +30,32 @@
         }
         .logo .link-home:hover { text-decoration: underline; }
 
+        /* Blocchi testo + foto affiancati */
+        .blocco {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 28px;
+            align-items: start;
+        }
+        .blocco-testo > h3:first-child { margin-top: 0; }
+        .blocco-foto figure.foto-pagina:first-child { margin-top: 0; }
+        .blocco-foto figure.foto-pagina:last-child { margin-bottom: 0; }
+        .blocco + .blocco { margin-top: 32px; }
+
+        @media (max-width: 800px) {
+            .blocco {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .blocco-foto { margin-top: 16px; }
+        }
+
         figure.foto-pagina {
             margin: 20px 0;
             border: 1px solid #000000;
             background-color: rgba(255, 255, 255, 0.88);
         }
-        figure.foto-pagina img { width: 100%; height: auto; cursor: zoom-in; }
+        figure.foto-pagina img { width: 100%; height: auto; cursor: zoom-in; display: block; }
         figure.foto-pagina.verticale img {
             max-height: 460px;
             object-fit: cover;
@@ -102,77 +127,99 @@
         <h2>Tastiere nuove</h2>
         <p>Realizziamo tastiere su misura, in copia o su disegno del cliente.</p>
 
-        <h3>Cosa realizziamo</h3>
-        <p>Costruiamo le tastiere con i migliori materiali a disposizione, rispettando, se richiesto, le specifiche filologiche.</p>
-        <ul>
-            <li>Tastiere imperniate in coda, a bilanciere</li>
-            <li>Tasti in abete rosso, in noce o in altre essenze</li>
-            <li>Telai moderni con punte in inox, oppure in stile antico con punte in ottone</li>
-            <li>Guide sotto, dietro o tra i tasti</li>
-        </ul>
-        <p>I telai sono realizzati in essenze dure, come faggio o noce, oppure in abete con inserti duri per le punte.</p>
-        <p>Realizziamo anche modiglioni semplici o sagomati, provvisti di eventuali cerniere per la sovrapposizione nelle consolle.</p>
+        <!-- BLOCCO 1: Cosa realizziamo -->
+        <div class="blocco" style="margin-top: 28px;">
+            <div class="blocco-testo">
+                <h3>Cosa realizziamo</h3>
+                <p>Costruiamo le tastiere con i migliori materiali a disposizione, rispettando, se richiesto, le specifiche filologiche.</p>
+                <ul>
+                    <li>Tastiere imperniate in coda, a bilanciere</li>
+                    <li>Tasti in abete rosso, in noce o in altre essenze</li>
+                    <li>Telai moderni con punte in inox, oppure in stile antico con punte in ottone</li>
+                    <li>Guide sotto, dietro o tra i tasti</li>
+                </ul>
+                <p>I telai sono realizzati in essenze dure, come faggio o noce, oppure in abete con inserti duri per le punte.</p>
+                <p>Realizziamo anche modiglioni semplici o sagomati, provvisti di eventuali cerniere per la sovrapposizione nelle consolle.</p>
+            </div>
+            <div class="blocco-foto">
+                <figure class="foto-pagina verticale">
+                    <img src="tastiera-noce.jpg" width="1000" height="1485" loading="lazy" alt="Tastiera con telaio e leve in noce, copertura in ebano, diesis ricoperti d'osso e modiglioni sagomati in copia">
+                    <figcaption>Tastiera con telaio e leve in noce, copertura in ebano, diesis ricoperti d'osso e modiglioni sagomati in copia</figcaption>
+                </figure>
+                <figure class="foto-pagina verticale">
+                    <img src="coda1.jpg" alt="Tastiera nuova per pianoforte a coda">
+                    <figcaption>Tastiera nuova per pianoforte a coda</figcaption>
+                </figure>
+            </div>
+        </div>
 
-        <figure class="foto-pagina verticale">
-            <img src="tastiera-noce.jpg" width="1000" height="1485" loading="lazy" alt="Tastiera con telaio e leve in noce, copertura in ebano, diesis ricoperti d'osso e modiglioni sagomati in copia">
-            <figcaption>Tastiera con telaio e leve in noce, copertura in ebano, diesis ricoperti d'osso e modiglioni sagomati in copia</figcaption>
-        </figure>
+        <!-- BLOCCO 2: Materiali -->
+        <div class="blocco">
+            <div class="blocco-testo">
+                <h3>Materiali</h3>
+                <p>Le coperture dei tasti possono essere in materiali plastici o in osso per i tasti bianchi, oppure in legno pregiato.</p>
+                <ul>
+                    <li>Materiale plastico bianco (plexiglass o PVC)</li>
+                    <li>Materiale plastico minerale di pregio (Corian o Elforin)</li>
+                    <li>Osso di primissima scelta</li>
+                    <li>Legno: bosso (brasiliano o europeo), ebano o altre essenze</li>
+                </ul>
+            </div>
+            <div class="blocco-foto">
+                <figure class="foto-pagina">
+                    <img src="bosso-ebano1.jpg" alt="Tasti in bosso con diesis in ebano, particolare">
+                    <figcaption>Tasti in bosso con diesis in ebano</figcaption>
+                </figure>
+                <figure class="foto-pagina verticale">
+                    <img src="bosso-ebano2.jpg" alt="Tastiera in bosso con punte in inox e tasti asolati per il passaggio dei tiranti">
+                    <figcaption>Tastiera in bosso con punte in inox e tasti asolati per il passaggio dei tiranti</figcaption>
+                </figure>
+                <figure class="foto-pagina">
+                    <img src="bosso-ebano3.jpg" alt="Frontalini a chiocciola">
+                    <figcaption>Frontalini a chiocciola</figcaption>
+                </figure>
+            </div>
+        </div>
 
-        <figure class="foto-pagina verticale">
-            <img src="coda1.jpg" alt="Tastiera nuova per pianoforte a coda">
-            <figcaption>Tastiera nuova per pianoforte a coda</figcaption>
-        </figure>
+        <!-- BLOCCO 3: Diesis -->
+        <div class="blocco">
+            <div class="blocco-testo">
+                <h3>Diesis</h3>
+                <p>Anche i diesis possono essere realizzati in diverse essenze, come ebano, ebano ricoperto d'osso, noce, pero o altre essenze su richiesta.</p>
+            </div>
+            <div class="blocco-foto">
+                <figure class="foto-pagina">
+                    <img src="ebano1.jpg" alt="Tastiera con tasti in abete rosso ricoperti d'ebano e diesis ricoperti in osso">
+                    <figcaption>Tastiera con tasti in abete rosso ricoperti d'ebano e diesis ricoperti in osso</figcaption>
+                </figure>
+                <figure class="foto-pagina verticale">
+                    <img src="ebano2.jpg" alt="Particolare dei tasti in abete rosso ricoperti d'ebano con diesis ricoperti in osso">
+                    <figcaption>Particolare dei tasti in abete rosso ricoperti d'ebano con diesis ricoperti in osso</figcaption>
+                </figure>
+                <figure class="foto-pagina">
+                    <img src="tastiera-ebano.jpg" width="1200" height="782" loading="lazy" alt="Tastiera in ebano con diesis ricoperti d'osso e frontalino trilobati">
+                    <figcaption>Tastiera in ebano con diesis ricoperti d'osso e frontalino trilobati</figcaption>
+                </figure>
+            </div>
+        </div>
 
-        <h3>Materiali</h3>
-        <p>Le coperture dei tasti possono essere in materiali plastici o in osso per i tasti bianchi, oppure in legno pregiato.</p>
-        <ul>
-            <li>Materiale plastico bianco (plexiglass o PVC)</li>
-            <li>Materiale plastico minerale di pregio (Corian o Elforin)</li>
-            <li>Osso di primissima scelta</li>
-            <li>Legno: bosso (brasiliano o europeo), ebano o altre essenze</li>
-        </ul>
-
-        <figure class="foto-pagina">
-            <img src="bosso-ebano1.jpg" alt="Tasti in bosso con diesis in ebano, particolare">
-            <figcaption>Tasti in bosso con diesis in ebano</figcaption>
-        </figure>
-
-        <figure class="foto-pagina verticale">
-            <img src="bosso-ebano2.jpg" alt="Tastiera in bosso con punte in inox e tasti asolati per il passaggio dei tiranti">
-            <figcaption>Tastiera in bosso con punte in inox e tasti asolati per il passaggio dei tiranti</figcaption>
-        </figure>
-
-        <figure class="foto-pagina">
-            <img src="bosso-ebano3.jpg" alt="Frontalini a chiocciola">
-            <figcaption>Frontalini a chiocciola</figcaption>
-        </figure>
-
-        <p>Anche i diesis possono essere realizzati in diverse essenze, come ebano, ebano ricoperto d'osso, noce, pero o altre essenze su richiesta.</p>
-
-        <figure class="foto-pagina">
-            <img src="ebano1.jpg" alt="Tastiera con tasti in abete rosso ricoperti d'ebano e diesis ricoperti in osso">
-            <figcaption>Tastiera con tasti in abete rosso ricoperti d'ebano e diesis ricoperti in osso</figcaption>
-        </figure>
-
-        <figure class="foto-pagina verticale">
-            <img src="ebano2.jpg" alt="Particolare dei tasti in abete rosso ricoperti d'ebano con diesis ricoperti in osso">
-            <figcaption>Particolare dei tasti in abete rosso ricoperti d'ebano con diesis ricoperti in osso</figcaption>
-        </figure>
-
-        <figure class="foto-pagina">
-            <img src="tastiera-ebano.jpg" width="1200" height="782" loading="lazy" alt="Tastiera in ebano con diesis ricoperti d'osso e frontalino trilobati">
-            <figcaption>Tastiera in ebano con diesis ricoperti d'osso e frontalino trilobati</figcaption>
-        </figure>
-
-        <figure class="foto-pagina verticale">
-            <img src="tasti1.jpg" width="810" height="1800" loading="lazy" alt="Tastiera in osso in due pezzi curvato sul diesis">
-            <figcaption>Tastiera in osso in due pezzi curvato sul diesis</figcaption>
-        </figure>
-
-        <figure class="foto-pagina">
-            <img src="tasti2.jpg" width="1200" height="575" loading="lazy" alt="Tastiera in osso con diesis in ebano">
-            <figcaption>Tastiera in osso con diesis in ebano</figcaption>
-        </figure>
+        <!-- BLOCCO 4: Tastiere in osso -->
+        <div class="blocco">
+            <div class="blocco-testo">
+                <h3>Tastiere in osso</h3>
+                <p>La copertura in osso può essere realizzata in un solo pezzo oppure in due pezzi, con curvatura sul diesis.</p>
+            </div>
+            <div class="blocco-foto">
+                <figure class="foto-pagina verticale">
+                    <img src="tasti1.jpg" width="810" height="1800" loading="lazy" alt="Tastiera in osso in due pezzi curvato sul diesis">
+                    <figcaption>Tastiera in osso in due pezzi curvato sul diesis</figcaption>
+                </figure>
+                <figure class="foto-pagina">
+                    <img src="tasti2.jpg" width="1200" height="575" loading="lazy" alt="Tastiera in osso con diesis in ebano">
+                    <figcaption>Tastiera in osso con diesis in ebano</figcaption>
+                </figure>
+            </div>
+        </div>
 
         <p style="margin-top: 28px;"><a href="contatti.html">Richiedi informazioni</a> · <a href="servizi.html">← Tutti i servizi</a></p>
     </section>
