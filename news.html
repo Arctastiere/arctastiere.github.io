@@ -22,6 +22,25 @@
             text-decoration: none;
         }
         .logo .link-home:hover { text-decoration: underline; }
+        .lista-diametri {
+            margin: 12px 0 12px 22px;
+            padding: 0;
+        }
+        .lista-diametri li { margin-bottom: 4px; }
+        .foto-news-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+            align-items: flex-start;
+        }
+        .foto-news {
+            flex: 1 1 240px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -46,9 +65,23 @@
         <p>Novità, iniziative e comunicazioni del momento. Questa pagina cambia nel tempo: torna a trovarci per restare aggiornato.</p>
 
         <div class="servizio-card">
-            <p class="data-news">[Data]</p>
-            <h3>[Titolo della novità]</h3>
-            <p>[Da scrivere: il testo della novità.]</p>
+            <p class="data-news">Ottobre 2026</p>
+            <h3>Filo di ferro cotto nero per meccaniche d'organo</h3>
+            <p>Filo di ferro cotto nero in barre della migliore qualità, in barre di 2 m o tagliato a misura su specifiche del cliente, adatto all’uso nelle meccaniche degli organi (lo si può piegare e raddrizzare più volte senza che si rompa).</p>
+            <p>Disponibile nei seguenti diametri:</p>
+            <ul class="lista-diametri">
+                <li>1,6</li>
+                <li>1,8</li>
+                <li>2,0</li>
+                <li>2,2</li>
+                <li>2,5</li>
+                <li>3,0</li>
+                <li>3,5</li>
+            </ul>
+            <div class="foto-news-container">
+                <img src="filo-ferro-1.jpg" alt="Fasci di filo di ferro cotto nero in barre" class="foto-news" loading="lazy">
+                <img src="filo-ferro-2.jpg" alt="Dettaglio delle barre di filo di ferro cotto nero" class="foto-news" loading="lazy">
+            </div>
         </div>
 
         <div class="servizio-card">
