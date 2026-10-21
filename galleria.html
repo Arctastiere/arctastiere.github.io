@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galleria | A.R.C. S.n.c. Costruzione e Restauro Tastiere</title>
-    <meta name="description" content="Le nostre tastiere per organi, pianoforti, clavicembali e spinette: costruzione e restauro, immagini dei lavori A.R.C.">
+    <title>Galleria: tastiere per organi, pianoforti e clavicembali | A.R.C. Torino</title>
+    <meta name="description" content="Galleria dei lavori di A.R.C.: tastiere nuove e restaurate per organi, pianoforti, clavicembali e spinette, con coperture in bosso, ebano e osso. Piobesi Torinese (Torino).">
+    <link rel="canonical" href="https://arctastiere.it/galleria.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="Galleria | A.R.C. Costruzione e restauro tastiere">
+    <meta property="og:description" content="Le nostre tastiere per organi, pianoforti, clavicembali e spinette: costruzione e restauro.">
+    <meta property="og:url" content="https://arctastiere.it/galleria.html">
+    <meta property="og:image" content="https://arctastiere.it/Bosso.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="extra.css">
     <script src="header.js" defer></script>
@@ -21,14 +29,44 @@
         }
         .logo .link-home:hover { text-decoration: underline; }
 
-        figure.gallery-item { margin: 0; background-color: rgba(255, 255, 255, 0.88); border: 1px solid #000000; }
-        figure.gallery-item img { cursor: zoom-in; }
-        figure.gallery-item figcaption {
-            padding: 10px 12px;
-            font-size: 14px;
+        /* Griglia: 3 foto per riga, 4 sugli schermi larghi */
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 16px;
+        }
+        @media (min-width: 900px) {
+            #gallery .gallery-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 12px;
+            }
+        }
+        #gallery figure.gallery-item {
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.88);
+            border: 1px solid #000000;
+            min-width: 0;
+        }
+        #gallery figure.gallery-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            cursor: zoom-in;
+        }
+        #gallery figure.gallery-item figcaption {
+            padding: 6px 8px;
+            font-size: 12px;
+            line-height: 1.3;
             color: #111111;
         }
+        @media (min-width: 900px) {
+            #gallery figure.gallery-item figcaption { font-size: 14px; padding: 10px 12px; }
+        }
 
+        /* Visualizzazione a schermo intero con scorrimento */
         #lightbox {
             display: none;
             position: fixed;
@@ -39,14 +77,19 @@
             align-items: center;
             justify-content: center;
             padding: 16px;
+            touch-action: pan-y;
+            user-select: none;
+            -webkit-user-select: none;
         }
         #lightbox.aperto { display: flex; }
         #lightbox img {
             max-width: 100%;
-            max-height: 80vh;
+            max-height: calc(100vh - 130px);
+            max-height: calc(100dvh - 130px);
             width: auto;
             height: auto;
             object-fit: contain;
+            -webkit-user-drag: none;
         }
         #lightbox-didascalia {
             color: #ffffff;
@@ -55,18 +98,30 @@
             margin-top: 14px;
             max-width: 600px;
         }
-        #lightbox-chiudi {
+        #lightbox-contatore {
+            color: #bbbbbb;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+        .lb-btn {
             position: absolute;
-            top: 12px;
-            right: 16px;
-            background: none;
-            border: none;
+            background: rgba(255, 255, 255, 0.15);
             color: #ffffff;
-            font-size: 36px;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 26px;
             line-height: 1;
             cursor: pointer;
-            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        .lb-btn:hover { background: rgba(255, 255, 255, 0.3); }
+        #lightbox-chiudi { top: 12px; right: 12px; font-size: 30px; }
+        #lightbox-prec { left: 8px; top: 50%; transform: translateY(-50%); }
+        #lightbox-succ { right: 8px; top: 50%; transform: translateY(-50%); }
     </style>
 </head>
 <body>
@@ -102,9 +157,12 @@
     </section>
 
     <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto a schermo intero">
-        <button id="lightbox-chiudi" aria-label="Chiudi">&times;</button>
-        <img id="lightbox-img" src="" alt="">
+        <button type="button" class="lb-btn" id="lightbox-chiudi" aria-label="Chiudi">&times;</button>
+        <button type="button" class="lb-btn" id="lightbox-prec" aria-label="Foto precedente">&#8249;</button>
+        <button type="button" class="lb-btn" id="lightbox-succ" aria-label="Foto successiva">&#8250;</button>
+        <img id="lightbox-img" src="" alt="" draggable="false">
         <p id="lightbox-didascalia"></p>
+        <div id="lightbox-contatore"></div>
     </div>
 
     <footer id="contatti">
@@ -134,14 +192,37 @@
             var box = document.getElementById('lightbox');
             var img = document.getElementById('lightbox-img');
             var did = document.getElementById('lightbox-didascalia');
+            var conta = document.getElementById('lightbox-contatore');
+            var btnPrec = document.getElementById('lightbox-prec');
+            var btnSucc = document.getElementById('lightbox-succ');
+            var foto = Array.prototype.slice.call(document.querySelectorAll('.gallery-item img'));
+            var indice = 0;
+            var appenaScorso = false;
 
-            function apri(foto) {
-                var fig = foto.closest('figure');
+            function mostra(i) {
+                if (!foto.length) return;
+                indice = (i + foto.length) % foto.length;
+                var f = foto[indice];
+                var fig = f.closest('figure');
                 var cap = fig ? fig.querySelector('figcaption') : null;
-                img.src = foto.src;
-                img.alt = foto.alt;
+                img.src = f.currentSrc || f.src;
+                img.alt = f.alt;
                 did.textContent = cap ? cap.textContent : '';
                 did.style.display = cap ? 'block' : 'none';
+                conta.textContent = foto.length > 1 ? (indice + 1) + ' / ' + foto.length : '';
+
+                /* precarica le foto vicine per uno scorrimento fluido */
+                if (foto.length > 1) {
+                    new Image().src = foto[(indice + 1) % foto.length].src;
+                    new Image().src = foto[(indice - 1 + foto.length) % foto.length].src;
+                }
+            }
+
+            function apri(i) {
+                var piu = foto.length > 1;
+                btnPrec.style.display = piu ? 'flex' : 'none';
+                btnSucc.style.display = piu ? 'flex' : 'none';
+                mostra(i);
                 box.classList.add('aperto');
                 document.body.style.overflow = 'hidden';
             }
@@ -152,17 +233,52 @@
                 img.src = '';
             }
 
-            document.querySelectorAll('.gallery-item img').forEach(function (f) {
-                f.addEventListener('click', function () { apri(f); });
+            foto.forEach(function (f, i) {
+                f.addEventListener('click', function () { apri(i); });
             });
 
-            box.addEventListener('click', function (e) {
-                if (e.target === img) return;
+            btnPrec.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
+            btnSucc.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice + 1); });
+            document.getElementById('lightbox-chiudi').addEventListener('click', function (e) {
+                e.stopPropagation();
                 chiudi();
             });
 
+            /* Tocco o click sullo sfondo (non sulla foto) chiude */
+            box.addEventListener('click', function (e) {
+                if (appenaScorso) return;
+                if (e.target === img) return;
+                if (e.target === box || e.target === did || e.target === conta) chiudi();
+            });
+
+            /* Scorrimento col dito o trascinando col mouse */
+            var startX = null, startY = null;
+            box.addEventListener('pointerdown', function (e) {
+                startX = e.clientX;
+                startY = e.clientY;
+            });
+            box.addEventListener('pointerup', function (e) {
+                if (startX === null) return;
+                var dx = e.clientX - startX;
+                var dy = e.clientY - startY;
+                startX = null;
+                startY = null;
+                if (foto.length > 1 && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+                    mostra(dx > 0 ? indice - 1 : indice + 1);
+                    appenaScorso = true;
+                    setTimeout(function () { appenaScorso = false; }, 100);
+                }
+            });
+            box.addEventListener('pointercancel', function () {
+                startX = null;
+                startY = null;
+            });
+
             document.addEventListener('keydown', function (e) {
+                if (!box.classList.contains('aperto')) return;
                 if (e.key === 'Escape') chiudi();
+                if (e.key === 'ArrowLeft') mostra(indice - 1);
+                if (e.key === 'ArrowRight') mostra(indice + 1);
             });
         })();
     </script>
