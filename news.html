@@ -23,23 +23,42 @@
         }
         .logo .link-home:hover { text-decoration: underline; }
         .lista-diametri {
-            margin: 12px 0 12px 22px;
+            margin: 12px 0 0 22px;
             padding: 0;
         }
         .lista-diametri li { margin-bottom: 4px; }
-        .foto-news-container {
+        .news-contenuto {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 16px;
+            gap: 24px;
             align-items: flex-start;
+            margin-top: 8px;
         }
-        .foto-news {
-            flex: 1 1 240px;
-            max-width: 100%;
+        .news-testo {
+            flex: 1 1 320px;
+            min-width: 0;
+        }
+        .news-foto {
+            flex: 0 1 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .news-foto img {
+            width: 100%;
             height: auto;
             border-radius: 4px;
             display: block;
+        }
+        @media (max-width: 700px) {
+            .news-foto {
+                flex: 1 1 100%;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .news-foto img {
+                width: calc(50% - 6px);
+            }
         }
     </style>
 </head>
@@ -67,27 +86,25 @@
         <div class="servizio-card">
             <p class="data-news">Ottobre 2026</p>
             <h3>Filo di ferro cotto nero per meccaniche d'organo</h3>
-            <p>Filo di ferro cotto nero in barre della migliore qualità, in barre di 2 m o tagliato a misura su specifiche del cliente, adatto all’uso nelle meccaniche degli organi (lo si può piegare e raddrizzare più volte senza che si rompa).</p>
-            <p>Disponibile nei seguenti diametri:</p>
-            <ul class="lista-diametri">
-                <li>1,6</li>
-                <li>1,8</li>
-                <li>2,0</li>
-                <li>2,2</li>
-                <li>2,5</li>
-                <li>3,0</li>
-                <li>3,5</li>
-            </ul>
-            <div class="foto-news-container">
-                <img src="filo-ferro-1.jpg" alt="Fasci di filo di ferro cotto nero in barre" class="foto-news" loading="lazy">
-                <img src="filo-ferro-2.jpg" alt="Dettaglio delle barre di filo di ferro cotto nero" class="foto-news" loading="lazy">
+            <div class="news-contenuto">
+                <div class="news-testo">
+                    <p>Filo di ferro cotto nero in barre della migliore qualità, in barre di 2 m o tagliato a misura su specifiche del cliente, adatto all’uso nelle meccaniche degli organi (lo si può piegare e raddrizzare più volte senza che si rompa).</p>
+                    <p>Disponibile nei seguenti diametri:</p>
+                    <ul class="lista-diametri">
+                        <li>1,6</li>
+                        <li>1,8</li>
+                        <li>2,0</li>
+                        <li>2,2</li>
+                        <li>2,5</li>
+                        <li>3,0</li>
+                        <li>3,5</li>
+                    </ul>
+                </div>
+                <div class="news-foto">
+                    <img src="filo-ferro-1.jpg" alt="Fasci di filo di ferro cotto nero in barre" loading="lazy">
+                    <img src="filo-ferro-2.jpg" alt="Dettaglio delle barre di filo di ferro cotto nero" loading="lazy">
+                </div>
             </div>
-        </div>
-
-        <div class="servizio-card">
-            <p class="data-news">[Data]</p>
-            <h3>[Titolo della novità]</h3>
-            <p>[Da scrivere: il testo della novità.]</p>
         </div>
     </section>
 
