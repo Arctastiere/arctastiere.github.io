@@ -12,7 +12,7 @@
     <meta property="og:title" content="Galleria | A.R.C. Costruzione e restauro tastiere">
     <meta property="og:description" content="Le nostre tastiere per organi, pianoforti, clavicembali e spinette: costruzione e restauro.">
     <meta property="og:url" content="https://arctastiere.it/galleria.html">
-    <meta property="og:image" content="https://arctastiere.it/Bosso.jpg">
+    <meta property="og:image" content="https://arctastiere.it/tastiera-pianoforte-piloti-ottone-installati-04.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="extra.css">
     <script src="header.js" defer></script>
@@ -29,41 +29,106 @@
         }
         .logo .link-home:hover { text-decoration: underline; }
 
-        /* Griglia: 3 foto per riga, 4 sugli schermi larghi */
-        #gallery .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            margin-top: 16px;
+        /* Gruppo di foto */
+        #gallery .gruppo {
+            max-width: 760px;
+            margin: 24px auto 40px;
+            padding: 0 8px;
         }
-        @media (min-width: 900px) {
-            #gallery .gallery-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 12px;
-            }
+        #gallery .gruppo h3 {
+            margin: 0 0 6px;
+            font-size: 20px;
         }
-        #gallery figure.gallery-item {
-            margin: 0;
+        #gallery .gruppo .gruppo-desc {
+            margin: 0 0 12px;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        /* Slider con scorrimento a dito e a mouse */
+        .slider-wrap {
+            position: relative;
             background-color: rgba(255, 255, 255, 0.88);
             border: 1px solid #000000;
-            min-width: 0;
         }
-        #gallery figure.gallery-item img {
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior-x: contain;
+            cursor: grab;
+        }
+        .slider::-webkit-scrollbar { display: none; }
+        .slider.trascina {
+            scroll-snap-type: none;
+            scroll-behavior: auto;
+            cursor: grabbing;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .slide {
+            flex: 0 0 100%;
+            min-width: 0;
+            margin: 0;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+        .slide img {
             display: block;
             width: 100%;
             height: auto;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            background-color: #f4f1ec;
             cursor: zoom-in;
+            -webkit-user-drag: none;
+            user-select: none;
         }
-        #gallery figure.gallery-item figcaption {
-            padding: 6px 8px;
-            font-size: 12px;
+        .slide figcaption {
+            padding: 8px 12px;
+            font-size: 13px;
             line-height: 1.3;
             color: #111111;
+            border-top: 1px solid #000000;
         }
         @media (min-width: 900px) {
-            #gallery figure.gallery-item figcaption { font-size: 14px; padding: 10px 12px; }
+            .slide figcaption { font-size: 14px; padding: 10px 14px; }
+        }
+        .sl-btn {
+            position: absolute;
+            top: calc(50% - 40px);
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.55);
+            color: #ffffff;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        .sl-btn:hover { background: rgba(0, 0, 0, 0.8); }
+        .sl-btn:disabled { opacity: 0.25; cursor: default; }
+        .sl-prec { left: 8px; }
+        .sl-succ { right: 8px; }
+        .sl-conta {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 10px;
+            z-index: 2;
+            pointer-events: none;
         }
 
         /* Visualizzazione a schermo intero con scorrimento */
@@ -143,17 +208,38 @@
 
     <section id="gallery">
         <h2>Galleria</h2>
-        <div class="gallery-grid">
-            <figure class="gallery-item">
-                <img src="Bosso.jpg" alt="Tastiera con coperture in bosso">
-            </figure>
-            <figure class="gallery-item">
-                <img src="Bosso2.jpg" alt="Dettaglio di una tastiera con coperture in bosso">
-            </figure>
-            <figure class="gallery-item">
-                <img src="Coda.jpg" alt="Tastiera di pianoforte a coda">
-            </figure>
+
+        <!-- GRUPPO 1 -->
+        <div class="gruppo">
+            <h3>Intarsio in faggio e installazione piloti in ottone</h3>
+            <p class="gruppo-desc">Restauro di tastiera di pianoforte: intarsio in faggio, foratura per i piloti, lucidatura e installazione dei piloti in ottone.</p>
+            <div class="slider-wrap">
+                <button type="button" class="sl-btn sl-prec" aria-label="Foto precedente">&#8249;</button>
+                <button type="button" class="sl-btn sl-succ" aria-label="Foto successiva">&#8250;</button>
+                <div class="sl-conta">1 / 4</div>
+                <div class="slider">
+                    <figure class="slide">
+                        <img src="tastiera-pianoforte-piloti-ottone-lucidati-01.jpg" width="1600" height="1400" alt="Tastiera di pianoforte in restauro con fila di piloti in ottone lucidato installati sui tasti" draggable="false">
+                        <figcaption>Piloti in ottone lucidato installati lungo tutta la tastiera</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="tastiera-pianoforte-pilota-ottone-dettaglio-02.jpg" width="1600" height="925" alt="Dettaglio di un pilota in ottone su un tasto di pianoforte con intarsio in faggio" loading="lazy" draggable="false">
+                        <figcaption>Dettaglio del pilota in ottone con foro di fissaggio</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="tastiera-pianoforte-piloti-ottone-intarsio-faggio-03.jpg" width="1600" height="900" alt="Piloti in ottone lucidato su tasti di pianoforte con intarsio in faggio e feltro verde" loading="lazy" draggable="false">
+                        <figcaption>Intarsio in faggio, foratura e piloti in ottone sui tasti</figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <img src="tastiera-pianoforte-piloti-ottone-installati-04.jpg" width="1600" height="853" alt="Piloti in ottone installati sui tasti di una tastiera di pianoforte restaurata" loading="lazy" draggable="false">
+                        <figcaption>Installazione dei piloti completata: vista d'insieme della tastiera</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
+
+        <!-- Per aggiungere un nuovo gruppo, copia il blocco "gruppo" qui sopra
+             e cambia titolo, descrizione, foto e il numero nel contatore. -->
     </section>
 
     <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto a schermo intero">
@@ -189,13 +275,91 @@
 
     <script>
         (function () {
+            /* ---------- Slider dei gruppi ---------- */
+            var gruppi = Array.prototype.slice.call(document.querySelectorAll('.slider-wrap'));
+            var gruppoAttivo = null;
+            var trascinato = false;
+
+            gruppi.forEach(function (wrap) {
+                var slider = wrap.querySelector('.slider');
+                var slides = slider.querySelectorAll('.slide');
+                var btnP = wrap.querySelector('.sl-prec');
+                var btnS = wrap.querySelector('.sl-succ');
+                var conta = wrap.querySelector('.sl-conta');
+                var n = slides.length;
+
+                function corrente() {
+                    return Math.round(slider.scrollLeft / slider.clientWidth);
+                }
+                function vai(i, liscio) {
+                    i = Math.max(0, Math.min(n - 1, i));
+                    slider.scrollTo({ left: i * slider.clientWidth, behavior: liscio === false ? 'auto' : 'smooth' });
+                }
+                function aggiorna() {
+                    var i = Math.max(0, Math.min(n - 1, corrente()));
+                    conta.textContent = (i + 1) + ' / ' + n;
+                    btnP.disabled = (i === 0);
+                    btnS.disabled = (i === n - 1);
+                }
+
+                wrap._vai = vai;
+
+                if (n < 2) {
+                    btnP.style.display = 'none';
+                    btnS.style.display = 'none';
+                    conta.style.display = 'none';
+                }
+
+                btnP.addEventListener('click', function () { vai(corrente() - 1); });
+                btnS.addEventListener('click', function () { vai(corrente() + 1); });
+                slider.addEventListener('scroll', aggiorna, { passive: true });
+                window.addEventListener('resize', function () { vai(corrente(), false); aggiorna(); });
+                aggiorna();
+
+                /* Trascinamento col mouse (col dito scorre da solo) */
+                var giu = false, x0 = 0, scroll0 = 0, indice0 = 0, spostato = false;
+
+                slider.addEventListener('mousedown', function (e) {
+                    if (e.button !== 0) return;
+                    giu = true;
+                    spostato = false;
+                    x0 = e.clientX;
+                    scroll0 = slider.scrollLeft;
+                    indice0 = corrente();
+                    slider.classList.add('trascina');
+                    e.preventDefault();
+                });
+                window.addEventListener('mousemove', function (e) {
+                    if (!giu) return;
+                    var dx = e.clientX - x0;
+                    if (Math.abs(dx) > 5) spostato = true;
+                    slider.scrollLeft = scroll0 - dx;
+                });
+                window.addEventListener('mouseup', function (e) {
+                    if (!giu) return;
+                    giu = false;
+                    slider.classList.remove('trascina');
+                    var dx = e.clientX - x0;
+                    if (Math.abs(dx) > 50) {
+                        vai(dx < 0 ? indice0 + 1 : indice0 - 1);
+                    } else {
+                        vai(indice0);
+                    }
+                    if (spostato) {
+                        trascinato = true;
+                        setTimeout(function () { trascinato = false; }, 50);
+                    }
+                });
+            });
+
+            /* ---------- Schermo intero ---------- */
             var box = document.getElementById('lightbox');
             var img = document.getElementById('lightbox-img');
             var did = document.getElementById('lightbox-didascalia');
             var conta = document.getElementById('lightbox-contatore');
             var btnPrec = document.getElementById('lightbox-prec');
             var btnSucc = document.getElementById('lightbox-succ');
-            var foto = Array.prototype.slice.call(document.querySelectorAll('.gallery-item img'));
+            var foto = [];
             var indice = 0;
             var appenaScorso = false;
 
@@ -218,7 +382,9 @@
                 }
             }
 
-            function apri(i) {
+            function apri(wrap, i) {
+                gruppoAttivo = wrap;
+                foto = Array.prototype.slice.call(wrap.querySelectorAll('.slide img'));
                 var piu = foto.length > 1;
                 btnPrec.style.display = piu ? 'flex' : 'none';
                 btnSucc.style.display = piu ? 'flex' : 'none';
@@ -231,10 +397,18 @@
                 box.classList.remove('aperto');
                 document.body.style.overflow = '';
                 img.src = '';
+                /* riporta lo slider sulla foto vista per ultima */
+                if (gruppoAttivo && gruppoAttivo._vai) gruppoAttivo._vai(indice, false);
             }
 
-            foto.forEach(function (f, i) {
-                f.addEventListener('click', function () { apri(i); });
+            gruppi.forEach(function (wrap) {
+                var imgs = wrap.querySelectorAll('.slide img');
+                Array.prototype.forEach.call(imgs, function (f, i) {
+                    f.addEventListener('click', function () {
+                        if (trascinato) return;
+                        apri(wrap, i);
+                    });
+                });
             });
 
             btnPrec.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
