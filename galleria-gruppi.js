@@ -252,6 +252,44 @@ window.GALLERIA_GRUPPI = [
                 did: { it: "Messa in posa: la tastiera stretta calza sulla meccanica già esistente" }
             }
         ]
+    },
+
+    {
+        id: "tastiera-nuova-pianoforte-plexiglass",
+        titolo: { it: "Tastiera nuova per pianoforte nuovo con copertura in plexiglass" },
+        descrizione: { it: "Tastiera nuova per pianoforte nuovo: copertura dei tasti in plexiglass, diesis in ebano, bilanciere e inserti in faggio, capsule in tiglio." },
+        foto: [
+            {
+                file: "tastiera-nuova-pianoforte-plexiglass-diesis-ebano-01.jpg", w: 1465, h: 1600,
+                alt: { it: "Tastiera nuova per pianoforte nuovo con copertura dei tasti in plexiglass e diesis in ebano, sul banco di lavoro" },
+                did: { it: "Tastiera nuova con tasti in plexiglass e diesis in ebano" }
+            },
+            {
+                file: "tastiera-nuova-pianoforte-plexiglass-vista-frontale-02.jpg", w: 1600, h: 520,
+                alt: { it: "Vista frontale della tastiera nuova per pianoforte con copertura in plexiglass, diesis in ebano e leve in legno chiaro" },
+                did: { it: "Vista frontale della tastiera completa" }
+            },
+            {
+                file: "tastiera-nuova-pianoforte-bilanciere-faggio-03.jpg", w: 1600, h: 1200,
+                alt: { it: "Bilanciere in faggio con perni in metallo e rondelle di feltro verde di una tastiera nuova per pianoforte" },
+                did: { it: "Bilanciere in faggio con perni e rondelle di feltro" }
+            },
+            {
+                file: "tastiera-nuova-pianoforte-bilanciere-fianco-04.jpg", w: 1600, h: 535,
+                alt: { it: "Fianco in faggio e bilanciere con perni e feltri verdi e rossi di una tastiera nuova per pianoforte" },
+                did: { it: "Fianco in faggio e bilanciere, vista a livello del banco" }
+            },
+            {
+                file: "tastiera-nuova-pianoforte-telaio-inserti-faggio-05.jpg", w: 1200, h: 1600,
+                alt: { it: "Telaio in legno chiaro con inserto in faggio e inserti in ottone per una tastiera nuova di pianoforte, in lavorazione" },
+                did: { it: "Telaio in lavorazione con inserti in faggio" }
+            },
+            {
+                file: "tastiera-nuova-pianoforte-telaio-dettaglio-06.jpg", w: 1200, h: 1600,
+                alt: { it: "Dettaglio del telaio in legno con inserto in faggio e inserti in ottone di una tastiera nuova per pianoforte" },
+                did: { it: "Particolare del telaio e dell'inserto in faggio" }
+            }
+        ]
     }
 
     /* ----------------------------------------------------------
