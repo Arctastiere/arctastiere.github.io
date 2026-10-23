@@ -303,4 +303,36 @@ window.GALLERIA_GRUPPI = [
                 did: { it: "Tavole di abete rosso della Val di Fiemme per la realizzazione dei tasti" }
             },
             {
-                file: "abete-rosso-val-di-fiemme-caric
+                file: "abete-rosso-val-di-fiemme-carico-fornitura-02.jpg", w: 1260, h: 990,
+                alt: { it: "Carico di tavole di abete rosso della Val di Fiemme durante la consegna della fornitura" },
+                did: { it: "Carico della fornitura di abete rosso" }
+            },
+            {
+                file: "abete-rosso-val-di-fiemme-fibra-compatta-03.jpg", w: 1048, h: 1600,
+                alt: { it: "Testata delle tavole di abete rosso della Val di Fiemme a fibra piatta, con legno compatto" },
+                did: { it: "Abete rosso a fibra piatta: legno compatto per i tasti" }
+            }
+        ]
+    }
+
+    /* ----------------------------------------------------------
+       MODELLO PER UN NUOVO GRUPPO
+       Metti una virgola dopo l'ultima parentesi graffa } del gruppo
+       precedente (quella che chiude il gruppo, non la foto), poi
+       incolla questo blocco (senza i commenti):
+
+    ,{
+        id: "nome-breve-del-gruppo",
+        titolo: { it: "Titolo del gruppo" },
+        descrizione: { it: "Descrizione del lavoro." },
+        foto: [
+            {
+                file: "nome-file.jpg", w: 1600, h: 1200,
+                alt: { it: "Descrizione della foto per Google" },
+                did: { it: "Didascalia breve" }
+            }
+        ]
+    }
+       ---------------------------------------------------------- */
+
+];
