@@ -336,6 +336,49 @@ window.GALLERIA_GRUPPI = [
                 did: { it: "Profilo posteriore sagomato su disegno del cliente" }
             }
         ]
+    },
+
+    {
+        id: "tastiere-sovrapposte-bosso",
+        titolo: { it: "Tastiere sovrapposte in bosso con frontalini a chiocciola e diesis in ebano" },
+        descrizione: { it: "Tastiere sovrapposte in bosso con frontalini a chiocciola e diesis in ebano su misura. La tastiera superiore è dotata di cave per il passaggio dei tiranti delle meccaniche." },
+        foto: [
+            {
+                file: "tastiere-sovrapposte-bosso-diesis-ebano-01.jpg", w: 1319, h: 1600,
+                alt: { it: "Due tastiere sovrapposte in bosso con diesis in ebano su misura, in lavorazione sul banco" },
+                did: { it: "Tastiere sovrapposte in bosso con diesis in ebano" }
+            },
+            {
+                file: "tastiere-sovrapposte-bosso-vista-d-insieme-02.jpg", w: 1599, h: 1600,
+                alt: { it: "Vista d'insieme di due tastiere sovrapposte in bosso, con la tastiera superiore dotata di cave per il passaggio dei tiranti" },
+                did: { it: "Le due tastiere sovrapposte, vista d'insieme" }
+            },
+            {
+                file: "tastiere-sovrapposte-bosso-leve-cave-tiranti-03.jpg", w: 1550, h: 1130,
+                alt: { it: "Tastiere sovrapposte in bosso con diesis in ebano: la tastiera superiore ha le cave per il passaggio dei tiranti delle meccaniche" },
+                did: { it: "Tastiera superiore con cave per i tiranti delle meccaniche" }
+            },
+            {
+                file: "tastiere-bosso-diesis-ebano-su-misura-04.jpg", w: 1600, h: 983,
+                alt: { it: "Particolare dei tasti in bosso con diesis in ebano su misura e cave per il passaggio dei tiranti" },
+                did: { it: "Diesis in ebano su misura sui tasti in bosso" }
+            },
+            {
+                file: "tastiere-bosso-frontalini-a-chiocciola-05.jpg", w: 1600, h: 897,
+                alt: { it: "Frontalini a chiocciola dei tasti in bosso di una tastiera sovrapposta, con diesis in ebano sullo sfondo" },
+                did: { it: "Frontalini a chiocciola dei tasti in bosso" }
+            },
+            {
+                file: "tastiere-bosso-piano-leve-cave-06.jpg", w: 1600, h: 463,
+                alt: { it: "Piano in bosso con le cave per il passaggio dei tiranti e le linee di taglio dei tasti" },
+                did: { it: "Piano in bosso con le cave fresate e le linee di taglio dei tasti" }
+            },
+            {
+                file: "tastiere-bosso-cave-tiranti-dettaglio-07.jpg", w: 1600, h: 1458,
+                alt: { it: "Dettaglio delle cave fresate per il passaggio dei tiranti su un piano in bosso con le linee di taglio dei tasti" },
+                did: { it: "Dettaglio delle cave per i tiranti" }
+            }
+        ]
     }
 
     /* ----------------------------------------------------------
