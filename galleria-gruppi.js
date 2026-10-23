@@ -313,6 +313,29 @@ window.GALLERIA_GRUPPI = [
                 did: { it: "Abete rosso a fibra piatta: legno compatto per i tasti" }
             }
         ]
+    },
+
+    {
+        id: "tastiere-organo-placcate-osso",
+        titolo: { it: "Tastiere per organo placcate in osso con diesis in ebano" },
+        descrizione: { it: "Tastiere per organo placcate in osso, con diesis in ebano e profilo posteriore sagomato su disegno del cliente." },
+        foto: [
+            {
+                file: "tastiere-organo-placcate-osso-diesis-ebano-01.jpg", w: 1600, h: 869,
+                alt: { it: "Due tastiere per organo placcate in osso con diesis in ebano e profilo posteriore sagomato su disegno del cliente" },
+                did: { it: "Due tastiere per organo placcate in osso, con diesis in ebano" }
+            },
+            {
+                file: "tastiere-organo-placcate-osso-vista-diagonale-02.jpg", w: 1550, h: 1600,
+                alt: { it: "Vista diagonale di due tastiere per organo con tasti placcati in osso e diesis in ebano" },
+                did: { it: "Tasti placcati in osso e diesis in ebano, vista diagonale" }
+            },
+            {
+                file: "tastiere-organo-profilo-posteriore-sagomato-03.jpg", w: 1600, h: 569,
+                alt: { it: "Vista laterale di due tastiere per organo sovrapposte, con il profilo posteriore dei tasti sagomato su disegno del cliente" },
+                did: { it: "Profilo posteriore sagomato su disegno del cliente" }
+            }
+        ]
     }
 
     /* ----------------------------------------------------------
