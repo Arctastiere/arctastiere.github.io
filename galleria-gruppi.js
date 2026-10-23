@@ -290,26 +290,17 @@ window.GALLERIA_GRUPPI = [
                 did: { it: "Particolare del telaio e dell'inserto in faggio" }
             }
         ]
-    }
+    },
 
-    /* ----------------------------------------------------------
-       MODELLO PER UN NUOVO GRUPPO
-       Metti una virgola dopo l'ultima parentesi graffa } del gruppo
-       precedente (quella che chiude il gruppo, non la foto), poi
-       incolla questo blocco (senza i commenti):
-
-    ,{
-        id: "nome-breve-del-gruppo",
-        titolo: { it: "Titolo del gruppo" },
-        descrizione: { it: "Descrizione del lavoro." },
+    {
+        id: "abete-rosso-val-di-fiemme-tasti",
+        titolo: { it: "Abete rosso della Val di Fiemme per la costruzione dei tasti" },
+        descrizione: { it: "La nostra fornitura di abete rosso della Val di Fiemme a fibra piatta: un legno compatto, per la realizzazione dei tasti." },
         foto: [
             {
-                file: "nome-file.jpg", w: 1600, h: 1200,
-                alt: { it: "Descrizione della foto per Google" },
-                did: { it: "Didascalia breve" }
-            }
-        ]
-    }
-       ---------------------------------------------------------- */
-
-];
+                file: "abete-rosso-val-di-fiemme-tavole-per-tasti-01.jpg", w: 1600, h: 1085,
+                alt: { it: "Catasta di tavole di abete rosso della Val di Fiemme, fornitura per la realizzazione dei tasti" },
+                did: { it: "Tavole di abete rosso della Val di Fiemme per la realizzazione dei tasti" }
+            },
+            {
+                file: "abete-rosso-val-di-fiemme-caric
