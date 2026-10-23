@@ -1,361 +1,529 @@
-/* ==========================================================
-   GRUPPI DELLA GALLERIA - A.R.C.
-   Per aggiungere un gruppo: copia il modello in fondo al file
-   e incollalo PRIMA dell'ultima riga "];".
-   Le lingue: ora c'è solo "it". Per tradurre si aggiungerà "en", ecc.
-   ========================================================== */
-window.GALLERIA_GRUPPI = [
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria: tastiere per organi, pianoforti e clavicembali | A.R.C. Torino</title>
+    <meta name="description" content="Galleria dei lavori di A.R.C.: tastiere nuove e restaurate per organi, pianoforti, clavicembali e spinette, con coperture in bosso, ebano e osso. Piobesi Torinese (Torino).">
+    <link rel="canonical" href="https://arctastiere.it/galleria.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="Galleria | A.R.C. Costruzione e restauro tastiere">
+    <meta property="og:description" content="Le nostre tastiere per organi, pianoforti, clavicembali e spinette: costruzione e restauro.">
+    <meta property="og:url" content="https://arctastiere.it/galleria.html">
+    <meta property="og:image" content="https://arctastiere.it/consolle-organo-quattro-tastiere-corian-vista-frontale-01.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extra.css">
+    <script src="header.js" defer></script>
+    <style>
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
 
-    {
-        id: "intarsio-faggio-piloti-ottone",
-        titolo: { it: "Intarsio in faggio e installazione piloti in ottone" },
-        descrizione: { it: "Restauro di tastiera di pianoforte: intarsio in faggio, foratura per i piloti, lucidatura e installazione dei piloti in ottone." },
-        foto: [
-            {
-                file: "tastiera-pianoforte-piloti-ottone-lucidati-01.jpg", w: 1600, h: 1400,
-                alt: { it: "Tastiera di pianoforte in restauro con fila di piloti in ottone lucidato installati sui tasti" },
-                did: { it: "Piloti in ottone lucidato installati lungo tutta la tastiera" }
-            },
-            {
-                file: "tastiera-pianoforte-pilota-ottone-dettaglio-02.jpg", w: 1600, h: 925,
-                alt: { it: "Dettaglio di un pilota in ottone su un tasto di pianoforte con intarsio in faggio" },
-                did: { it: "Dettaglio del pilota in ottone con foro di fissaggio" }
-            },
-            {
-                file: "tastiera-pianoforte-piloti-ottone-intarsio-faggio-03.jpg", w: 1600, h: 900,
-                alt: { it: "Piloti in ottone lucidato su tasti di pianoforte con intarsio in faggio e feltro verde" },
-                did: { it: "Intarsio in faggio, foratura e piloti in ottone sui tasti" }
-            },
-            {
-                file: "tastiera-pianoforte-piloti-ottone-installati-04.jpg", w: 1600, h: 853,
-                alt: { it: "Piloti in ottone installati sui tasti di una tastiera di pianoforte restaurata" },
-                did: { it: "Installazione dei piloti completata: vista d'insieme della tastiera" }
+        /* Sezione galleria: mai più larga della pagina */
+        #gallery {
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+        }
+
+        /* Gruppo di foto */
+        #gallery .gruppo {
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 760px;
+            min-width: 0;
+            margin: 24px auto 40px;
+            padding: 0 12px;
+        }
+        #gallery .gruppo h3 {
+            margin: 0 0 6px;
+            font-size: 20px;
+            overflow-wrap: anywhere;
+        }
+        #gallery .gruppo .gruppo-desc {
+            margin: 0 0 12px;
+            font-size: 15px;
+            line-height: 1.4;
+            overflow-wrap: anywhere;
+        }
+        @media (max-width: 600px) {
+            #gallery .gruppo {
+                margin: 16px auto 28px;
+                padding: 0 8px;
             }
-        ]
-    },
+            #gallery .gruppo h3 { font-size: 18px; }
+            #gallery .gruppo .gruppo-desc { font-size: 14px; }
+        }
 
-    {
-        id: "integrazione-tasti-copertura-osso",
-        titolo: { it: "Integrazione tasti mancanti, copertura in osso e lucidatura piloti" },
-        descrizione: { it: "Restauro di tastiera di pianoforte: integrazione dei tasti mancanti, sostituzione della copertura in osso dei tasti e lucidatura dei piloti." },
-        foto: [
-            {
-                file: "restauro-tastiera-pianoforte-copertura-osso-tasti-01.jpg", w: 1200, h: 1600,
-                alt: { it: "Copertura in osso dei tasti di una tastiera di pianoforte in restauro, fissata con morsetti in laboratorio" },
-                did: { it: "Sostituzione della copertura in osso dei tasti" }
-            },
-            {
-                file: "restauro-tastiera-pianoforte-copertura-osso-laboratorio-02.jpg", w: 1200, h: 1600,
-                alt: { it: "Tastiera di pianoforte con nuova copertura in osso appena applicata nel laboratorio A.R.C." },
-                did: { it: "Copertura in osso applicata su tutta la tastiera" }
-            },
-            {
-                file: "restauro-tastiera-pianoforte-tasti-bianchi-ebano-lucidati-03.jpg", w: 1200, h: 1600,
-                alt: { it: "Tastiera di pianoforte restaurata con tasti bianchi lucidati e tasti neri in ebano sul banco di lavoro" },
-                did: { it: "Tasti bianchi ed ebano lucidati: tastiera completa" }
-            },
-            {
-                file: "restauro-tastiera-pianoforte-integrazione-tasti-mancanti-04.jpg", w: 1600, h: 1200,
-                alt: { it: "Vista diagonale di una tastiera di pianoforte con due tasti nuovi in legno chiaro integrati tra quelli originali" },
-                did: { it: "Integrazione dei tasti mancanti: i tasti nuovi in legno chiaro" }
-            },
-            {
-                file: "restauro-tastiera-pianoforte-tasti-nuovi-integrati-05.jpg", w: 999, h: 1600,
-                alt: { it: "Particolare di due tasti nuovi in legno chiaro inseriti nella tastiera di un pianoforte in restauro" },
-                did: { it: "Tasti nuovi integrati nella tastiera, particolare" }
-            },
-            {
-                file: "restauro-tastiera-pianoforte-tasti-nuovi-integrati-06.jpg", w: 1327, h: 1600,
-                alt: { it: "Tasti numerati di un pianoforte con tasti nuovi integrati e coperture in osso e ebano" },
-                did: { it: "Tasti mancanti ricostruiti e coperti in osso" }
-            },
-            {
-                file: "restauro-tastiera-pianoforte-copertura-osso-finita-07.jpg", w: 1533, h: 1600,
-                alt: { it: "Vista frontale dei tasti di un pianoforte restaurato con copertura in osso e tasti neri, tasti nuovi al centro" },
-                did: { it: "Copertura in osso completata, vista frontale" }
-            },
-            {
-                file: "restauro-tastiera-pianoforte-piloti-lucidati-08.jpg", w: 1200, h: 1600,
-                alt: { it: "Piloti lucidati allineati sui tasti di una tastiera di pianoforte in restauro" },
-                did: { it: "Lucidatura dei piloti" }
+        /* Slider con scorrimento a dito e a mouse */
+        .slider-wrap {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.88);
+            border: 1px solid #000000;
+        }
+        .slider {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+            contain: inline-size;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior-x: contain;
+            cursor: grab;
+        }
+        .slider::-webkit-scrollbar { display: none; }
+        .slider.trascina {
+            scroll-snap-type: none;
+            scroll-behavior: auto;
+            cursor: grabbing;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .slide {
+            flex: 0 0 100%;
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+            margin: 0;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+        .slide img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            background-color: #f4f1ec;
+            cursor: zoom-in;
+            -webkit-user-drag: none;
+            user-select: none;
+        }
+        .slide figcaption {
+            padding: 8px 12px;
+            font-size: 13px;
+            line-height: 1.3;
+            color: #111111;
+            border-top: 1px solid #000000;
+        }
+        @media (min-width: 900px) {
+            .slide figcaption { font-size: 14px; padding: 10px 14px; }
+        }
+        .sl-btn {
+            position: absolute;
+            top: calc(50% - 40px);
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.55);
+            color: #ffffff;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        .sl-btn:hover { background: rgba(0, 0, 0, 0.8); }
+        .sl-btn:disabled { opacity: 0.25; cursor: default; }
+        .sl-prec { left: 8px; }
+        .sl-succ { right: 8px; }
+        .sl-conta {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 10px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        /* Visualizzazione a schermo intero con scorrimento */
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.94);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            touch-action: pan-y;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        #lightbox.aperto { display: flex; }
+        #lightbox img {
+            max-width: 100%;
+            max-height: calc(100vh - 130px);
+            max-height: calc(100dvh - 130px);
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            -webkit-user-drag: none;
+        }
+        #lightbox-didascalia {
+            color: #ffffff;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 14px;
+            max-width: 600px;
+        }
+        #lightbox-contatore {
+            color: #bbbbbb;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+        .lb-btn {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lb-btn:hover { background: rgba(255, 255, 255, 0.3); }
+        #lightbox-chiudi { top: 12px; right: 12px; font-size: 30px; }
+        #lightbox-prec { left: 8px; top: 50%; transform: translateY(-50%); }
+        #lightbox-succ { right: 8px; top: 50%; transform: translateY(-50%); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo A.R.C." class="logo-header"></a>
+                <a href="index.html" class="link-home">Home</a>
+            </div>
+            <ul>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="news.html" class="voce-news"><span class="emoji">📣</span> News ed extra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Galleria</h2>
+        <div id="gruppi-galleria"></div>
+        <noscript><p>Per vedere la galleria è necessario abilitare JavaScript.</p></noscript>
+    </section>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto a schermo intero">
+        <button type="button" class="lb-btn" id="lightbox-chiudi" aria-label="Chiudi">&times;</button>
+        <button type="button" class="lb-btn" id="lightbox-prec" aria-label="Foto precedente">&#8249;</button>
+        <button type="button" class="lb-btn" id="lightbox-succ" aria-label="Foto successiva">&#8250;</button>
+        <img id="lightbox-img" src="" alt="" draggable="false">
+        <p id="lightbox-didascalia"></p>
+        <div id="lightbox-contatore"></div>
+    </div>
+
+    <footer id="contatti">
+        <h2>Contatti e Sedi</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3>Recapiti</h3>
+                <p><strong>Telefono:</strong> <a href="tel:+393402621634">340 2621634</a></p>
+                <p><strong>Email:</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong>Pec:</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3>Sedi</h3>
+                <p><strong>Sede Operativa:</strong> Piobesi, Via Galimberti 67</p>
+                <p><strong>Sede Legale:</strong> Vinovo, Via Parisetto 31</p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C S.n.c di Andrea Colina &amp; Co.</strong></p>
+            <p>P. IVA: 12884500013</p>
+            <p>&copy; 2026 A.R.C. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="galleria-gruppi.js"></script>
+    <script>
+        (function () {
+            /* ---------- Costruzione dei gruppi dai dati ---------- */
+            var lingua = (document.documentElement.lang || 'it').slice(0, 2);
+
+            function tr(testo) {
+                if (!testo) return '';
+                if (typeof testo === 'string') return testo;
+                return testo[lingua] || testo.it || '';
             }
-        ]
-    },
-
-    {
-        id: "consolle-organo-quattro-tastiere-termisound",
-        titolo: { it: "Consolle d'organo a quattro tastiere con sensori Termisound" },
-        descrizione: { it: "Consolle a quattro tastiere con copertura dei tasti in Corian e sensori Termisound, costruita su progetto del cliente. Il sistema di molle per la livellatura e il fine corsa è realizzato su misura." },
-        foto: [
-            {
-                file: "consolle-organo-quattro-tastiere-corian-vista-frontale-01.jpg", w: 1600, h: 712,
-                alt: { it: "Consolle d'organo a quattro tastiere in rovere con copertura dei tasti in Corian, costruita da A.R.C." },
-                did: { it: "Consolle a quattro tastiere con copertura dei tasti in Corian" }
-            },
-            {
-                file: "consolle-organo-quattro-tastiere-corian-quercia-02.jpg", w: 1600, h: 1360,
-                alt: { it: "Vista laterale di una consolle d'organo a quattro tastiere sfalsate, con tasti in Corian e fianchi in rovere" },
-                did: { it: "Le quattro tastiere sfalsate, vista laterale" }
-            },
-            {
-                file: "consolle-organo-quattro-tastiere-sensori-termisound-03.jpg", w: 1600, h: 1200,
-                alt: { it: "Consolle d'organo a quattro tastiere con una tastiera sollevata che mostra i sensori Termisound e il sistema di molle" },
-                did: { it: "Tastiera sollevata: sensori Termisound e sistema di livellatura" }
-            },
-            {
-                file: "consolle-organo-quattro-tastiere-tasti-corian-ebano-04.jpg", w: 1294, h: 1600,
-                alt: { it: "Particolare dei tasti bianchi in Corian e dei tasti neri di una consolle d'organo a quattro tastiere" },
-                did: { it: "Tasti in Corian, particolare delle tastiere" }
-            },
-            {
-                file: "consolle-organo-sensori-livellatura-fine-corsa-05.jpg", w: 1600, h: 1200,
-                alt: { it: "Telaio di una tastiera d'organo con barra di fine corsa e sensori sotto i tasti" },
-                did: { it: "Sistema di livellatura e fine corsa realizzato su misura" }
-            },
-            {
-                file: "consolle-organo-sensori-termisound-piloti-06.jpg", w: 1200, h: 1600,
-                alt: { it: "Sensori Termisound e piloti neri allineati sotto i tasti di una tastiera d'organo" },
-                did: { it: "Sensori Termisound montati sotto i tasti" }
-            },
-            {
-                file: "consolle-organo-molle-livellatura-su-misura-07.jpg", w: 1600, h: 1200,
-                alt: { it: "Molle di livellatura realizzate su misura sotto i tasti di una tastiera d'organo" },
-                did: { it: "Molle di livellatura su misura" }
+            function el(tag, classe, testo) {
+                var e = document.createElement(tag);
+                if (classe) e.className = classe;
+                if (testo) e.textContent = testo;
+                return e;
             }
-        ]
-    },
 
-    {
-        id: "tastiera-concone-organo-a-canne",
-        titolo: { it: "Copia storica della tastiera Concone per organo a canne" },
-        descrizione: { it: "Copia storica della tastiera “Concone” per organo a canne: telaio e leve in noce nostrano, copertura dei tasti in ebano, diesis in ebano ricoperti d'osso. Tasti trilobati, modiglioni sagomati e barra sotto tasti sagomata in stile." },
-        foto: [
-            {
-                file: "tastiera-organo-a-canne-concone-finita-01.jpg", w: 1600, h: 757,
-                alt: { it: "Copia storica della tastiera Concone per organo a canne, con telaio in noce, tasti in ebano e diesis ricoperti d'osso" },
-                did: { it: "Copia storica della tastiera Concone per organo a canne, lavoro finito" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-telaio-noce-02.jpg", w: 1600, h: 1200,
-                alt: { it: "Telaio e piano dei tasti in noce nostrano per la copia storica della tastiera Concone per organo a canne, in lavorazione" },
-                did: { it: "Telaio e leve in noce nostrano in lavorazione" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-copertura-ebano-03.jpg", w: 1569, h: 1600,
-                alt: { it: "Copertura in ebano lucidata per i tasti di una tastiera storica per organo a canne" },
-                did: { it: "Copertura in ebano lucidata" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-tasti-ebano-04.jpg", w: 1600, h: 617,
-                alt: { it: "Leve in noce con copertura dei tasti in ebano e perni in ottone di una tastiera storica per organo a canne in costruzione" },
-                did: { it: "Leve in noce con copertura dei tasti in ebano" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-diesis-osso-05.jpg", w: 1600, h: 1200,
-                alt: { it: "Diesis in ebano ricoperti d'osso montati sui primi tasti di una tastiera storica per organo a canne" },
-                did: { it: "Diesis in ebano ricoperti d'osso" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-diesis-ebano-osso-06.jpg", w: 1600, h: 1200,
-                alt: { it: "Vista diagonale dei diesis in ebano ricoperti d'osso su una tastiera storica per organo a canne in costruzione" },
-                did: { it: "Diesis in ebano e osso, vista d'insieme" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-leve-noce-07.jpg", w: 1600, h: 1200,
-                alt: { it: "Sezione laterale delle leve in noce di una tastiera storica per organo a canne con il bordo del telaio" },
-                did: { it: "Particolare delle leve in noce nostrano" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-tasti-trilobati-08.jpg", w: 1600, h: 1043,
-                alt: { it: "Fronti dei tasti trilobati con copertura in ebano di una tastiera storica per organo a canne" },
-                did: { it: "Tasti trilobati, particolare" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-modiglioni-09.jpg", w: 1434, h: 1600,
-                alt: { it: "Tastiera storica per organo a canne con modiglioni sagomati e diesis ricoperti d'osso, vista laterale sul banco" },
-                did: { it: "Modiglioni sagomati, vista laterale" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-barra-sagomata-10.jpg", w: 1600, h: 1020,
-                alt: { it: "Telaio in noce con barra sotto tasti sagomata in stile, viti di fissaggio e leve in noce, tastiera per organo a canne" },
-                did: { it: "Barra sotto tasti sagomata in stile" }
-            },
-            {
-                file: "tastiera-organo-a-canne-concone-modiglione-dettaglio-11.jpg", w: 1600, h: 1200,
-                alt: { it: "Modiglione sagomato in legno chiaro con diesis in ebano ricoperti d'osso e perni in ottone, tastiera per organo a canne" },
-                did: { it: "Modiglione sagomato, particolare" }
+            var contenitore = document.getElementById('gruppi-galleria');
+            var dati = window.GALLERIA_GRUPPI || [];
+
+            if (!dati.length) {
+                contenitore.appendChild(el('p', '', 'Galleria momentaneamente non disponibile.'));
             }
-        ]
-    },
 
-    {
-        id: "consolle-organo-tre-tastiere-eltec",
-        titolo: { it: "Consolle d'organo a tre tastiere con sensori Eltec" },
-        descrizione: { it: "Consolle a tre tastiere con copertura dei tasti in Corian e modiglioni in rovere. Sistema di molle Daminato, sensori Eltec e magneti per la regolazione del peso dei tasti." },
-        foto: [
-            {
-                file: "consolle-organo-tre-tastiere-corian-vista-frontale-01.jpg", w: 1600, h: 827,
-                alt: { it: "Consolle d'organo a tre tastiere con copertura dei tasti in Corian e modiglioni in rovere, vista dall'alto" },
-                did: { it: "Consolle a tre tastiere con tasti in Corian" }
-            },
-            {
-                file: "consolle-organo-tre-tastiere-corian-modiglioni-rovere-02.jpg", w: 1600, h: 1014,
-                alt: { it: "Vista d'insieme di una consolle d'organo a tre tastiere con tasti in Corian e modiglioni in rovere sul banco di lavoro" },
-                did: { it: "Modiglioni in rovere e tastiere in Corian" }
-            },
-            {
-                file: "consolle-organo-tre-tastiere-corian-vista-laterale-03.jpg", w: 1600, h: 997,
-                alt: { it: "Vista laterale dei modiglioni in rovere di una consolle d'organo a tre tastiere sfalsate" },
-                did: { it: "Le tre tastiere sfalsate, vista laterale" }
-            },
-            {
-                file: "consolle-organo-tre-tastiere-sensori-eltec-04.jpg", w: 1559, h: 1250,
-                alt: { it: "Consolle d'organo a tre tastiere con una tastiera sollevata che mostra i sensori Eltec e la meccanica" },
-                did: { it: "Tastiera sollevata: sensori Eltec e meccanica" }
-            },
-            {
-                file: "consolle-organo-tre-tastiere-sensori-eltec-scheda-05.jpg", w: 1600, h: 1200,
-                alt: { it: "Scheda dei sensori Eltec montata sotto i tasti di una tastiera d'organo" },
-                did: { it: "Scheda dei sensori Eltec sotto i tasti" }
-            },
-            {
-                file: "consolle-organo-tre-tastiere-molle-daminato-06.jpg", w: 1600, h: 832,
-                alt: { it: "Sistema di molle Daminato con barra in ottone sotto i tasti di una consolle d'organo" },
-                did: { it: "Sistema di molle Daminato" }
-            },
-            {
-                file: "consolle-organo-tre-tastiere-magneti-regolazione-peso-07.jpg", w: 1200, h: 1600,
-                alt: { it: "Magneti per la regolazione del peso dei tasti e molle sotto una tastiera d'organo" },
-                did: { it: "Magneti per la regolazione del peso dei tasti" }
+            dati.forEach(function (g) {
+                var gruppo = el('div', 'gruppo');
+                if (g.id) gruppo.id = g.id;
+                gruppo.appendChild(el('h3', '', tr(g.titolo)));
+                gruppo.appendChild(el('p', 'gruppo-desc', tr(g.descrizione)));
+
+                var wrap = el('div', 'slider-wrap');
+
+                var bp = el('button', 'sl-btn sl-prec', '\u2039');
+                bp.type = 'button';
+                bp.setAttribute('aria-label', 'Foto precedente');
+                var bs = el('button', 'sl-btn sl-succ', '\u203A');
+                bs.type = 'button';
+                bs.setAttribute('aria-label', 'Foto successiva');
+                wrap.appendChild(bp);
+                wrap.appendChild(bs);
+                wrap.appendChild(el('div', 'sl-conta', '1 / ' + g.foto.length));
+
+                var slider = el('div', 'slider');
+                g.foto.forEach(function (f, i) {
+                    var fig = el('figure', 'slide');
+                    var im = document.createElement('img');
+                    im.src = f.file;
+                    if (f.w) im.width = f.w;
+                    if (f.h) im.height = f.h;
+                    im.alt = tr(f.alt);
+                    im.draggable = false;
+                    if (i > 0) im.loading = 'lazy';
+                    fig.appendChild(im);
+                    fig.appendChild(el('figcaption', '', tr(f.did)));
+                    slider.appendChild(fig);
+                });
+                wrap.appendChild(slider);
+                gruppo.appendChild(wrap);
+                contenitore.appendChild(gruppo);
+            });
+
+            /* se l'indirizzo contiene #nome-gruppo, vai a quel gruppo */
+            if (location.hash) {
+                var bersaglio = document.getElementById(location.hash.slice(1));
+                if (bersaglio) bersaglio.scrollIntoView();
             }
-        ]
-    },
 
-    {
-        id: "tastiera-stretta-pianoforte-a-coda",
-        titolo: { it: "Tastiera stretta per pianoforte a coda" },
-        descrizione: { it: "Tastiera per pianoforte a coda con tasti più stretti, costruita su richiesta del cliente per calzare sulla meccanica già esistente. Le foto della messa in posa mostrano di quanto è stata ridotta l'estensione della tastiera." },
-        foto: [
-            {
-                file: "tastiera-pianoforte-a-coda-stretta-vista-insieme-01.jpg", w: 1600, h: 1200,
-                alt: { it: "Pianoforte a coda con tastiera stretta costruita su misura da A.R.C. e montata sulla meccanica esistente, con l'estensione ridotta visibile ai lati dei tasti" },
-                did: { it: "Tastiera stretta montata sulla meccanica esistente: si vede di quanto è ridotta l'estensione" }
-            },
-            {
-                file: "tastiera-pianoforte-a-coda-stretta-tasti-su-misura-02.jpg", w: 1200, h: 1600,
-                alt: { it: "Tastiera stretta per pianoforte a coda con tasti più stretti, durante la messa in posa sulla meccanica esistente" },
-                did: { it: "Tasti più stretti, costruiti su richiesta del cliente" }
-            },
-            {
-                file: "tastiera-pianoforte-a-coda-stretta-messa-in-posa-03.jpg", w: 1200, h: 1600,
-                alt: { it: "Particolare della tastiera stretta per pianoforte a coda, con tasti bianchi e neri e leve in legno chiaro posati sulla meccanica esistente" },
-                did: { it: "Messa in posa: la tastiera stretta calza sulla meccanica già esistente" }
+            /* ---------- Slider dei gruppi ---------- */
+            var gruppi = Array.prototype.slice.call(document.querySelectorAll('.slider-wrap'));
+            var gruppoAttivo = null;
+            var trascinato = false;
+
+            gruppi.forEach(function (wrap) {
+                var slider = wrap.querySelector('.slider');
+                var slides = slider.querySelectorAll('.slide');
+                var btnP = wrap.querySelector('.sl-prec');
+                var btnS = wrap.querySelector('.sl-succ');
+                var conta = wrap.querySelector('.sl-conta');
+                var n = slides.length;
+
+                function corrente() {
+                    return Math.round(slider.scrollLeft / slider.clientWidth);
+                }
+                function vai(i, liscio) {
+                    i = Math.max(0, Math.min(n - 1, i));
+                    slider.scrollTo({ left: i * slider.clientWidth, behavior: liscio === false ? 'auto' : 'smooth' });
+                }
+                function aggiorna() {
+                    var i = Math.max(0, Math.min(n - 1, corrente()));
+                    conta.textContent = (i + 1) + ' / ' + n;
+                    btnP.disabled = (i === 0);
+                    btnS.disabled = (i === n - 1);
+                }
+
+                wrap._vai = vai;
+
+                if (n < 2) {
+                    btnP.style.display = 'none';
+                    btnS.style.display = 'none';
+                    conta.style.display = 'none';
+                }
+
+                btnP.addEventListener('click', function () { vai(corrente() - 1); });
+                btnS.addEventListener('click', function () { vai(corrente() + 1); });
+                slider.addEventListener('scroll', aggiorna, { passive: true });
+                window.addEventListener('resize', function () { vai(corrente(), false); aggiorna(); });
+                aggiorna();
+
+                /* Trascinamento col mouse (col dito scorre da solo) */
+                var giu = false, x0 = 0, scroll0 = 0, indice0 = 0, spostato = false;
+
+                slider.addEventListener('mousedown', function (e) {
+                    if (e.button !== 0) return;
+                    giu = true;
+                    spostato = false;
+                    x0 = e.clientX;
+                    scroll0 = slider.scrollLeft;
+                    indice0 = corrente();
+                    slider.classList.add('trascina');
+                    e.preventDefault();
+                });
+                window.addEventListener('mousemove', function (e) {
+                    if (!giu) return;
+                    var dx = e.clientX - x0;
+                    if (Math.abs(dx) > 5) spostato = true;
+                    slider.scrollLeft = scroll0 - dx;
+                });
+                window.addEventListener('mouseup', function (e) {
+                    if (!giu) return;
+                    giu = false;
+                    slider.classList.remove('trascina');
+                    var dx = e.clientX - x0;
+                    if (Math.abs(dx) > 50) {
+                        vai(dx < 0 ? indice0 + 1 : indice0 - 1);
+                    } else {
+                        vai(indice0);
+                    }
+                    if (spostato) {
+                        trascinato = true;
+                        setTimeout(function () { trascinato = false; }, 50);
+                    }
+                });
+            });
+
+            /* ---------- Schermo intero ---------- */
+            var box = document.getElementById('lightbox');
+            var img = document.getElementById('lightbox-img');
+            var did = document.getElementById('lightbox-didascalia');
+            var contaLb = document.getElementById('lightbox-contatore');
+            var btnPrec = document.getElementById('lightbox-prec');
+            var btnSucc = document.getElementById('lightbox-succ');
+            var foto = [];
+            var indice = 0;
+            var appenaScorso = false;
+
+            function mostra(i) {
+                if (!foto.length) return;
+                indice = (i + foto.length) % foto.length;
+                var f = foto[indice];
+                var fig = f.closest('figure');
+                var cap = fig ? fig.querySelector('figcaption') : null;
+                img.src = f.currentSrc || f.src;
+                img.alt = f.alt;
+                did.textContent = cap ? cap.textContent : '';
+                did.style.display = cap ? 'block' : 'none';
+                contaLb.textContent = foto.length > 1 ? (indice + 1) + ' / ' + foto.length : '';
+
+                /* precarica le foto vicine per uno scorrimento fluido */
+                if (foto.length > 1) {
+                    new Image().src = foto[(indice + 1) % foto.length].src;
+                    new Image().src = foto[(indice - 1 + foto.length) % foto.length].src;
+                }
             }
-        ]
-    },
 
-    {
-        id: "tastiera-nuova-pianoforte-plexiglass",
-        titolo: { it: "Tastiera nuova per pianoforte nuovo con copertura in plexiglass" },
-        descrizione: { it: "Tastiera nuova per pianoforte nuovo: copertura dei tasti in plexiglass, diesis in ebano, bilanciere e inserti in faggio, capsule in tiglio." },
-        foto: [
-            {
-                file: "tastiera-nuova-pianoforte-plexiglass-diesis-ebano-01.jpg", w: 1465, h: 1600,
-                alt: { it: "Tastiera nuova per pianoforte nuovo con copertura dei tasti in plexiglass e diesis in ebano, sul banco di lavoro" },
-                did: { it: "Tastiera nuova con tasti in plexiglass e diesis in ebano" }
-            },
-            {
-                file: "tastiera-nuova-pianoforte-plexiglass-vista-frontale-02.jpg", w: 1600, h: 520,
-                alt: { it: "Vista frontale della tastiera nuova per pianoforte con copertura in plexiglass, diesis in ebano e leve in legno chiaro" },
-                did: { it: "Vista frontale della tastiera completa" }
-            },
-            {
-                file: "tastiera-nuova-pianoforte-bilanciere-faggio-03.jpg", w: 1600, h: 1200,
-                alt: { it: "Bilanciere in faggio con perni in metallo e rondelle di feltro verde di una tastiera nuova per pianoforte" },
-                did: { it: "Bilanciere in faggio con perni e rondelle di feltro" }
-            },
-            {
-                file: "tastiera-nuova-pianoforte-bilanciere-fianco-04.jpg", w: 1600, h: 535,
-                alt: { it: "Fianco in faggio e bilanciere con perni e feltri verdi e rossi di una tastiera nuova per pianoforte" },
-                did: { it: "Fianco in faggio e bilanciere, vista a livello del banco" }
-            },
-            {
-                file: "tastiera-nuova-pianoforte-telaio-inserti-faggio-05.jpg", w: 1200, h: 1600,
-                alt: { it: "Telaio in legno chiaro con inserto in faggio e inserti in ottone per una tastiera nuova di pianoforte, in lavorazione" },
-                did: { it: "Telaio in lavorazione con inserti in faggio" }
-            },
-            {
-                file: "tastiera-nuova-pianoforte-telaio-dettaglio-06.jpg", w: 1200, h: 1600,
-                alt: { it: "Dettaglio del telaio in legno con inserto in faggio e inserti in ottone di una tastiera nuova per pianoforte" },
-                did: { it: "Particolare del telaio e dell'inserto in faggio" }
+            function apri(wrap, i) {
+                gruppoAttivo = wrap;
+                foto = Array.prototype.slice.call(wrap.querySelectorAll('.slide img'));
+                var piu = foto.length > 1;
+                btnPrec.style.display = piu ? 'flex' : 'none';
+                btnSucc.style.display = piu ? 'flex' : 'none';
+                mostra(i);
+                box.classList.add('aperto');
+                document.body.style.overflow = 'hidden';
             }
-        ]
-    },
 
-    {
-        id: "abete-rosso-val-di-fiemme-tasti",
-        titolo: { it: "Abete rosso della Val di Fiemme per la costruzione dei tasti" },
-        descrizione: { it: "La nostra fornitura di abete rosso della Val di Fiemme a fibra piatta: un legno compatto, per la realizzazione dei tasti." },
-        foto: [
-            {
-                file: "abete-rosso-val-di-fiemme-tavole-per-tasti-01.jpg", w: 1600, h: 1085,
-                alt: { it: "Catasta di tavole di abete rosso della Val di Fiemme, fornitura per la realizzazione dei tasti" },
-                did: { it: "Tavole di abete rosso della Val di Fiemme per la realizzazione dei tasti" }
-            },
-            {
-                file: "abete-rosso-val-di-fiemme-carico-fornitura-02.jpg", w: 1260, h: 990,
-                alt: { it: "Carico di tavole di abete rosso della Val di Fiemme durante la consegna della fornitura" },
-                did: { it: "Carico della fornitura di abete rosso" }
-            },
-            {
-                file: "abete-rosso-val-di-fiemme-fibra-compatta-03.jpg", w: 1048, h: 1600,
-                alt: { it: "Testata delle tavole di abete rosso della Val di Fiemme a fibra piatta, con legno compatto" },
-                did: { it: "Abete rosso a fibra piatta: legno compatto per i tasti" }
+            function chiudi() {
+                box.classList.remove('aperto');
+                document.body.style.overflow = '';
+                img.src = '';
+                /* riporta lo slider sulla foto vista per ultima */
+                if (gruppoAttivo && gruppoAttivo._vai) gruppoAttivo._vai(indice, false);
             }
-        ]
-    },
 
-    {
-        id: "tastiere-organo-placcate-osso",
-        titolo: { it: "Tastiere per organo placcate in osso con diesis in ebano" },
-        descrizione: { it: "Tastiere per organo placcate in osso, con diesis in ebano e profilo posteriore sagomato su disegno del cliente." },
-        foto: [
-            {
-                file: "tastiere-organo-placcate-osso-diesis-ebano-01.jpg", w: 1600, h: 869,
-                alt: { it: "Due tastiere per organo placcate in osso con diesis in ebano e profilo posteriore sagomato su disegno del cliente" },
-                did: { it: "Due tastiere per organo placcate in osso, con diesis in ebano" }
-            },
-            {
-                file: "tastiere-organo-placcate-osso-vista-diagonale-02.jpg", w: 1550, h: 1600,
-                alt: { it: "Vista diagonale di due tastiere per organo con tasti placcati in osso e diesis in ebano" },
-                did: { it: "Tasti placcati in osso e diesis in ebano, vista diagonale" }
-            },
-            {
-                file: "tastiere-organo-profilo-posteriore-sagomato-03.jpg", w: 1600, h: 569,
-                alt: { it: "Vista laterale di due tastiere per organo sovrapposte, con il profilo posteriore dei tasti sagomato su disegno del cliente" },
-                did: { it: "Profilo posteriore sagomato su disegno del cliente" }
-            }
-        ]
-    }
+            gruppi.forEach(function (wrap) {
+                var imgs = wrap.querySelectorAll('.slide img');
+                Array.prototype.forEach.call(imgs, function (f, i) {
+                    f.addEventListener('click', function () {
+                        if (trascinato) return;
+                        apri(wrap, i);
+                    });
+                });
+            });
 
-    /* ----------------------------------------------------------
-       MODELLO PER UN NUOVO GRUPPO
-       Metti una virgola dopo l'ultima parentesi graffa } del gruppo
-       precedente (quella che chiude il gruppo, non la foto), poi
-       incolla questo blocco (senza i commenti):
+            btnPrec.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
+            btnSucc.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice + 1); });
+            document.getElementById('lightbox-chiudi').addEventListener('click', function (e) {
+                e.stopPropagation();
+                chiudi();
+            });
 
-    ,{
-        id: "nome-breve-del-gruppo",
-        titolo: { it: "Titolo del gruppo" },
-        descrizione: { it: "Descrizione del lavoro." },
-        foto: [
-            {
-                file: "nome-file.jpg", w: 1600, h: 1200,
-                alt: { it: "Descrizione della foto per Google" },
-                did: { it: "Didascalia breve" }
-            }
-        ]
-    }
-       ---------------------------------------------------------- */
+            /* Tocco o click sullo sfondo (non sulla foto) chiude */
+            box.addEventListener('click', function (e) {
+                if (appenaScorso) return;
+                if (e.target === img) return;
+                if (e.target === box || e.target === did || e.target === contaLb) chiudi();
+            });
 
-];
+            /* Scorrimento col dito o trascinando col mouse */
+            var startX = null, startY = null;
+            box.addEventListener('pointerdown', function (e) {
+                startX = e.clientX;
+                startY = e.clientY;
+            });
+            box.addEventListener('pointerup', function (e) {
+                if (startX === null) return;
+                var dx = e.clientX - startX;
+                var dy = e.clientY - startY;
+                startX = null;
+                startY = null;
+                if (foto.length > 1 && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+                    mostra(dx > 0 ? indice - 1 : indice + 1);
+                    appenaScorso = true;
+                    setTimeout(function () { appenaScorso = false; }, 100);
+                }
+            });
+            box.addEventListener('pointercancel', function () {
+                startX = null;
+                startY = null;
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (!box.classList.contains('aperto')) return;
+                if (e.key === 'Escape') chiudi();
+                if (e.key === 'ArrowLeft') mostra(indice - 1);
+                if (e.key === 'ArrowRight') mostra(indice + 1);
+            });
+        })();
+    </script>
+</body>
+</html>
