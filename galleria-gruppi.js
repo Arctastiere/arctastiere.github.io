@@ -229,12 +229,36 @@ window.GALLERIA_GRUPPI = [
                 did: { it: "Magneti per la regolazione del peso dei tasti" }
             }
         ]
+    },
+
+    {
+        id: "tastiera-stretta-pianoforte-a-coda",
+        titolo: { it: "Tastiera stretta per pianoforte a coda" },
+        descrizione: { it: "Tastiera per pianoforte a coda con tasti più stretti, costruita su richiesta del cliente per calzare sulla meccanica già esistente. Le foto della messa in posa mostrano di quanto è stata ridotta l'estensione della tastiera." },
+        foto: [
+            {
+                file: "tastiera-pianoforte-a-coda-stretta-vista-insieme-01.jpg", w: 1600, h: 1200,
+                alt: { it: "Pianoforte a coda con tastiera stretta costruita su misura da A.R.C. e montata sulla meccanica esistente, con l'estensione ridotta visibile ai lati dei tasti" },
+                did: { it: "Tastiera stretta montata sulla meccanica esistente: si vede di quanto è ridotta l'estensione" }
+            },
+            {
+                file: "tastiera-pianoforte-a-coda-stretta-tasti-su-misura-02.jpg", w: 1200, h: 1600,
+                alt: { it: "Tastiera stretta per pianoforte a coda con tasti più stretti, durante la messa in posa sulla meccanica esistente" },
+                did: { it: "Tasti più stretti, costruiti su richiesta del cliente" }
+            },
+            {
+                file: "tastiera-pianoforte-a-coda-stretta-messa-in-posa-03.jpg", w: 1200, h: 1600,
+                alt: { it: "Particolare della tastiera stretta per pianoforte a coda, con tasti bianchi e neri e leve in legno chiaro posati sulla meccanica esistente" },
+                did: { it: "Messa in posa: la tastiera stretta calza sulla meccanica già esistente" }
+            }
+        ]
     }
 
     /* ----------------------------------------------------------
        MODELLO PER UN NUOVO GRUPPO
-       Metti una virgola dopo la parentesi graffa } del gruppo
-       precedente, poi incolla questo blocco (senza i commenti):
+       Metti una virgola dopo l'ultima parentesi graffa } del gruppo
+       precedente (quella che chiude il gruppo, non la foto), poi
+       incolla questo blocco (senza i commenti):
 
     ,{
         id: "nome-breve-del-gruppo",
