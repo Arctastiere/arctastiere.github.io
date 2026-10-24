@@ -10,8 +10,8 @@
    <script src="/lingue.js" defer></script>
    ========================================================== */
 (function () {
-    /* Lingue mostrate nel menu (solo quelle complete e controllate) */
-    var ATTIVE = ['it', 'en'];
+    /* Lingue mostrate nel menu */
+    var ATTIVE = ['it', 'en', 'fr', 'de', 'es', 'pt', 'hu'];
 
     /* Ordine in cui compaiono i link */
     var ORDINE = ['it', 'en', 'fr', 'de', 'es', 'pt', 'hu'];
