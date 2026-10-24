@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui sommes-nous : A.R.C., héritier de Gandolfo Tastiere et des frères Barra</title>
+    <meta name="description" content="L'histoire d'A.R.C. S.n.c. d'Andrea Colina : troisième génération de facteurs de claviers après les frères Barra et Carlo Gandolfo. Fabrication et restauration de claviers pour orgues, pianos, clavecins et épinettes.">
+    <link rel="canonical" href="https://arctastiere.it/fr/a-propos.html">
+    <link rel="alternate" hreflang="it" href="https://arctastiere.it/chi-siamo.html">
+    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/about-us.html">
+    <link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/a-propos.html">
+    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="Qui sommes-nous | A.R.C. Fabrication et restauration de claviers">
+    <meta property="og:description" content="Troisième génération de facteurs de claviers : des frères Barra à Gandolfo Tastiere jusqu'à A.R.C.">
+    <meta property="og:url" content="https://arctastiere.it/fr/a-propos.html">
+    <meta property="og:image" content="https://arctastiere.it/andrea-colina.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/extra.css">
+    <script src="/lingue.js" defer></script>
+    <script src="/header.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Qui sommes-nous | A.R.C. S.n.c.",
+        "url": "https://arctastiere.it/fr/a-propos.html",
+        "inLanguage": "fr",
+        "about": { "@id": "https://arctastiere.it/#azienda" }
+    }
+    </script>
+    <style>
+        section p + p { margin-top: 12px; }
+        section figure + p { margin-top: 12px; }
+        #chi-siamo { display: flow-root; }
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
+
+        /* Foto di Andrea Colina */
+        .foto-andrea {
+            width: 100%;
+            max-width: 340px;
+            margin: 20px auto;
+        }
+        .foto-andrea img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-andrea figcaption {
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #111111;
+        }
+        @media (min-width: 700px) {
+            .foto-andrea {
+                float: right;
+                width: 300px;
+                margin: 4px 0 16px 24px;
+            }
+        }
+
+        /* Logo di Gandolfo Tastiere */
+        .foto-gandolfo {
+            margin: 0 auto;
+            max-width: 520px;
+        }
+        .foto-gandolfo figure { margin: 0; }
+        .foto-gandolfo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-gandolfo figcaption {
+            margin-top: 12px;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.4;
+            color: #111111;
+        }
+
+        /* Foto laboratorio dei fratelli Barra */
+        .foto-barra { margin: 0 auto; max-width: 1000px; }
+        .foto-barra .griglia-foto {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .foto-barra img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-barra figcaption {
+            margin-top: 12px;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.4;
+            color: #111111;
+        }
+        @media (min-width: 700px) {
+            .foto-barra .griglia-foto { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* Ingrandimento a schermo intero */
+        .lb-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.92);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 16px;
+        }
+        .lb-overlay.aperto { display: flex; }
+        .lb-overlay img {
+            max-width: 100%;
+            max-height: calc(100vh - 110px);
+            width: auto;
+            object-fit: contain;
+            border-radius: 2px;
+            touch-action: pan-y;
+        }
+        .lb-didascalia {
+            margin-top: 12px;
+            color: #ffffff;
+            font-size: 14px;
+            font-style: italic;
+            text-align: center;
+            max-width: 90%;
+        }
+        .lb-contatore {
+            margin-top: 4px;
+            color: #bbbbbb;
+            font-size: 12px;
+        }
+        .lb-btn {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lb-btn:hover { background: rgba(255, 255, 255, 0.3); }
+        .lb-chiudi { top: 12px; right: 12px; }
+        .lb-prec { left: 8px; top: 50%; transform: translateY(-50%); }
+        .lb-succ { right: 8px; top: 50%; transform: translateY(-50%); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/fr/index.html"><img src="/logo.png" alt="Logo A.R.C." class="logo-header"></a>
+                <a href="/fr/index.html" class="link-home">Home</a>
+            </div>
+            <ul>
+                <li><a href="/fr/a-propos.html">Qui sommes-nous</a></li>
+                <li><a href="/fr/services.html">Services</a></li>
+                <li><a href="/fr/galerie.html">Galerie</a></li>
+                <li><a href="/fr/contact.html">Contact</a></li>
+                <li><a href="/fr/actualites.html" class="voce-news"><span class="emoji">📣</span> Actualités et extras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="chi-siamo">
+        <h2>Une tradition qui continue</h2>
+
+        <p>Notre parcours commence en 2006, lorsque Andrea Colina entre en atelier pour apprendre le métier d'accordeur et de technicien de piano. Au fil des années, il travaille comme salarié puis à son compte, en collaborant avec de nombreuses entreprises de la région pour le service de concert, la restauration et l'accord.</p>
+
+        <figure class="foto-andrea foto-zoom">
+            <img src="/andrea-colina.jpg" width="810" height="1800" loading="lazy" alt="Andrea Colina, facteur de claviers, au travail dans l'atelier A.R.C. à Piobesi Torinese">
+            <figcaption>Andrea Colina, troisième génération de facteurs de claviers, dans le nouvel atelier A.R.C.</figcaption>
+        </figure>
+
+        <p>En 2023, il reprend l'héritage de Carlo Gandolfo, titulaire de l'entreprise Gandolfo Tastiere, l'atelier auquel il confiait ses travaux depuis des années et dont il reçoit le métier de facteur de claviers. Depuis, A.R.C. se consacre presque exclusivement à la fabrication et à la restauration de claviers pour pianos, orgues, clavecins, épinettes et autres instruments.</p>
+
+        <p>Nous sommes la troisième génération d'une lignée de facteurs née avec les frères Barra et poursuivie par Gandolfo. Nous travaillons les bois précieux, l'os et les matériaux traditionnels pour offrir à chaque musicien un toucher précis et une mécanique toujours prête et réactive.</p>
+    </section>
+
+    <section class="foto-gandolfo">
+        <figure class="foto-zoom">
+            <img src="/IMG-20240111-WA0016.jpg" loading="lazy" alt="Logo de Gandolfo Tastiere, fabricant historique de claviers pour orgues et pianos">
+            <figcaption>Logo de Gandolfo Tastiere</figcaption>
+        </figure>
+    </section>
+
+    <section class="foto-barra">
+        <figure class="foto-zoom">
+            <div class="griglia-foto">
+                <img src="/barra1.jpg" width="1200" height="752" loading="lazy" alt="L'atelier des frères Barra : ouvriers au travail entre les établis">
+                <img src="/barra2.jpg" width="1200" height="792" loading="lazy" alt="L'atelier des frères Barra : la scie à ruban et les piles de bois">
+                <img src="/barra3.jpg" width="1200" height="757" loading="lazy" alt="L'atelier des frères Barra : fabrication de claviers sur les établis">
+                <img src="/barra4.jpg" width="1200" height="872" loading="lazy" alt="L'atelier des frères Barra : travail sur la mécanique d'un piano">
+            </div>
+            <figcaption>L'atelier des frères Barra, fabrication de claviers et de pianos</figcaption>
+        </figure>
+    </section>
+
+    <footer id="contatti">
+        <h2>Contact et adresses</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3>Coordonnées</h3>
+                <p><strong>Téléphone :</strong> <a href="tel:+393402621634">+39 340 2621634</a></p>
+                <p><strong>E-mail :</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong>PEC (e-mail certifié) :</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3>Adresses</h3>
+                <p><strong>Atelier :</strong> Piobesi Torinese, Via Galimberti 67</p>
+                <p><strong>Siège social :</strong> Vinovo, Via Parisetto 31</p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C. S.n.c. di Andrea Colina &amp; Co.</strong></p>
+            <p>N° TVA : IT12884500013</p>
+            <p>© 2026 A.R.C. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="lb-overlay" id="lb" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+        <button class="lb-btn lb-chiudi" id="lbChiudi" aria-label="Fermer">&times;</button>
+        <button class="lb-btn lb-prec" id="lbPrec" aria-label="Photo précédente">&#8249;</button>
+        <button class="lb-btn lb-succ" id="lbSucc" aria-label="Photo suivante">&#8250;</button>
+        <img id="lbImg" src="" alt="">
+        <div class="lb-didascalia" id="lbDida"></div>
+        <div class="lb-contatore" id="lbConta"></div>
+    </div>
+
+    <script>
+    (function () {
+        var lb = document.getElementById('lb');
+        var lbImg = document.getElementById('lbImg');
+        var lbDida = document.getElementById('lbDida');
+        var lbConta = document.getElementById('lbConta');
+        var btnPrec = document.getElementById('lbPrec');
+        var btnSucc = document.getElementById('lbSucc');
+
+        var lista = [];
+        var didascalia = '';
+        var indice = 0;
+
+        function mostra(i) {
+            indice = (i + lista.length) % lista.length;
+            lbImg.src = lista[indice].getAttribute('src');
+            lbImg.alt = lista[indice].alt;
+            lbDida.textContent = didascalia;
+            lbConta.textContent = lista.length > 1 ? (indice + 1) + ' / ' + lista.length : '';
+        }
+        function apri(figura, i) {
+            lista = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            var cap = figura.querySelector('figcaption');
+            didascalia = cap ? cap.textContent : '';
+            var piu = lista.length > 1;
+            btnPrec.style.display = piu ? 'flex' : 'none';
+            btnSucc.style.display = piu ? 'flex' : 'none';
+            mostra(i);
+            lb.classList.add('aperto');
+            document.body.style.overflow = 'hidden';
+        }
+        function chiudi() {
+            lb.classList.remove('aperto');
+            document.body.style.overflow = '';
+        }
+
+        Array.prototype.slice.call(document.querySelectorAll('.foto-zoom')).forEach(function (figura) {
+            var imgs = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            imgs.forEach(function (img, i) {
+                img.addEventListener('click', function () { apri(figura, i); });
+            });
+        });
+
+        document.getElementById('lbChiudi').addEventListener('click', chiudi);
+        btnPrec.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
+        btnSucc.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice + 1); });
+        lb.addEventListener('click', function (e) {
+            if (e.target === lb) chiudi();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (!lb.classList.contains('aperto')) return;
+            if (e.key === 'Escape') chiudi();
+            if (lista.length > 1 && e.key === 'ArrowLeft') mostra(indice - 1);
+            if (lista.length > 1 && e.key === 'ArrowRight') mostra(indice + 1);
+        });
+
+        var startX = null;
+        lbImg.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+        lbImg.addEventListener('touchend', function (e) {
+            if (startX === null) return;
+            var diff = e.changedTouches[0].clientX - startX;
+            if (lista.length > 1 && Math.abs(diff) > 50) mostra(diff > 0 ? indice - 1 : indice + 1);
+            startX = null;
+        });
+    })();
+    </script>
+</body>
+</html>

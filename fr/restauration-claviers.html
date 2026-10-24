@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauration de claviers anciens pour orgues, pianos et clavecins | A.R.C.</title>
+    <meta name="description" content="Restauration de claviers anciens pour orgues, pianos, clavecins et épinettes : nouveaux placages, réparation des leviers et des balanciers, remplacement des pointes, restauration conservatoire et traitement de l'ivoire. Turin, Italie.">
+    <link rel="canonical" href="https://arctastiere.it/fr/restauration-claviers.html">
+    <link rel="alternate" hreflang="it" href="https://arctastiere.it/restauro-tastiere.html">
+    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/keyboard-restoration.html">
+    <link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/restauration-claviers.html">
+    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="Restauration de claviers | A.R.C.">
+    <meta property="og:description" content="Restauration conservatoire de claviers anciens pour orgues, pianos, clavecins et épinettes.">
+    <meta property="og:url" content="https://arctastiere.it/fr/restauration-claviers.html">
+    <meta property="og:image" content="https://arctastiere.it/restauro-dopo.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/extra.css">
+    <script src="/lingue.js" defer></script>
+    <script src="/header.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Restauration de claviers",
+        "serviceType": "Restauration de claviers anciens pour orgues, pianos, clavecins et épinettes",
+        "description": "Restauration conservatoire de claviers existants : nouveaux placages, réparation des leviers et des balanciers, nettoyage ou remplacement des pointes, fabrication des touches manquantes, blanchiment et polissage de l'ivoire.",
+        "url": "https://arctastiere.it/fr/restauration-claviers.html",
+        "inLanguage": "fr",
+        "provider": { "@id": "https://arctastiere.it/#azienda" },
+        "areaServed": "IT"
+    }
+    </script>
+    <style>
+        section#restauro-tastiere {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section p + p { margin-top: 12px; }
+        section h3 { margin-top: 28px; margin-bottom: 8px; text-transform: uppercase; font-size: 18px; }
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
+
+        /* Testo a sinistra, foto a lato */
+        .testo-con-foto {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 28px;
+            align-items: start;
+            margin-top: 12px;
+        }
+        .colonna-testo > h3:first-child { margin-top: 0; }
+
+        /* Prima / Dopo in colonna */
+        .prima-dopo {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 0;
+        }
+        .prima-dopo figure {
+            position: relative;
+            margin: 0;
+            border: 1px solid #000000;
+            background-color: rgba(255, 255, 255, 0.88);
+        }
+        .prima-dopo img { width: 100%; height: auto; cursor: zoom-in; display: block; }
+        .prima-dopo .etichetta {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+        }
+        .didascalia-coppia {
+            margin: 0;
+            padding: 10px 12px;
+            font-size: 14px;
+            color: #111111;
+            border: 1px solid #000000;
+            border-top: none;
+            background-color: rgba(255, 255, 255, 0.88);
+        }
+
+        @media (max-width: 800px) {
+            .testo-con-foto {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.94);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        #lightbox.aperto { display: flex; }
+        #lightbox img {
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        #lightbox-didascalia {
+            color: #ffffff;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 14px;
+            max-width: 600px;
+        }
+        #lightbox-chiudi {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 36px;
+            line-height: 1;
+            cursor: pointer;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/fr/index.html"><img src="/logo.png" alt="Logo A.R.C." class="logo-header"></a>
+                <a href="/fr/index.html" class="link-home">Home</a>
+            </div>
+            <ul>
+                <li><a href="/fr/a-propos.html">Qui sommes-nous</a></li>
+                <li><a href="/fr/services.html">Services</a></li>
+                <li><a href="/fr/galerie.html">Galerie</a></li>
+                <li><a href="/fr/contact.html">Contact</a></li>
+                <li><a href="/fr/actualites.html" class="voce-news"><span class="emoji">📣</span> Actualités et extras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="restauro-tastiere">
+        <h2>Restauration de claviers</h2>
+        <p>Remise en état de claviers anciens et usés par le temps : nouveaux placages, réparation des leviers et des balanciers, nettoyage ou remplacement des pointes et réparations en général.</p>
+
+        <div class="testo-con-foto">
+            <!-- TESTO CONTINUO -->
+            <div class="colonna-testo">
+                <h3>Nos interventions</h3>
+                <p>Selon l'état du clavier et les besoins du client, nous restaurons les claviers existants en remplaçant les composants, les garnitures en drap de laine, les placages, les pointes ou d'autres éléments.</p>
+
+                <p>Nous abordons la restauration dans le respect de la construction d'origine de chaque composant, en intervenant, dans la mesure du possible, de façon conservatoire.</p>
+
+                <p>Il est possible de blanchir les anciens claviers en ivoire et de leur rendre leur éclat, ou d'envisager le remplacement partiel ou complet des composants.</p>
+            </div>
+
+            <!-- FOTO A LATO DEL TESTO -->
+            <div class="colonna-foto">
+                <div class="prima-dopo">
+                    <figure>
+                        <span class="etichetta">Avant</span>
+                        <img src="/restauro-prima.jpg" data-ruota="-90" alt="Clavier d'orgue ancien avant restauration, avec des touches manquantes et une mécanique détériorée" data-didascalia="Avant : fabrication des touches manquantes et restauration du clavier">
+                    </figure>
+                    <figure>
+                        <span class="etichetta">Après</span>
+                        <img src="/restauro-dopo.jpg" alt="Le même clavier après restauration, avec les touches manquantes refaites" data-didascalia="Après : fabrication des touches manquantes et restauration du clavier">
+                    </figure>
+                </div>
+                <p class="didascalia-coppia">Fabrication des touches manquantes et restauration du clavier</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 28px;"><a href="/fr/contact.html">Demander des informations</a> · <a href="/fr/services.html">← Tous les services</a></p>
+    </section>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo en plein écran">
+        <button id="lightbox-chiudi" aria-label="Fermer">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-didascalia"></p>
+    </div>
+
+    <footer id="contatti">
+        <h2>Contact et adresses</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3>Coordonnées</h3>
+                <p><strong>Téléphone :</strong> <a href="tel:+393402621634">+39 340 2621634</a></p>
+                <p><strong>E-mail :</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong>PEC (e-mail certifié) :</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3>Adresses</h3>
+                <p><strong>Atelier :</strong> Piobesi Torinese, Via Galimberti 67</p>
+                <p><strong>Siège social :</strong> Vinovo, Via Parisetto 31</p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C S.n.c di Andrea Colina &amp; Co.</strong></p>
+            <p>N° TVA : IT12884500013</p>
+            <p>© 2026 A.R.C. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var box = document.getElementById('lightbox');
+            var img = document.getElementById('lightbox-img');
+            var did = document.getElementById('lightbox-didascalia');
+
+            /* Ruota le foto con attributo data-ruota (gradi: -90 = a sinistra, 90 = a destra) */
+            function ruota(foto) {
+                var gradi = parseInt(foto.getAttribute('data-ruota'), 10);
+                if (!gradi) return;
+                var originale = new Image();
+                originale.onload = function () {
+                    try {
+                        var w = originale.naturalWidth;
+                        var h = originale.naturalHeight;
+                        var scala = Math.min(1, 2000 / Math.max(w, h));
+                        var sw = Math.round(w * scala);
+                        var sh = Math.round(h * scala);
+                        var c = document.createElement('canvas');
+                        c.width = sh;
+                        c.height = sw;
+                        var ctx = c.getContext('2d');
+                        if (gradi < 0) {
+                            ctx.translate(0, c.height);
+                            ctx.rotate(-Math.PI / 2);
+                        } else {
+                            ctx.translate(c.width, 0);
+                            ctx.rotate(Math.PI / 2);
+                        }
+                        ctx.drawImage(originale, 0, 0, sw, sh);
+                        foto.src = c.toDataURL('image/jpeg', 0.92);
+                    } catch (e) {
+                        /* se la rotazione non riesce, resta la foto originale */
+                    }
+                };
+                originale.src = foto.src;
+            }
+
+            function apri(foto) {
+                var testo = foto.getAttribute('data-didascalia') || '';
+                img.src = foto.src;
+                img.alt = foto.alt;
+                did.textContent = testo;
+                did.style.display = testo ? 'block' : 'none';
+                box.classList.add('aperto');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function chiudi() {
+                box.classList.remove('aperto');
+                document.body.style.overflow = '';
+                img.src = '';
+            }
+
+            document.querySelectorAll('.prima-dopo img').forEach(function (f) {
+                ruota(f);
+                f.addEventListener('click', function () { apri(f); });
+            });
+
+            box.addEventListener('click', function (e) {
+                if (e.target === img) return;
+                chiudi();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') chiudi();
+            });
+        })();
+    </script>
+</body>
+    </html>

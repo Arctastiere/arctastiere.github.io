@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claviers neufs sur mesure pour orgues, pianos et clavecins | A.R.C.</title>
+    <meta name="description" content="Fabrication de claviers neufs sur mesure pour orgues, pianos, clavecins et épinettes, en copie ou sur plan : touches en os, ébène, buis, Plexiglas et Corian. Piobesi Torinese (Turin, Italie).">
+    <link rel="canonical" href="https://arctastiere.it/fr/claviers-neufs.html">
+    <link rel="alternate" hreflang="it" href="https://arctastiere.it/tastiere-nuove.html">
+    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/new-keyboards.html">
+    <link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/claviers-neufs.html">
+    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="Claviers neufs sur mesure | A.R.C.">
+    <meta property="og:description" content="Claviers neufs pour orgues, pianos, clavecins et épinettes, en copie ou sur plan du client.">
+    <meta property="og:url" content="https://arctastiere.it/fr/claviers-neufs.html">
+    <meta property="og:image" content="https://arctastiere.it/tastiera-noce.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/extra.css">
+    <script src="/lingue.js" defer></script>
+    <script src="/header.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Claviers neufs sur mesure",
+        "serviceType": "Fabrication de claviers pour orgues, pianos, clavecins et épinettes",
+        "description": "Claviers neufs sur mesure, en copie ou sur plan du client, avec touches en épicéa, en noyer ou en d'autres essences et placages en os, ébène, buis, Plexiglas, PVC, Corian ou Elforin.",
+        "url": "https://arctastiere.it/fr/claviers-neufs.html",
+        "inLanguage": "fr",
+        "provider": { "@id": "https://arctastiere.it/#azienda" },
+        "areaServed": "IT"
+    }
+    </script>
+    <style>
+        section#tastiere-nuove {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section p + p { margin-top: 12px; }
+        section h3 { margin-top: 28px; margin-bottom: 8px; text-transform: uppercase; font-size: 18px; }
+        section ul { list-style: disc; padding-left: 22px; margin-top: 8px; }
+        section li { margin-top: 6px; color: #333333; font-size: 15px; }
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
+
+        /* Testo a sinistra, foto a lato */
+        .testo-con-foto {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 28px;
+            align-items: start;
+            margin-top: 12px;
+        }
+        .colonna-testo > h3:first-child { margin-top: 0; }
+        .colonna-foto figure.foto-pagina:first-child { margin-top: 0; }
+        .colonna-foto figure.foto-pagina:last-child { margin-bottom: 0; }
+        .colonna-foto figure.foto-pagina.verticale img { max-height: 340px; }
+
+        /* Foto a due a due dopo il testo */
+        .griglia-foto {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 32px;
+        }
+        .griglia-foto figure.foto-pagina { margin: 0; }
+        .griglia-foto figure.foto-pagina img,
+        .griglia-foto figure.foto-pagina.verticale img {
+            width: 100%;
+            height: auto;
+            max-height: none;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        @media (max-width: 800px) {
+            .testo-con-foto {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .colonna-foto { margin-top: 16px; }
+            .colonna-foto figure.foto-pagina:first-child { margin-top: 20px; }
+        }
+        @media (max-width: 480px) {
+            .griglia-foto { grid-template-columns: 1fr; }
+        }
+
+        figure.foto-pagina {
+            margin: 20px 0;
+            border: 1px solid #000000;
+            background-color: rgba(255, 255, 255, 0.88);
+        }
+        figure.foto-pagina img { width: 100%; height: auto; cursor: zoom-in; display: block; }
+        figure.foto-pagina.verticale img {
+            max-height: 460px;
+            object-fit: cover;
+        }
+        figure.foto-pagina figcaption {
+            padding: 10px 12px;
+            font-size: 14px;
+            color: #111111;
+        }
+
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.94);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        #lightbox.aperto { display: flex; }
+        #lightbox img {
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        #lightbox-didascalia {
+            color: #ffffff;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 14px;
+            max-width: 600px;
+        }
+        #lightbox-chiudi {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 36px;
+            line-height: 1;
+            cursor: pointer;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/fr/index.html"><img src="/logo.png" alt="Logo A.R.C." class="logo-header"></a>
+                <a href="/fr/index.html" class="link-home">Home</a>
+            </div>
+            <ul>
+                <li><a href="/fr/a-propos.html">Qui sommes-nous</a></li>
+                <li><a href="/fr/services.html">Services</a></li>
+                <li><a href="/fr/galerie.html">Galerie</a></li>
+                <li><a href="/fr/contact.html">Contact</a></li>
+                <li><a href="/fr/actualites.html" class="voce-news"><span class="emoji">📣</span> Actualités et extras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tastiere-nuove">
+        <h2>Claviers neufs</h2>
+        <p>Nous réalisons des claviers sur mesure, en copie ou sur plan du client.</p>
+
+        <div class="testo-con-foto">
+            <!-- TESTO CONTINUO -->
+            <div class="colonna-testo">
+                <h3>Ce que nous réalisons</h3>
+                <p>Nous fabriquons nos claviers avec les meilleurs matériaux disponibles, en respectant, si on nous le demande, les spécifications historiques.</p>
+                <ul>
+                    <li>Claviers à touches pivotant en queue ou sur balancier</li>
+                    <li>Touches en épicéa, en noyer ou en d'autres essences</li>
+                    <li>Châssis modernes avec pointes en inox, ou de style ancien avec pointes en laiton</li>
+                    <li>Guidage sous, derrière ou entre les touches</li>
+                </ul>
+                <p>Les châssis sont réalisés en bois durs, comme le hêtre ou le noyer, ou en épicéa avec des inserts durs pour les pointes.</p>
+                <p>Nous réalisons aussi des joues simples ou profilées, munies si nécessaire de charnières pour la superposition des claviers dans la console.</p>
+
+                <h3>Matériaux</h3>
+                <p>Les touches blanches peuvent être plaquées en matière plastique ou en os, ou bien en bois précieux.</p>
+                <ul>
+                    <li>Matière plastique blanche (Plexiglas ou PVC)</li>
+                    <li>Matériau minéral composite haut de gamme (Corian ou Elforin)</li>
+                    <li>Os de tout premier choix</li>
+                    <li>Bois : buis (brésilien ou européen), ébène ou autres essences</li>
+                </ul>
+                <p>Les feintes peuvent elles aussi être réalisées en différentes essences : ébène, ébène plaqué os, noyer, poirier ou autres essences sur demande.</p>
+            </div>
+
+            <!-- FOTO A LATO DEL TESTO -->
+            <div class="colonna-foto">
+                <figure class="foto-pagina verticale">
+                    <img src="/tastiera-noce.jpg" width="1000" height="1485" alt="Clavier d'orgue avec châssis et leviers en noyer, placage en ébène, feintes plaquées os et joues profilées copiées sur l'original">
+                    <figcaption>Clavier avec châssis et leviers en noyer, placage en ébène, feintes plaquées os et joues profilées copiées sur l'original</figcaption>
+                </figure>
+                <figure class="foto-pagina verticale">
+                    <img src="/coda1.jpg" loading="lazy" alt="Clavier neuf pour piano à queue fabriqué par A.R.C.">
+                    <figcaption>Clavier neuf pour piano à queue</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- ALTRE FOTO A DUE A DUE -->
+        <div class="griglia-foto">
+            <figure class="foto-pagina">
+                <img src="/bosso-ebano1.jpg" loading="lazy" alt="Touches en buis avec feintes en ébène, détail d'un clavier d'orgue neuf">
+                <figcaption>Touches en buis avec feintes en ébène</figcaption>
+            </figure>
+            <figure class="foto-pagina verticale">
+                <img src="/bosso-ebano2.jpg" loading="lazy" alt="Clavier en buis avec pointes en inox et touches mortaisées pour le passage des vergettes">
+                <figcaption>Clavier en buis avec pointes en inox et touches mortaisées pour le passage des vergettes</figcaption>
+            </figure>
+            <figure class="foto-pagina">
+                <img src="/bosso-ebano3.jpg" loading="lazy" alt="Frontons en volute d'un clavier d'orgue en buis et ébène">
+                <figcaption>Frontons en volute</figcaption>
+            </figure>
+            <figure class="foto-pagina">
+                <img src="/ebano1.jpg" loading="lazy" alt="Clavier avec touches en épicéa plaquées ébène et feintes plaquées os">
+                <figcaption>Clavier avec touches en épicéa plaquées ébène et feintes plaquées os</figcaption>
+            </figure>
+            <figure class="foto-pagina verticale">
+                <img src="/ebano2.jpg" loading="lazy" alt="Détail des touches en épicéa plaquées ébène avec feintes plaquées os">
+                <figcaption>Détail des touches en épicéa plaquées ébène avec feintes plaquées os</figcaption>
+            </figure>
+            <figure class="foto-pagina">
+                <img src="/tastiera-ebano.jpg" width="1200" height="782" loading="lazy" alt="Clavier en ébène avec feintes plaquées os et frontons trilobés">
+                <figcaption>Clavier en ébène avec feintes plaquées os et frontons trilobés</figcaption>
+            </figure>
+            <figure class="foto-pagina verticale">
+                <img src="/tasti1.jpg" width="810" height="1800" loading="lazy" alt="Clavier plaqué os en deux pièces, cintré autour des feintes">
+                <figcaption>Clavier plaqué os en deux pièces, cintré autour des feintes</figcaption>
+            </figure>
+            <figure class="foto-pagina">
+                <img src="/tasti2.jpg" width="1200" height="575" loading="lazy" alt="Clavier plaqué os avec feintes en ébène">
+                <figcaption>Clavier plaqué os avec feintes en ébène</figcaption>
+            </figure>
+        </div>
+
+        <p style="margin-top: 28px;"><a href="/fr/contact.html">Demander des informations</a> · <a href="/fr/services.html">← Tous les services</a></p>
+    </section>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo en plein écran">
+        <button id="lightbox-chiudi" aria-label="Fermer">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-didascalia"></p>
+    </div>
+
+    <footer id="contatti">
+        <h2>Contact et adresses</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3>Coordonnées</h3>
+                <p><strong>Téléphone :</strong> <a href="tel:+393402621634">+39 340 2621634</a></p>
+                <p><strong>E-mail :</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong>PEC (e-mail certifié) :</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3>Adresses</h3>
+                <p><strong>Atelier :</strong> Piobesi Torinese, Via Galimberti 67</p>
+                <p><strong>Siège social :</strong> Vinovo, Via Parisetto 31</p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C. S.n.c. di Andrea Colina &amp; Co.</strong></p>
+            <p>N° TVA : IT12884500013</p>
+            <p>© 2026 A.R.C. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var box = document.getElementById('lightbox');
+            var img = document.getElementById('lightbox-img');
+            var did = document.getElementById('lightbox-didascalia');
+
+            function apri(foto) {
+                var fig = foto.closest('figure');
+                var cap = fig ? fig.querySelector('figcaption') : null;
+                img.src = foto.src;
+                img.alt = foto.alt;
+                did.textContent = cap ? cap.textContent : '';
+                did.style.display = cap ? 'block' : 'none';
+                box.classList.add('aperto');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function chiudi() {
+                box.classList.remove('aperto');
+                document.body.style.overflow = '';
+                img.src = '';
+            }
+
+            document.querySelectorAll('.foto-pagina img').forEach(function (f) {
+                f.addEventListener('click', function () { apri(f); });
+            });
+
+            box.addEventListener('click', function (e) {
+                if (e.target === img) return;
+                chiudi();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') chiudi();
+            });
+        })();
+    </script>
+</body>
+    </html>
