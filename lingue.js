@@ -60,8 +60,19 @@
     var menu = document.querySelector('header nav ul');
     if (!menu) return;
 
-    ORDINE.forEach(function (codice) {
-        if (codice === corrente || ATTIVE.indexOf(codice) === -1 || !pagina[codice]) return;
+    var altre = ORDINE.filter(function (codice) {
+        return codice !== corrente && ATTIVE.indexOf(codice) !== -1 && pagina[codice];
+    });
+
+    /* Con tre o più lingue, su telefono vanno a capo tutte insieme (vedi extra.css) */
+    if (altre.length >= 3) {
+        var aCapo = document.createElement('li');
+        aCapo.className = 'a-capo-lingue';
+        aCapo.setAttribute('aria-hidden', 'true');
+        menu.appendChild(aCapo);
+    }
+
+    altre.forEach(function (codice) {
         var li = document.createElement('li');
         var a = document.createElement('a');
         a.className = 'cambio-lingua';
