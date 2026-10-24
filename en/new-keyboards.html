@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom new keyboards for organs, pianos and harpsichords | A.R.C.</title>
-    <meta name="description" content="Making new custom keyboards for organs, pianos, harpsichords and spinets, as copies or to the client's design: keys covered in bone, ebony, boxwood, Plexiglas and Corian. Piobesi Torinese (Turin, Italy).">
-    <link rel="canonical" href="https://arctastiere.it/en/new-keyboards.html">
-    <link rel="alternate" hreflang="it" href="https://arctastiere.it/tastiere-nuove.html">
-    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/new-keyboards.html">
-    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html">
+    <title>Restoration of antique keyboards for organs, pianos and harpsichords | A.R.C.</title>
+    <meta name="description" content="Restoration of antique keyboards for organs, pianos, harpsichords and spinets: new coverings, repair of key levers and balance rails, pin replacement, conservative restoration and ivory treatment. Turin, Italy.">
+    <link rel="canonical" href="https://arctastiere.it/en/keyboard-restoration.html">
+    <link rel="alternate" hreflang="it" href="https://arctastiere.it/restauro-tastiere.html">
+    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/keyboard-restoration.html">
+    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_GB">
     <meta property="og:locale:alternate" content="it_IT">
     <meta property="og:site_name" content="A.R.C. S.n.c.">
-    <meta property="og:title" content="Custom new keyboards | A.R.C.">
-    <meta property="og:description" content="New keyboards for organs, pianos, harpsichords and spinets, as copies or to the client's design.">
-    <meta property="og:url" content="https://arctastiere.it/en/new-keyboards.html">
-    <meta property="og:image" content="https://arctastiere.it/tastiera-noce.jpg">
+    <meta property="og:title" content="Keyboard restoration | A.R.C.">
+    <meta property="og:description" content="Conservative restoration of antique keyboards for organs, pianos, harpsichords and spinets.">
+    <meta property="og:url" content="https://arctastiere.it/en/keyboard-restoration.html">
+    <meta property="og:image" content="https://arctastiere.it/restauro-dopo.jpg">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/extra.css">
     <script src="/header.js" defer></script>
@@ -24,25 +24,23 @@
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Custom new keyboards",
-        "serviceType": "Making keyboards for organs, pianos, harpsichords and spinets",
-        "description": "Custom new keyboards, as copies or to the client's design, with keys in Norway spruce, walnut or other woods and coverings in bone, ebony, boxwood, Plexiglas, PVC, Corian or Elforin.",
-        "url": "https://arctastiere.it/en/new-keyboards.html",
+        "name": "Keyboard restoration",
+        "serviceType": "Restoration of antique keyboards for organs, pianos, harpsichords and spinets",
+        "description": "Conservative restoration of existing keyboards: new coverings, repair of key levers and balance rails, cleaning or replacement of pins, making missing keys, bleaching and polishing of ivory.",
+        "url": "https://arctastiere.it/en/keyboard-restoration.html",
         "inLanguage": "en",
         "provider": { "@id": "https://arctastiere.it/#azienda" },
         "areaServed": "IT"
     }
     </script>
     <style>
-        section#tastiere-nuove {
+        section#restauro-tastiere {
             max-width: 1100px;
             margin-left: auto;
             margin-right: auto;
         }
         section p + p { margin-top: 12px; }
         section h3 { margin-top: 28px; margin-bottom: 8px; text-transform: uppercase; font-size: 18px; }
-        section ul { list-style: disc; padding-left: 22px; margin-top: 8px; }
-        section li { margin-top: 6px; color: #333333; font-size: 15px; }
         .logo .link-home {
             display: block;
             margin-top: 4px;
@@ -64,53 +62,48 @@
             margin-top: 12px;
         }
         .colonna-testo > h3:first-child { margin-top: 0; }
-        .colonna-foto figure.foto-pagina:first-child { margin-top: 0; }
-        .colonna-foto figure.foto-pagina:last-child { margin-bottom: 0; }
-        .colonna-foto figure.foto-pagina.verticale img { max-height: 340px; }
 
-        /* Foto a due a due dopo il testo */
-        .griglia-foto {
+        /* Prima / Dopo in colonna */
+        .prima-dopo {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-top: 32px;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 0;
         }
-        .griglia-foto figure.foto-pagina { margin: 0; }
-        .griglia-foto figure.foto-pagina img,
-        .griglia-foto figure.foto-pagina.verticale img {
-            width: 100%;
-            height: auto;
-            max-height: none;
-            aspect-ratio: 4 / 3;
-            object-fit: cover;
+        .prima-dopo figure {
+            position: relative;
+            margin: 0;
+            border: 1px solid #000000;
+            background-color: rgba(255, 255, 255, 0.88);
+        }
+        .prima-dopo img { width: 100%; height: auto; cursor: zoom-in; display: block; }
+        .prima-dopo .etichetta {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+        }
+        .didascalia-coppia {
+            margin: 0;
+            padding: 10px 12px;
+            font-size: 14px;
+            color: #111111;
+            border: 1px solid #000000;
+            border-top: none;
+            background-color: rgba(255, 255, 255, 0.88);
         }
 
         @media (max-width: 800px) {
             .testo-con-foto {
                 grid-template-columns: 1fr;
-                gap: 0;
+                gap: 24px;
             }
-            .colonna-foto { margin-top: 16px; }
-            .colonna-foto figure.foto-pagina:first-child { margin-top: 20px; }
-        }
-        @media (max-width: 480px) {
-            .griglia-foto { grid-template-columns: 1fr; }
-        }
-
-        figure.foto-pagina {
-            margin: 20px 0;
-            border: 1px solid #000000;
-            background-color: rgba(255, 255, 255, 0.88);
-        }
-        figure.foto-pagina img { width: 100%; height: auto; cursor: zoom-in; display: block; }
-        figure.foto-pagina.verticale img {
-            max-height: 460px;
-            object-fit: cover;
-        }
-        figure.foto-pagina figcaption {
-            padding: 10px 12px;
-            font-size: 14px;
-            color: #111111;
         }
 
         #lightbox {
@@ -166,87 +159,40 @@
                 <li><a href="/en/gallery.html">Gallery</a></li>
                 <li><a href="/en/contacts.html">Contacts</a></li>
                 <li><a href="/en/news.html" class="voce-news"><span class="emoji">📣</span> News &amp; extras</a></li>
-                <li><a href="/tastiere-nuove.html" hreflang="it" lang="it" title="Versione italiana">IT</a></li>
+                <li><a href="/restauro-tastiere.html" hreflang="it" lang="it" title="Versione italiana">IT</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="tastiere-nuove">
-        <h2>New keyboards</h2>
-        <p>We make custom keyboards, as copies or to the client's design.</p>
+    <section id="restauro-tastiere">
+        <h2>Keyboard restoration</h2>
+        <p>Recovery of antique, time-worn keyboards: new coverings, repair of key levers and balance rails, cleaning or replacement of pins, and repairs in general.</p>
 
         <div class="testo-con-foto">
             <!-- TESTO CONTINUO -->
             <div class="colonna-testo">
-                <h3>What we make</h3>
-                <p>We build our keyboards with the best materials available, respecting historical specifications where requested.</p>
-                <ul>
-                    <li>Keyboards pivoted at the rear, or balanced on a balance rail</li>
-                    <li>Keys in Norway spruce, walnut or other woods</li>
-                    <li>Modern frames with stainless steel pins, or antique-style frames with brass pins</li>
-                    <li>Key guides below, behind or between the keys</li>
-                </ul>
-                <p>The frames are made of hardwoods such as beech or walnut, or of spruce with hardwood inserts for the pins.</p>
-                <p>We also make plain or shaped cheek pieces, fitted where required with hinges for stacking keyboards in organ consoles.</p>
+                <h3>What we do</h3>
+                <p>Depending on the condition of the keyboard and the client's needs, we restore existing keyboards by replacing components, key bushings in woollen cloth, coverings, pins or other parts.</p>
 
-                <h3>Materials</h3>
-                <p>The key coverings can be made of plastic materials or bone for the white keys, or of fine wood.</p>
-                <ul>
-                    <li>White plastic material (Plexiglas or PVC)</li>
-                    <li>Fine mineral-based material (Corian or Elforin)</li>
-                    <li>Top-quality bone</li>
-                    <li>Wood: boxwood (Brazilian or European), ebony or other woods</li>
-                </ul>
-                <p>The sharps too can be made in different woods, such as ebony, bone-covered ebony, walnut, pearwood or other woods on request.</p>
+                <p>We approach restoration with respect for the original construction of each component, working in a conservative way wherever possible.</p>
+
+                <p>Antique ivory keyboards can be bleached and have their lustre restored, or partial or complete replacement of components can be considered.</p>
             </div>
 
             <!-- FOTO A LATO DEL TESTO -->
             <div class="colonna-foto">
-                <figure class="foto-pagina verticale">
-                    <img src="/tastiera-noce.jpg" width="1000" height="1485" alt="Organ keyboard with walnut frame and levers, ebony covering, bone-covered sharps and shaped cheek pieces copied from the original">
-                    <figcaption>Keyboard with walnut frame and levers, ebony covering, bone-covered sharps and shaped cheek pieces copied from the original</figcaption>
-                </figure>
-                <figure class="foto-pagina verticale">
-                    <img src="/coda1.jpg" loading="lazy" alt="New grand piano keyboard made by A.R.C.">
-                    <figcaption>New keyboard for a grand piano</figcaption>
-                </figure>
+                <div class="prima-dopo">
+                    <figure>
+                        <span class="etichetta">Before</span>
+                        <img src="/restauro-prima.jpg" data-ruota="-90" alt="Antique organ keyboard before restoration, with missing keys and a deteriorated action" data-didascalia="Before: making missing keys and restoring the keyboard">
+                    </figure>
+                    <figure>
+                        <span class="etichetta">After</span>
+                        <img src="/restauro-dopo.jpg" alt="The same keyboard after restoration, with the missing keys rebuilt" data-didascalia="After: making missing keys and restoring the keyboard">
+                    </figure>
+                </div>
+                <p class="didascalia-coppia">Making missing keys and restoring the keyboard</p>
             </div>
-        </div>
-
-        <!-- ALTRE FOTO A DUE A DUE -->
-        <div class="griglia-foto">
-            <figure class="foto-pagina">
-                <img src="/bosso-ebano1.jpg" loading="lazy" alt="Boxwood keys with ebony sharps, detail of a new organ keyboard">
-                <figcaption>Boxwood keys with ebony sharps</figcaption>
-            </figure>
-            <figure class="foto-pagina verticale">
-                <img src="/bosso-ebano2.jpg" loading="lazy" alt="Boxwood keyboard with stainless steel pins and slotted keys for the passage of the trackers">
-                <figcaption>Boxwood keyboard with stainless steel pins and slotted keys for the passage of the trackers</figcaption>
-            </figure>
-            <figure class="foto-pagina">
-                <img src="/bosso-ebano3.jpg" loading="lazy" alt="Scroll-style key fronts on a boxwood and ebony organ keyboard">
-                <figcaption>Scroll-style key fronts</figcaption>
-            </figure>
-            <figure class="foto-pagina">
-                <img src="/ebano1.jpg" loading="lazy" alt="Keyboard with Norway spruce keys covered in ebony and bone-covered sharps">
-                <figcaption>Keyboard with Norway spruce keys covered in ebony and bone-covered sharps</figcaption>
-            </figure>
-            <figure class="foto-pagina verticale">
-                <img src="/ebano2.jpg" loading="lazy" alt="Detail of Norway spruce keys covered in ebony with bone-covered sharps">
-                <figcaption>Detail of Norway spruce keys covered in ebony with bone-covered sharps</figcaption>
-            </figure>
-            <figure class="foto-pagina">
-                <img src="/tastiera-ebano.jpg" width="1200" height="782" loading="lazy" alt="Ebony keyboard with bone-covered sharps and trefoil key fronts">
-                <figcaption>Ebony keyboard with bone-covered sharps and trefoil key fronts</figcaption>
-            </figure>
-            <figure class="foto-pagina verticale">
-                <img src="/tasti1.jpg" width="810" height="1800" loading="lazy" alt="Bone keyboard with two-piece coverings, curved at the sharp">
-                <figcaption>Bone keyboard with two-piece coverings, curved at the sharp</figcaption>
-            </figure>
-            <figure class="foto-pagina">
-                <img src="/tasti2.jpg" width="1200" height="575" loading="lazy" alt="Bone keyboard with ebony sharps">
-                <figcaption>Bone keyboard with ebony sharps</figcaption>
-            </figure>
         </div>
 
         <p style="margin-top: 28px;"><a href="/en/contacts.html">Request information</a> · <a href="/en/services.html">← All services</a></p>
@@ -274,7 +220,7 @@
             </div>
         </div>
         <div class="dati-regolamentari">
-            <p><strong>A.R.C. S.n.c. di Andrea Colina &amp; Co.</strong></p>
+            <p><strong>A.R.C S.n.c di Andrea Colina &amp; Co.</strong></p>
             <p>VAT No.: IT12884500013</p>
             <p>&copy; 2026 A.R.C. All rights reserved.</p>
         </div>
@@ -286,13 +232,44 @@
             var img = document.getElementById('lightbox-img');
             var did = document.getElementById('lightbox-didascalia');
 
+            /* Rotates photos with a data-ruota attribute (degrees: -90 = left, 90 = right) */
+            function ruota(foto) {
+                var gradi = parseInt(foto.getAttribute('data-ruota'), 10);
+                if (!gradi) return;
+                var originale = new Image();
+                originale.onload = function () {
+                    try {
+                        var w = originale.naturalWidth;
+                        var h = originale.naturalHeight;
+                        var scala = Math.min(1, 2000 / Math.max(w, h));
+                        var sw = Math.round(w * scala);
+                        var sh = Math.round(h * scala);
+                        var c = document.createElement('canvas');
+                        c.width = sh;
+                        c.height = sw;
+                        var ctx = c.getContext('2d');
+                        if (gradi < 0) {
+                            ctx.translate(0, c.height);
+                            ctx.rotate(-Math.PI / 2);
+                        } else {
+                            ctx.translate(c.width, 0);
+                            ctx.rotate(Math.PI / 2);
+                        }
+                        ctx.drawImage(originale, 0, 0, sw, sh);
+                        foto.src = c.toDataURL('image/jpeg', 0.92);
+                    } catch (e) {
+                        /* if rotation fails, the original photo stays */
+                    }
+                };
+                originale.src = foto.src;
+            }
+
             function apri(foto) {
-                var fig = foto.closest('figure');
-                var cap = fig ? fig.querySelector('figcaption') : null;
+                var testo = foto.getAttribute('data-didascalia') || '';
                 img.src = foto.src;
                 img.alt = foto.alt;
-                did.textContent = cap ? cap.textContent : '';
-                did.style.display = cap ? 'block' : 'none';
+                did.textContent = testo;
+                did.style.display = testo ? 'block' : 'none';
                 box.classList.add('aperto');
                 document.body.style.overflow = 'hidden';
             }
@@ -303,7 +280,8 @@
                 img.src = '';
             }
 
-            document.querySelectorAll('.foto-pagina img').forEach(function (f) {
+            document.querySelectorAll('.prima-dopo img').forEach(function (f) {
+                ruota(f);
                 f.addEventListener('click', function () { apri(f); });
             });
 
@@ -318,4 +296,4 @@
         })();
     </script>
 </body>
-  </html>
+</html>
