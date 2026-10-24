@@ -33,7 +33,12 @@
     var contenitore = document.getElementById('gruppi-galleria');
     var dati = window.GALLERIA_GRUPPI || [];
 
-    if (!dati.length) {
+    /* La pagina contiene già una copia della galleria scritta nell'HTML
+       (serve a Google e a chi non ha JavaScript): qui la si ricostruisce
+       dai dati di galleria-gruppi.js, che restano la fonte. */
+    if (dati.length) {
+        contenitore.innerHTML = '';
+    } else if (!contenitore.children.length) {
         contenitore.appendChild(el('p', '', T.nessuno));
     }
 
@@ -81,7 +86,7 @@
     }
 
     /* ---------- Slider dei gruppi ---------- */
-    var gruppi = Array.prototype.slice.call(document.querySelectorAll('.slider-wrap'));
+    var gruppi = dati.length ? Array.prototype.slice.call(document.querySelectorAll('.slider-wrap')) : [];
     var gruppoAttivo = null;
     var trascinato = false;
 

@@ -4,6 +4,8 @@
    e incollalo PRIMA dell'ultima riga "];".
    Ogni testo ha le lingue: it, en, fr, de, es, pt, hu.
    Se una lingua manca, la pagina mostra il testo italiano.
+   Le pagine galleria contengono anche una copia scritta di questi
+   dati (per Google): dopo una modifica va rigenerata.
    ========================================================== */
 window.GALLERIA_GRUPPI = [
 
