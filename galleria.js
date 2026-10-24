@@ -9,7 +9,8 @@
     var TESTI = {
         it: { prec: 'Foto precedente', succ: 'Foto successiva', nessuno: 'Galleria momentaneamente non disponibile.' },
         en: { prec: 'Previous photo', succ: 'Next photo', nessuno: 'Gallery temporarily unavailable.' },
-        fr: { prec: 'Photo précédente', succ: 'Photo suivante', nessuno: 'Galerie momentanément indisponible.' }
+        fr: { prec: 'Photo précédente', succ: 'Photo suivante', nessuno: 'Galerie momentanément indisponible.' },
+        de: { prec: 'Vorheriges Foto', succ: 'Nächstes Foto', nessuno: 'Galerie vorübergehend nicht verfügbar.' }
     };
     var T = TESTI[lingua] || TESTI.it;
 
