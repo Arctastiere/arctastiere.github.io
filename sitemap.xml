@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <!-- Home -->
+    <!-- index / index -->
     <url>
         <loc>https://arctastiere.it/</loc>
         <lastmod>2026-10-24</lastmod>
@@ -17,7 +17,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
     </url>
 
-    <!-- Chi siamo / About us -->
+    <!-- chi-siamo / about-us -->
     <url>
         <loc>https://arctastiere.it/chi-siamo.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -33,7 +33,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
     </url>
 
-    <!-- Servizi / Services -->
+    <!-- servizi / services -->
     <url>
         <loc>https://arctastiere.it/servizi.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -49,7 +49,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
     </url>
 
-    <!-- Tastiere nuove / New keyboards -->
+    <!-- tastiere-nuove / new-keyboards -->
     <url>
         <loc>https://arctastiere.it/tastiere-nuove.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -65,7 +65,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
     </url>
 
-    <!-- Dotazione elettrica / Electrical fittings -->
+    <!-- dotazione-elettrica / electrical-keyboards -->
     <url>
         <loc>https://arctastiere.it/dotazione-elettrica.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -81,7 +81,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
     </url>
 
-    <!-- Restauro tastiere / Keyboard restoration -->
+    <!-- restauro-tastiere / keyboard-restoration -->
     <url>
         <loc>https://arctastiere.it/restauro-tastiere.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -97,7 +97,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
     </url>
 
-    <!-- Galleria / Gallery -->
+    <!-- galleria / gallery -->
     <url>
         <loc>https://arctastiere.it/galleria.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -113,7 +113,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
     </url>
 
-    <!-- News ed extra / News & extras -->
+    <!-- news / news -->
     <url>
         <loc>https://arctastiere.it/news.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -129,7 +129,7 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
     </url>
 
-    <!-- Contatti / Contacts -->
+    <!-- contatti / contacts -->
     <url>
         <loc>https://arctastiere.it/contatti.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -144,3 +144,5 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/contacts.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
     </url>
+
+</urlset>
