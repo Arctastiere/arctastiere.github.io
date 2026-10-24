@@ -1,12 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://arctastiere.it/</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/chi-siamo.html</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/servizi.html</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/tastiere-nuove.html</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/dotazione-elettrica.html</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/restauro-tastiere.html</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/galleria.html</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/news.html</loc><lastmod>2026-10-21</lastmod></url>
-    <url><loc>https://arctastiere.it/contatti.html</loc><lastmod>2026-10-18</lastmod></url>
-</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Home -->
+    <url>
+        <loc>https://arctastiere.it/</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/index.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
+    </url>
+
+    <!-- Chi siamo / About us -->
+    <url>
+        <loc>https://arctastiere.it/chi-siamo.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/chi-siamo.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/about-us.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/about-us.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/chi-siamo.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/about-us.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
+    </url>
+
+    <!-- Servizi / Services -->
+    <url>
+        <loc>https://arctastiere.it/servizi.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/servizi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/services.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/services.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/servizi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/services.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
+    </url>
+
+    <!-- Tastiere nuove / New keyboards -->
+    <url>
+        <loc>https://arctastiere.it/tastiere-nuove.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/tastiere-nuove.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/new-keyboards.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/new-keyboards.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/tastiere-nuove.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/new-keyboards.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
+    </url>
+
+    <!-- Dotazione elettrica / Electrical fittings -->
+    <url>
+        <loc>https://arctastiere.it/dotazione-elettrica.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/dotazione-elettrica.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/electrical-keyboards.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/electrical-keyboards.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/dotazione-elettrica.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/electrical-keyboards.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
+    </url>
+
+    <!-- Restauro tastiere / Keyboard restoration -->
+    <url>
+        <loc>https://arctastiere.it/restauro-tastiere.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/restauro-tastiere.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/keyboard-restoration.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/keyboard-restoration.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/restauro-tastiere.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/keyboard-restoration.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
+    </url>
+
+    <!-- Galleria / Gallery -->
+    <url>
+        <loc>https://arctastiere.it/galleria.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/galleria.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/gallery.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/gallery.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/galleria.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/gallery.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
+    </url>
+
+    <!-- News ed extra / News & extras -->
+    <url>
+        <loc>https://arctastiere.it/news.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/news.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/news.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/news.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/news.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/news.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
+    </url>
+
+    <!-- Contatti / Contacts -->
+    <url>
+        <loc>https://arctastiere.it/contatti.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/contatti.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/contacts.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/en/contacts.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/contatti.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/contacts.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
+    </url>
