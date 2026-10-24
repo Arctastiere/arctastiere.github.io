@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Pagina non trovata | A.R.C.</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/extra.css">
+    <script src="/lingue.js" defer></script>
+    <style>
+        nav { justify-content: center; }
+        .logo-hero {
+            display: block;
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            margin: 0 auto 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/chi-siamo.html" data-k="chi-siamo" data-t="9">Chi Siamo</a></li>
+                <li><a href="/servizi.html" data-k="servizi" data-t="10">Servizi</a></li>
+                <li><a href="/galleria.html" data-k="galleria" data-t="11">Galleria</a></li>
+                <li><a href="/contatti.html" data-k="contatti" data-t="12">Contatti</a></li>
+                <li><a href="/news.html" data-k="news" class="voce-news"><span class="emoji">📣</span> <span data-t="13">News ed extra</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <a href="/" data-k="index"><img src="/logo.png" alt="A.R.C." class="logo-hero"></a>
+        <h1>404</h1>
+        <div class="linea-decorativa"></div>
+        <h2 data-t="titolo">Pagina non trovata</h2>
+        <p data-t="testo">La pagina che cerchi non esiste o è stata spostata. Puoi tornare alla home o scegliere una sezione dal menu.</p>
+        <a class="btn" href="/" data-k="index" data-t="home">Torna alla home</a>
+    </section>
+
+    <footer id="contatti">
+        <h2 data-t="28">Contatti e Sedi</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3 data-t="29">Recapiti</h3>
+                <p><strong data-t="30">Telefono:</strong> <a href="tel:+393402621634" data-t="tel">340 2621634</a></p>
+                <p><strong data-t="31">Email:</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong data-t="32">Pec:</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3 data-t="33">Sedi</h3>
+                <p><strong data-t="34">Sede Operativa:</strong> <span data-t="35">Piobesi, Via Galimberti 67</span></p>
+                <p><strong data-t="36">Sede Legale:</strong> <span data-t="37">Vinovo, Via Parisetto 31</span></p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C. S.n.c. di Andrea Colina &amp; Co.</strong></p>
+            <p data-t="39">P. IVA: 12884500013</p>
+            <p data-t="40">© 2026 A.R.C. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+    /* Traduce la pagina in base alla cartella della lingua nell'indirizzo (es. /de/...) */
+    (function () {
+        var TESTI = {"en": {"title": "Page not found | A.R.C.", "titolo": "Page not found", "testo": "The page you are looking for does not exist or has been moved. You can go back to the home page or choose a section from the menu.", "home": "Back to the home page", "9": "About Us", "10": "Services", "11": "Gallery", "12": "Contacts", "13": "News & extras", "28": "Contacts and Locations", "29": "Contact details", "30": "Phone:", "31": "Email:", "32": "PEC (certified email):", "33": "Locations", "34": "Workshop:", "35": "Piobesi Torinese, Via Galimberti 67", "36": "Registered office:", "37": "Vinovo, Via Parisetto 31", "39": "VAT No.: IT12884500013", "40": "© 2026 A.R.C. All rights reserved.", "tel": "+39 340 2621634", "link": {"index": "/en/index.html", "chi-siamo": "/en/about-us.html", "servizi": "/en/services.html", "galleria": "/en/gallery.html", "contatti": "/en/contacts.html", "news": "/en/news.html"}}, "fr": {"title": "Page introuvable | A.R.C.", "titolo": "Page introuvable", "testo": "La page que vous cherchez n'existe pas ou a été déplacée. Vous pouvez revenir à l'accueil ou choisir une rubrique dans le menu.", "home": "Retour à l'accueil", "9": "Qui sommes-nous", "10": "Services", "11": "Galerie", "12": "Contact", "13": "Actualités et extras", "28": "Contact et adresses", "29": "Coordonnées", "30": "Téléphone :", "31": "E-mail :", "32": "PEC (e-mail certifié) :", "33": "Adresses", "34": "Atelier :", "35": "Piobesi Torinese, Via Galimberti 67", "36": "Siège social :", "37": "Vinovo, Via Parisetto 31", "39": "N° TVA : IT12884500013", "40": "© 2026 A.R.C. Tous droits réservés.", "tel": "+39 340 2621634", "link": {"index": "/fr/index.html", "chi-siamo": "/fr/a-propos.html", "servizi": "/fr/services.html", "galleria": "/fr/galerie.html", "contatti": "/fr/contact.html", "news": "/fr/actualites.html"}}, "de": {"title": "Seite nicht gefunden | A.R.C.", "titolo": "Seite nicht gefunden", "testo": "Die gesuchte Seite existiert nicht oder wurde verschoben. Sie können zur Startseite zurückkehren oder einen Bereich im Menü wählen.", "home": "Zur Startseite", "9": "Über uns", "10": "Leistungen", "11": "Galerie", "12": "Kontakt", "13": "Aktuelles & Extras", "28": "Kontakt und Standorte", "29": "Kontaktdaten", "30": "Telefon:", "31": "E-Mail:", "32": "PEC (zertifizierte E-Mail):", "33": "Standorte", "34": "Werkstatt:", "35": "Piobesi Torinese, Via Galimberti 67", "36": "Firmensitz:", "37": "Vinovo, Via Parisetto 31", "39": "USt-IdNr.: IT12884500013", "40": "© 2026 A.R.C. Alle Rechte vorbehalten.", "tel": "+39 340 2621634", "link": {"index": "/de/index.html", "chi-siamo": "/de/ueber-uns.html", "servizi": "/de/leistungen.html", "galleria": "/de/galerie.html", "contatti": "/de/kontakt.html", "news": "/de/aktuelles.html"}}, "es": {"title": "Página no encontrada | A.R.C.", "titolo": "Página no encontrada", "testo": "La página que busca no existe o ha sido trasladada. Puede volver a la página de inicio o elegir una sección del menú.", "home": "Volver al inicio", "9": "Quiénes somos", "10": "Servicios", "11": "Galería", "12": "Contacto", "13": "Noticias y extras", "28": "Contacto y sedes", "29": "Datos de contacto", "30": "Teléfono:", "31": "Correo electrónico:", "32": "PEC (correo certificado):", "33": "Sedes", "34": "Taller:", "35": "Piobesi Torinese, Via Galimberti 67", "36": "Domicilio social:", "37": "Vinovo, Via Parisetto 31", "39": "N.º IVA: IT12884500013", "40": "© 2026 A.R.C. Todos los derechos reservados.", "tel": "+39 340 2621634", "link": {"index": "/es/index.html", "chi-siamo": "/es/quienes-somos.html", "servizi": "/es/servicios.html", "galleria": "/es/galeria.html", "contatti": "/es/contacto.html", "news": "/es/noticias.html"}}, "pt": {"title": "Página não encontrada | A.R.C.", "titolo": "Página não encontrada", "testo": "A página que procura não existe ou foi movida. Pode voltar à página inicial ou escolher uma secção no menu.", "home": "Voltar à página inicial", "9": "Quem somos", "10": "Serviços", "11": "Galeria", "12": "Contacto", "13": "Notícias e extras", "28": "Contactos e moradas", "29": "Contactos", "30": "Telefone:", "31": "E-mail:", "32": "PEC (e-mail certificado):", "33": "Moradas", "34": "Oficina:", "35": "Piobesi Torinese, Via Galimberti 67", "36": "Sede social:", "37": "Vinovo, Via Parisetto 31", "39": "N.º IVA: IT12884500013", "40": "© 2026 A.R.C. Todos os direitos reservados.", "tel": "+39 340 2621634", "link": {"index": "/pt/index.html", "chi-siamo": "/pt/quem-somos.html", "servizi": "/pt/servicos.html", "galleria": "/pt/galeria.html", "contatti": "/pt/contacto.html", "news": "/pt/noticias.html"}}, "hu": {"title": "Az oldal nem található | A.R.C.", "titolo": "Az oldal nem található", "testo": "A keresett oldal nem létezik, vagy áthelyezték. Visszatérhet a kezdőlapra, vagy választhat egy részt a menüből.", "home": "Vissza a kezdőlapra", "9": "Rólunk", "10": "Szolgáltatások", "11": "Galéria", "12": "Kapcsolat", "13": "Hírek és extrák", "28": "Kapcsolat és telephelyek", "29": "Elérhetőségek", "30": "Telefon:", "31": "E-mail:", "32": "PEC (tanúsított e-mail):", "33": "Telephelyek", "34": "Műhely:", "35": "Piobesi Torinese, Via Galimberti 67", "36": "Székhely:", "37": "Vinovo, Via Parisetto 31", "39": "Közösségi adószám: IT12884500013", "40": "© 2026 A.R.C. Minden jog fenntartva.", "tel": "+39 340 2621634", "link": {"index": "/hu/index.html", "chi-siamo": "/hu/rolunk.html", "servizi": "/hu/szolgaltatasok.html", "galleria": "/hu/galeria.html", "contatti": "/hu/kapcsolat.html", "news": "/hu/hirek.html"}}};
+        var lingua = location.pathname.split('/')[1];
+        var T = TESTI[lingua];
+        if (!T) return;
+        document.documentElement.lang = lingua;
+        document.title = T.title;
+        Array.prototype.forEach.call(document.querySelectorAll('[data-t]'), function (el) {
+            var v = T[el.getAttribute('data-t')];
+            if (v) el.textContent = v;
+        });
+        Array.prototype.forEach.call(document.querySelectorAll('[data-k]'), function (el) {
+            el.href = T.link[el.getAttribute('data-k')];
+        });
+    })();
+    </script>
+</body>
+</html>
