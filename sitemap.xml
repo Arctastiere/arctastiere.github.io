@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <!-- index / index / index / index / index / index -->
+    <!-- index / index / index / index / index / index / index -->
     <url>
         <loc>https://arctastiere.it/</loc>
         <lastmod>2026-10-24</lastmod>
@@ -11,6 +11,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/index.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
     </url>
     <url>
@@ -22,6 +23,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/index.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
     </url>
     <url>
@@ -33,6 +35,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/index.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
     </url>
     <url>
@@ -44,6 +47,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/index.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
     </url>
     <url>
@@ -55,6 +59,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/index.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
     </url>
     <url>
@@ -66,10 +71,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/index.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/index.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/index.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/index.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/index.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/index.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/"/>
     </url>
 
-    <!-- chi-siamo / about-us / a-propos / ueber-uns / quienes-somos / quem-somos -->
+    <!-- chi-siamo / about-us / a-propos / ueber-uns / quienes-somos / quem-somos / rolunk -->
     <url>
         <loc>https://arctastiere.it/chi-siamo.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -79,6 +97,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
     </url>
     <url>
@@ -90,6 +109,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
     </url>
     <url>
@@ -101,6 +121,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
     </url>
     <url>
@@ -112,6 +133,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
     </url>
     <url>
@@ -123,6 +145,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
     </url>
     <url>
@@ -134,10 +157,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/rolunk.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/chi-siamo.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/about-us.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/a-propos.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html"/>
     </url>
 
-    <!-- servizi / services / services / leistungen / servicios / servicos -->
+    <!-- servizi / services / services / leistungen / servicios / servicos / szolgaltatasok -->
     <url>
         <loc>https://arctastiere.it/servizi.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -147,6 +183,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/leistungen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/servicios.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/servicos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/szolgaltatasok.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
     </url>
     <url>
@@ -158,6 +195,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/leistungen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/servicios.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/servicos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/szolgaltatasok.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
     </url>
     <url>
@@ -169,6 +207,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/leistungen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/servicios.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/servicos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/szolgaltatasok.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
     </url>
     <url>
@@ -180,6 +219,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/leistungen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/servicios.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/servicos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/szolgaltatasok.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
     </url>
     <url>
@@ -191,6 +231,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/leistungen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/servicios.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/servicos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/szolgaltatasok.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
     </url>
     <url>
@@ -202,10 +243,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/leistungen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/servicios.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/servicos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/szolgaltatasok.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/szolgaltatasok.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/servizi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/services.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/services.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/leistungen.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/servicios.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/servicos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/szolgaltatasok.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/servizi.html"/>
     </url>
 
-    <!-- tastiere-nuove / new-keyboards / claviers-neufs / neue-klaviaturen / teclados-nuevos / teclados-novos -->
+    <!-- tastiere-nuove / new-keyboards / claviers-neufs / neue-klaviaturen / teclados-nuevos / teclados-novos / uj-billentyuzetek -->
     <url>
         <loc>https://arctastiere.it/tastiere-nuove.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -215,6 +269,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/neue-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/teclados-nuevos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/teclados-novos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/uj-billentyuzetek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
     </url>
     <url>
@@ -226,6 +281,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/neue-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/teclados-nuevos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/teclados-novos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/uj-billentyuzetek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
     </url>
     <url>
@@ -237,6 +293,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/neue-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/teclados-nuevos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/teclados-novos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/uj-billentyuzetek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
     </url>
     <url>
@@ -248,6 +305,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/neue-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/teclados-nuevos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/teclados-novos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/uj-billentyuzetek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
     </url>
     <url>
@@ -259,6 +317,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/neue-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/teclados-nuevos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/teclados-novos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/uj-billentyuzetek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
     </url>
     <url>
@@ -270,10 +329,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/neue-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/teclados-nuevos.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/teclados-novos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/uj-billentyuzetek.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/uj-billentyuzetek.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/tastiere-nuove.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/new-keyboards.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/claviers-neufs.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/neue-klaviaturen.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/teclados-nuevos.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/teclados-novos.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/uj-billentyuzetek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/tastiere-nuove.html"/>
     </url>
 
-    <!-- dotazione-elettrica / electrical-keyboards / equipement-electrique / elektrische-ausstattung / equipamiento-electrico / equipamento-eletrico -->
+    <!-- dotazione-elettrica / electrical-keyboards / equipement-electrique / elektrische-ausstattung / equipamiento-electrico / equipamento-eletrico / elektromos-felszereles -->
     <url>
         <loc>https://arctastiere.it/dotazione-elettrica.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -283,6 +355,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/elektrische-ausstattung.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/equipamiento-electrico.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/equipamento-eletrico.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/elektromos-felszereles.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
     </url>
     <url>
@@ -294,6 +367,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/elektrische-ausstattung.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/equipamiento-electrico.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/equipamento-eletrico.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/elektromos-felszereles.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
     </url>
     <url>
@@ -305,6 +379,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/elektrische-ausstattung.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/equipamiento-electrico.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/equipamento-eletrico.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/elektromos-felszereles.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
     </url>
     <url>
@@ -316,6 +391,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/elektrische-ausstattung.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/equipamiento-electrico.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/equipamento-eletrico.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/elektromos-felszereles.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
     </url>
     <url>
@@ -327,6 +403,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/elektrische-ausstattung.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/equipamiento-electrico.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/equipamento-eletrico.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/elektromos-felszereles.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
     </url>
     <url>
@@ -338,10 +415,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/elektrische-ausstattung.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/equipamiento-electrico.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/equipamento-eletrico.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/elektromos-felszereles.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/elektromos-felszereles.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/dotazione-elettrica.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/electrical-keyboards.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/equipement-electrique.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/elektrische-ausstattung.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/equipamiento-electrico.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/equipamento-eletrico.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/elektromos-felszereles.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/dotazione-elettrica.html"/>
     </url>
 
-    <!-- restauro-tastiere / keyboard-restoration / restauration-claviers / restaurierung-klaviaturen / restauracion-teclados / restauro-teclados -->
+    <!-- restauro-tastiere / keyboard-restoration / restauration-claviers / restaurierung-klaviaturen / restauracion-teclados / restauro-teclados / billentyuzetek-restauralasa -->
     <url>
         <loc>https://arctastiere.it/restauro-tastiere.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -351,6 +441,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/restauro-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/billentyuzetek-restauralasa.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
     </url>
     <url>
@@ -362,6 +453,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/restauro-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/billentyuzetek-restauralasa.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
     </url>
     <url>
@@ -373,6 +465,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/restauro-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/billentyuzetek-restauralasa.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
     </url>
     <url>
@@ -384,6 +477,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/restauro-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/billentyuzetek-restauralasa.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
     </url>
     <url>
@@ -395,6 +489,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/restauro-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/billentyuzetek-restauralasa.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
     </url>
     <url>
@@ -406,10 +501,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/restauro-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/billentyuzetek-restauralasa.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/billentyuzetek-restauralasa.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/restauro-tastiere.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/keyboard-restoration.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/restauration-claviers.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/restauro-teclados.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/billentyuzetek-restauralasa.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html"/>
     </url>
 
-    <!-- galleria / gallery / galerie / galerie / galeria / galeria -->
+    <!-- galleria / gallery / galerie / galerie / galeria / galeria / galeria -->
     <url>
         <loc>https://arctastiere.it/galleria.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -419,6 +527,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/galerie.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
     </url>
     <url>
@@ -430,6 +539,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/galerie.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
     </url>
     <url>
@@ -441,6 +551,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/galerie.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
     </url>
     <url>
@@ -452,6 +563,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/galerie.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
     </url>
     <url>
@@ -463,6 +575,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/galerie.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
     </url>
     <url>
@@ -474,10 +587,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/galerie.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/galeria.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/galleria.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/gallery.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/galerie.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/galerie.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/galeria.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/galeria.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/galleria.html"/>
     </url>
 
-    <!-- news / news / actualites / aktuelles / noticias / noticias -->
+    <!-- news / news / actualites / aktuelles / noticias / noticias / hirek -->
     <url>
         <loc>https://arctastiere.it/news.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -487,6 +613,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/aktuelles.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/noticias.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/hirek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
     </url>
     <url>
@@ -498,6 +625,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/aktuelles.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/noticias.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/hirek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
     </url>
     <url>
@@ -509,6 +637,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/aktuelles.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/noticias.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/hirek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
     </url>
     <url>
@@ -520,6 +649,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/aktuelles.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/noticias.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/hirek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
     </url>
     <url>
@@ -531,6 +661,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/aktuelles.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/noticias.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/hirek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
     </url>
     <url>
@@ -542,10 +673,23 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/aktuelles.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/noticias.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/hirek.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/hirek.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/news.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/news.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/actualites.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/aktuelles.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/noticias.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/hirek.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/news.html"/>
     </url>
 
-    <!-- contatti / contacts / contact / kontakt / contacto / contacto -->
+    <!-- contatti / contacts / contact / kontakt / contacto / contacto / kapcsolat -->
     <url>
         <loc>https://arctastiere.it/contatti.html</loc>
         <lastmod>2026-10-24</lastmod>
@@ -555,6 +699,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/kontakt.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/contacto.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/kapcsolat.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
     </url>
     <url>
@@ -566,6 +711,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/kontakt.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/contacto.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/kapcsolat.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
     </url>
     <url>
@@ -577,6 +723,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/kontakt.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/contacto.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/kapcsolat.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
     </url>
     <url>
@@ -588,6 +735,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/kontakt.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/contacto.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/kapcsolat.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
     </url>
     <url>
@@ -599,6 +747,7 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/kontakt.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/contacto.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/kapcsolat.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
     </url>
     <url>
@@ -610,6 +759,19 @@
         <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/kontakt.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/contacto.html"/>
         <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/kapcsolat.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
+    </url>
+    <url>
+        <loc>https://arctastiere.it/hu/kapcsolat.html</loc>
+        <lastmod>2026-10-24</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://arctastiere.it/contatti.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://arctastiere.it/en/contacts.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://arctastiere.it/de/kontakt.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://arctastiere.it/es/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/kapcsolat.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://arctastiere.it/contatti.html"/>
     </url>
 

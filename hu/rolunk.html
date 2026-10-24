@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rólunk: az A.R.C., a Gandolfo Tastiere és a Barra fivérek örököse</title>
+    <meta name="description" content="Andrea Colina cége, az A.R.C. S.n.c. története: a billentyűzetkészítők harmadik nemzedéke a Barra fivérek és Carlo Gandolfo után. Billentyűzetek készítése és restaurálása orgonákhoz, zongorákhoz, csembalókhoz és spinétekhez.">
+    <link rel="canonical" href="https://arctastiere.it/hu/rolunk.html">
+    <link rel="alternate" hreflang="it" href="https://arctastiere.it/chi-siamo.html">
+    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/about-us.html">
+    <link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/a-propos.html">
+    <link rel="alternate" hreflang="de" href="https://arctastiere.it/de/ueber-uns.html">
+    <link rel="alternate" hreflang="es" href="https://arctastiere.it/es/quienes-somos.html">
+    <link rel="alternate" hreflang="pt" href="https://arctastiere.it/pt/quem-somos.html">
+    <link rel="alternate" hreflang="hu" href="https://arctastiere.it/hu/rolunk.html">
+    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hu_HU">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="Rólunk | A.R.C. Billentyűzetek készítése és restaurálása">
+    <meta property="og:description" content="A billentyűzetkészítők harmadik nemzedéke: a Barra fivérektől a Gandolfo Tastierén át az A.R.C.-ig.">
+    <meta property="og:url" content="https://arctastiere.it/hu/rolunk.html">
+    <meta property="og:image" content="https://arctastiere.it/andrea-colina.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/extra.css">
+    <script src="/lingue.js" defer></script>
+    <script src="/header.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Rólunk | A.R.C. S.n.c.",
+        "url": "https://arctastiere.it/hu/rolunk.html",
+        "inLanguage": "hu",
+        "about": { "@id": "https://arctastiere.it/#azienda" }
+    }
+    </script>
+    <style>
+        section p + p { margin-top: 12px; }
+        section figure + p { margin-top: 12px; }
+        #chi-siamo { display: flow-root; }
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
+
+        /* Foto di Andrea Colina */
+        .foto-andrea {
+            width: 100%;
+            max-width: 340px;
+            margin: 20px auto;
+        }
+        .foto-andrea img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-andrea figcaption {
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #111111;
+        }
+        @media (min-width: 700px) {
+            .foto-andrea {
+                float: right;
+                width: 300px;
+                margin: 4px 0 16px 24px;
+            }
+        }
+
+        /* Logo di Gandolfo Tastiere */
+        .foto-gandolfo {
+            margin: 0 auto;
+            max-width: 520px;
+        }
+        .foto-gandolfo figure { margin: 0; }
+        .foto-gandolfo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-gandolfo figcaption {
+            margin-top: 12px;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.4;
+            color: #111111;
+        }
+
+        /* Foto laboratorio dei fratelli Barra */
+        .foto-barra { margin: 0 auto; max-width: 1000px; }
+        .foto-barra .griglia-foto {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .foto-barra img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-barra figcaption {
+            margin-top: 12px;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.4;
+            color: #111111;
+        }
+        @media (min-width: 700px) {
+            .foto-barra .griglia-foto { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* Ingrandimento a schermo intero */
+        .lb-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.92);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 16px;
+        }
+        .lb-overlay.aperto { display: flex; }
+        .lb-overlay img {
+            max-width: 100%;
+            max-height: calc(100vh - 110px);
+            width: auto;
+            object-fit: contain;
+            border-radius: 2px;
+            touch-action: pan-y;
+        }
+        .lb-didascalia {
+            margin-top: 12px;
+            color: #ffffff;
+            font-size: 14px;
+            font-style: italic;
+            text-align: center;
+            max-width: 90%;
+        }
+        .lb-contatore {
+            margin-top: 4px;
+            color: #bbbbbb;
+            font-size: 12px;
+        }
+        .lb-btn {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lb-btn:hover { background: rgba(255, 255, 255, 0.3); }
+        .lb-chiudi { top: 12px; right: 12px; }
+        .lb-prec { left: 8px; top: 50%; transform: translateY(-50%); }
+        .lb-succ { right: 8px; top: 50%; transform: translateY(-50%); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/hu/index.html"><img src="/logo.png" alt="Az A.R.C. logója" class="logo-header"></a>
+                <a href="/hu/index.html" class="link-home">Home</a>
+            </div>
+            <ul>
+                <li><a href="/hu/rolunk.html">Rólunk</a></li>
+                <li><a href="/hu/szolgaltatasok.html">Szolgáltatások</a></li>
+                <li><a href="/hu/galeria.html">Galéria</a></li>
+                <li><a href="/hu/kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="/hu/hirek.html" class="voce-news"><span class="emoji">📣</span> Hírek és extrák</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="chi-siamo">
+        <h2>Egy hagyomány, amely tovább él</h2>
+
+        <p>Utunk 2006-ban kezdődik, amikor Andrea Colina műhelybe kerül, hogy kitanulja a zongorahangoló és zongoratechnikus mesterséget. Az évek során alkalmazottként és önállóan is dolgozik, a környék számos cégével együttműködve koncertszervizben, restaurálásban és hangolásban.</p>
+
+        <figure class="foto-andrea foto-zoom">
+            <img src="/andrea-colina.jpg" width="810" height="1800" loading="lazy" alt="Andrea Colina billentyűzetkészítő munka közben az A.R.C. műhelyében, Piobesi Torinesében">
+            <figcaption>Andrea Colina, a billentyűzetkészítők harmadik nemzedéke, az A.R.C. új műhelyében</figcaption>
+        </figure>
+
+        <p>2023-ban átveszi Carlo Gandolfo, a Gandolfo Tastiere cég tulajdonosa örökségét – annak a műhelynek az örökségét, amelyre évek óta rábízta a munkáit, és amelytől a billentyűzetkészítés mesterségét kapja. Azóta az A.R.C. szinte kizárólag zongorák, orgonák, csembalók, spinétek és más hangszerek billentyűzeteinek készítésével és restaurálásával foglalkozik.</p>
+
+        <p>Egy olyan billentyűzetkészítő hagyomány harmadik nemzedéke vagyunk, amely a Barra fivérekkel kezdődött és Gandolfóval folytatódott. Nemes fákkal, csonttal és hagyományos anyagokkal dolgozunk, hogy minden zenésznek pontos játékérzetet és mindig kész, gyorsan reagáló mechanikát nyújtsunk.</p>
+    </section>
+
+    <section class="foto-gandolfo">
+        <figure class="foto-zoom">
+            <img src="/IMG-20240111-WA0016.jpg" loading="lazy" alt="A Gandolfo Tastiere logója – a cég orgona- és zongorabillentyűzetek régi, nagy múltú készítője">
+            <figcaption>A Gandolfo Tastiere logója</figcaption>
+        </figure>
+    </section>
+
+    <section class="foto-barra">
+        <figure class="foto-zoom">
+            <div class="griglia-foto">
+                <img src="/barra1.jpg" width="1200" height="752" loading="lazy" alt="A Barra fivérek műhelye: munkások a gyalupadok között">
+                <img src="/barra2.jpg" width="1200" height="792" loading="lazy" alt="A Barra fivérek műhelye: a szalagfűrész és a farakások">
+                <img src="/barra3.jpg" width="1200" height="757" loading="lazy" alt="A Barra fivérek műhelye: billentyűzetek készítése a gyalupadokon">
+                <img src="/barra4.jpg" width="1200" height="872" loading="lazy" alt="A Barra fivérek műhelye: egy zongora mechanikájának megmunkálása">
+            </div>
+            <figcaption>A Barra fivérek műhelye, billentyűzet- és zongorakészítés</figcaption>
+        </figure>
+    </section>
+
+    <footer id="contatti">
+        <h2>Kapcsolat és telephelyek</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3>Elérhetőségek</h3>
+                <p><strong>Telefon:</strong> <a href="tel:+393402621634">+39 340 2621634</a></p>
+                <p><strong>E-mail:</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong>PEC (tanúsított e-mail):</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3>Telephelyek</h3>
+                <p><strong>Műhely:</strong> Piobesi Torinese, Via Galimberti 67</p>
+                <p><strong>Székhely:</strong> Vinovo, Via Parisetto 31</p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C. S.n.c. di Andrea Colina &amp; Co.</strong></p>
+            <p>Közösségi adószám: IT12884500013</p>
+            <p>© 2026 A.R.C. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <div class="lb-overlay" id="lb" role="dialog" aria-modal="true" aria-label="Nagyított fotó">
+        <button class="lb-btn lb-chiudi" id="lbChiudi" aria-label="Bezárás">&times;</button>
+        <button class="lb-btn lb-prec" id="lbPrec" aria-label="Előző fotó">&#8249;</button>
+        <button class="lb-btn lb-succ" id="lbSucc" aria-label="Következő fotó">&#8250;</button>
+        <img id="lbImg" src="" alt="">
+        <div class="lb-didascalia" id="lbDida"></div>
+        <div class="lb-contatore" id="lbConta"></div>
+    </div>
+
+    <script>
+    (function () {
+        var lb = document.getElementById('lb');
+        var lbImg = document.getElementById('lbImg');
+        var lbDida = document.getElementById('lbDida');
+        var lbConta = document.getElementById('lbConta');
+        var btnPrec = document.getElementById('lbPrec');
+        var btnSucc = document.getElementById('lbSucc');
+
+        var lista = [];
+        var didascalia = '';
+        var indice = 0;
+
+        function mostra(i) {
+            indice = (i + lista.length) % lista.length;
+            lbImg.src = lista[indice].getAttribute('src');
+            lbImg.alt = lista[indice].alt;
+            lbDida.textContent = didascalia;
+            lbConta.textContent = lista.length > 1 ? (indice + 1) + ' / ' + lista.length : '';
+        }
+        function apri(figura, i) {
+            lista = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            var cap = figura.querySelector('figcaption');
+            didascalia = cap ? cap.textContent : '';
+            var piu = lista.length > 1;
+            btnPrec.style.display = piu ? 'flex' : 'none';
+            btnSucc.style.display = piu ? 'flex' : 'none';
+            mostra(i);
+            lb.classList.add('aperto');
+            document.body.style.overflow = 'hidden';
+        }
+        function chiudi() {
+            lb.classList.remove('aperto');
+            document.body.style.overflow = '';
+        }
+
+        Array.prototype.slice.call(document.querySelectorAll('.foto-zoom')).forEach(function (figura) {
+            var imgs = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            imgs.forEach(function (img, i) {
+                img.addEventListener('click', function () { apri(figura, i); });
+            });
+        });
+
+        document.getElementById('lbChiudi').addEventListener('click', chiudi);
+        btnPrec.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
+        btnSucc.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice + 1); });
+        lb.addEventListener('click', function (e) {
+            if (e.target === lb) chiudi();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (!lb.classList.contains('aperto')) return;
+            if (e.key === 'Escape') chiudi();
+            if (lista.length > 1 && e.key === 'ArrowLeft') mostra(indice - 1);
+            if (lista.length > 1 && e.key === 'ArrowRight') mostra(indice + 1);
+        });
+
+        var startX = null;
+        lbImg.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+        lbImg.addEventListener('touchend', function (e) {
+            if (startX === null) return;
+            var diff = e.changedTouches[0].clientX - startX;
+            if (lista.length > 1 && Math.abs(diff) > 50) mostra(diff > 0 ? indice - 1 : indice + 1);
+            startX = null;
+        });
+    })();
+    </script>
+</body>
+</html>

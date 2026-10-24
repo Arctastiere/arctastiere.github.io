@@ -12,7 +12,8 @@
         fr: { prec: 'Photo précédente', succ: 'Photo suivante', nessuno: 'Galerie momentanément indisponible.' },
         de: { prec: 'Vorheriges Foto', succ: 'Nächstes Foto', nessuno: 'Galerie vorübergehend nicht verfügbar.' },
         es: { prec: 'Foto anterior', succ: 'Foto siguiente', nessuno: 'Galería no disponible temporalmente.' },
-        pt: { prec: 'Foto anterior', succ: 'Foto seguinte', nessuno: 'Galeria temporariamente indisponível.' }
+        pt: { prec: 'Foto anterior', succ: 'Foto seguinte', nessuno: 'Galeria temporariamente indisponível.' },
+        hu: { prec: 'Előző fotó', succ: 'Következő fotó', nessuno: 'A galéria átmenetileg nem érhető el.' }
     };
     var T = TESTI[lingua] || TESTI.it;
 
