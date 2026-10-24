@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us: A.R.C., heir to Gandolfo Tastiere and the Barra brothers</title>
+    <meta name="description" content="The story of A.R.C. S.n.c. by Andrea Colina: the third generation of keyboard makers after the Barra brothers and Carlo Gandolfo. Making and restoring keyboards for organs, pianos, harpsichords and spinets.">
+    <link rel="canonical" href="https://arctastiere.it/en/about-us.html">
+    <link rel="alternate" hreflang="it" href="https://arctastiere.it/chi-siamo.html">
+    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/about-us.html">
+    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/chi-siamo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="About us | A.R.C. Keyboard making and restoration">
+    <meta property="og:description" content="The third generation of keyboard makers: from the Barra brothers to Gandolfo Tastiere and now A.R.C.">
+    <meta property="og:url" content="https://arctastiere.it/en/about-us.html">
+    <meta property="og:image" content="https://arctastiere.it/andrea-colina.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/extra.css">
+    <script src="/header.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About us | A.R.C. S.n.c.",
+        "url": "https://arctastiere.it/en/about-us.html",
+        "inLanguage": "en",
+        "about": { "@id": "https://arctastiere.it/#azienda" }
+    }
+    </script>
+    <style>
+        section p + p { margin-top: 12px; }
+        section figure + p { margin-top: 12px; }
+        #chi-siamo { display: flow-root; }
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
+
+        /* Foto di Andrea Colina */
+        .foto-andrea {
+            width: 100%;
+            max-width: 340px;
+            margin: 20px auto;
+        }
+        .foto-andrea img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-andrea figcaption {
+            margin-top: 8px;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #111111;
+        }
+        @media (min-width: 700px) {
+            .foto-andrea {
+                float: right;
+                width: 300px;
+                margin: 4px 0 16px 24px;
+            }
+        }
+
+        /* Logo di Gandolfo Tastiere */
+        .foto-gandolfo {
+            margin: 0 auto;
+            max-width: 520px;
+        }
+        .foto-gandolfo figure { margin: 0; }
+        .foto-gandolfo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-gandolfo figcaption {
+            margin-top: 12px;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.4;
+            color: #111111;
+        }
+
+        /* Foto laboratorio dei fratelli Barra */
+        .foto-barra { margin: 0 auto; max-width: 1000px; }
+        .foto-barra .griglia-foto {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+        .foto-barra img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: zoom-in;
+        }
+        .foto-barra figcaption {
+            margin-top: 12px;
+            text-align: center;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.4;
+            color: #111111;
+        }
+        @media (min-width: 700px) {
+            .foto-barra .griglia-foto { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* Ingrandimento a schermo intero */
+        .lb-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.92);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 16px;
+        }
+        .lb-overlay.aperto { display: flex; }
+        .lb-overlay img {
+            max-width: 100%;
+            max-height: calc(100vh - 110px);
+            width: auto;
+            object-fit: contain;
+            border-radius: 2px;
+            touch-action: pan-y;
+        }
+        .lb-didascalia {
+            margin-top: 12px;
+            color: #ffffff;
+            font-size: 14px;
+            font-style: italic;
+            text-align: center;
+            max-width: 90%;
+        }
+        .lb-contatore {
+            margin-top: 4px;
+            color: #bbbbbb;
+            font-size: 12px;
+        }
+        .lb-btn {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 26px;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lb-btn:hover { background: rgba(255, 255, 255, 0.3); }
+        .lb-chiudi { top: 12px; right: 12px; }
+        .lb-prec { left: 8px; top: 50%; transform: translateY(-50%); }
+        .lb-succ { right: 8px; top: 50%; transform: translateY(-50%); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/en/index.html"><img src="/logo.png" alt="A.R.C. logo" class="logo-header"></a>
+                <a href="/en/index.html" class="link-home">Home</a>
+            </div>
+            <ul>
+                <li><a href="/en/about-us.html">About Us</a></li>
+                <li><a href="/en/services.html">Services</a></li>
+                <li><a href="/en/gallery.html">Gallery</a></li>
+                <li><a href="/en/contacts.html">Contacts</a></li>
+                <li><a href="/en/news.html" class="voce-news"><span class="emoji">📣</span> News &amp; extras</a></li>
+                <li><a href="/chi-siamo.html" hreflang="it" lang="it" title="Versione italiana">IT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="chi-siamo">
+        <h2>A tradition that continues</h2>
+
+        <p>Our story begins in 2006, when Andrea Colina joined a workshop to learn the trade of piano tuner and technician. Over the years he worked both as an employee and on his own account, collaborating with many local companies in concert service, restoration and tuning.</p>
+
+        <figure class="foto-andrea foto-zoom">
+            <img src="/andrea-colina.jpg" width="810" height="1800" loading="lazy" alt="Andrea Colina, keyboard maker, at work in the A.R.C. workshop in Piobesi Torinese">
+            <figcaption>Andrea Colina, third generation of keyboard makers, in the new A.R.C. workshop</figcaption>
+        </figure>
+
+        <p>In 2023 he took over the legacy of Carlo Gandolfo, owner of Gandolfo Tastiere, the workshop he had relied on for years and from which he received the craft of keyboard making. From that moment A.R.C. has devoted itself almost exclusively to making and restoring keyboards for pianos, organs, harpsichords, spinets and other instruments.</p>
+
+        <p>We are the third generation of a line of makers that began with the Barra brothers and continued with Gandolfo. We work with fine woods, bone and traditional materials to give every musician a precise touch and a mechanism that is always ready and responsive.</p>
+    </section>
+
+    <section class="foto-gandolfo">
+        <figure class="foto-zoom">
+            <img src="/IMG-20240111-WA0016.jpg" loading="lazy" alt="Logo of Gandolfo Tastiere, historic maker of keyboards for organs and pianos">
+            <figcaption>Logo of Gandolfo Tastiere</figcaption>
+        </figure>
+    </section>
+
+    <section class="foto-barra">
+        <figure class="foto-zoom">
+            <div class="griglia-foto">
+                <img src="/barra1.jpg" width="1200" height="752" loading="lazy" alt="The Barra brothers' workshop: workers at their benches">
+                <img src="/barra2.jpg" width="1200" height="792" loading="lazy" alt="The Barra brothers' workshop: the band saw and stacks of timber">
+                <img src="/barra3.jpg" width="1200" height="757" loading="lazy" alt="The Barra brothers' workshop: keyboards being built on the workbenches">
+                <img src="/barra4.jpg" width="1200" height="872" loading="lazy" alt="The Barra brothers' workshop: working on a piano action">
+            </div>
+            <figcaption>The Barra brothers' workshop, making keyboards and pianos</figcaption>
+        </figure>
+    </section>
+
+    <footer id="contatti">
+        <h2>Contacts and Locations</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3>Contact details</h3>
+                <p><strong>Phone:</strong> <a href="tel:+393402621634">+39 340 2621634</a></p>
+                <p><strong>Email:</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong>PEC (certified email):</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3>Locations</h3>
+                <p><strong>Workshop:</strong> Piobesi Torinese, Via Galimberti 67</p>
+                <p><strong>Registered office:</strong> Vinovo, Via Parisetto 31</p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C. S.n.c. di Andrea Colina &amp; Co.</strong></p>
+            <p>VAT No.: IT12884500013</p>
+            <p>&copy; 2026 A.R.C. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="lb-overlay" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged photo">
+        <button class="lb-btn lb-chiudi" id="lbChiudi" aria-label="Close">&times;</button>
+        <button class="lb-btn lb-prec" id="lbPrec" aria-label="Previous photo">&#8249;</button>
+        <button class="lb-btn lb-succ" id="lbSucc" aria-label="Next photo">&#8250;</button>
+        <img id="lbImg" src="" alt="">
+        <div class="lb-didascalia" id="lbDida"></div>
+        <div class="lb-contatore" id="lbConta"></div>
+    </div>
+
+    <script>
+    (function () {
+        var lb = document.getElementById('lb');
+        var lbImg = document.getElementById('lbImg');
+        var lbDida = document.getElementById('lbDida');
+        var lbConta = document.getElementById('lbConta');
+        var btnPrec = document.getElementById('lbPrec');
+        var btnSucc = document.getElementById('lbSucc');
+
+        var lista = [];
+        var didascalia = '';
+        var indice = 0;
+
+        function mostra(i) {
+            indice = (i + lista.length) % lista.length;
+            lbImg.src = lista[indice].getAttribute('src');
+            lbImg.alt = lista[indice].alt;
+            lbDida.textContent = didascalia;
+            lbConta.textContent = lista.length > 1 ? (indice + 1) + ' / ' + lista.length : '';
+        }
+        function apri(figura, i) {
+            lista = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            var cap = figura.querySelector('figcaption');
+            didascalia = cap ? cap.textContent : '';
+            var piu = lista.length > 1;
+            btnPrec.style.display = piu ? 'flex' : 'none';
+            btnSucc.style.display = piu ? 'flex' : 'none';
+            mostra(i);
+            lb.classList.add('aperto');
+            document.body.style.overflow = 'hidden';
+        }
+        function chiudi() {
+            lb.classList.remove('aperto');
+            document.body.style.overflow = '';
+        }
+
+        Array.prototype.slice.call(document.querySelectorAll('.foto-zoom')).forEach(function (figura) {
+            var imgs = Array.prototype.slice.call(figura.querySelectorAll('img'));
+            imgs.forEach(function (img, i) {
+                img.addEventListener('click', function () { apri(figura, i); });
+            });
+        });
+
+        document.getElementById('lbChiudi').addEventListener('click', chiudi);
+        btnPrec.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice - 1); });
+        btnSucc.addEventListener('click', function (e) { e.stopPropagation(); mostra(indice + 1); });
+        lb.addEventListener('click', function (e) {
+            if (e.target === lb) chiudi();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (!lb.classList.contains('aperto')) return;
+            if (e.key === 'Escape') chiudi();
+            if (lista.length > 1 && e.key === 'ArrowLeft') mostra(indice - 1);
+            if (lista.length > 1 && e.key === 'ArrowRight') mostra(indice + 1);
+        });
+
+        var startX = null;
+        lbImg.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+        lbImg.addEventListener('touchend', function (e) {
+            if (startX === null) return;
+            var diff = e.changedTouches[0].clientX - startX;
+            if (lista.length > 1 && Math.abs(diff) > 50) mostra(diff > 0 ? indice - 1 : indice + 1);
+            startX = null;
+        });
+    })();
+    </script>
+</body>
+</html>
