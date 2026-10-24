@@ -1,8 +1,9 @@
 /* ==========================================================
-   GRUPPI DELLA GALLERIA - A.R.C.  (italiano + inglese)
+   GRUPPI DELLA GALLERIA - A.R.C.  (it, en, fr, de, es, pt, hu)
    Per aggiungere un gruppo: copia il modello in fondo al file
    e incollalo PRIMA dell'ultima riga "];".
-   Ogni testo ha le lingue: it: "..." ed en: "...".
+   Ogni testo ha le lingue: it, en, fr, de, es, pt, hu.
+   Se una lingua manca, la pagina mostra il testo italiano.
    ========================================================== */
 window.GALLERIA_GRUPPI = [
 

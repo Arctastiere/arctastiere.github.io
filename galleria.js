@@ -1,5 +1,5 @@
 /* ==========================================================
-   LOGICA DELLA GALLERIA - usata da galleria.html e en/gallery.html
+   LOGICA DELLA GALLERIA - usata dalle pagine galleria di tutte le lingue
    Legge i gruppi da galleria-gruppi.js (window.GALLERIA_GRUPPI)
    e usa la lingua indicata in <html lang="...">.
    ========================================================== */
