@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauración de teclados antiguos para órganos, pianos y clavecines | A.R.C.</title>
+    <meta name="description" content="Restauración de teclados antiguos para órganos, pianos, clavecines y espinetas: nuevos recubrimientos, reparación de palancas y balancines, sustitución de los pernos, restauración conservativa y tratamiento del marfil. Turín, Italia.">
+    <link rel="canonical" href="https://arctastiere.it/es/restauracion-teclados.html">
+    <link rel="alternate" hreflang="it" href="https://arctastiere.it/restauro-tastiere.html">
+    <link rel="alternate" hreflang="en" href="https://arctastiere.it/en/keyboard-restoration.html">
+    <link rel="alternate" hreflang="fr" href="https://arctastiere.it/fr/restauration-claviers.html">
+    <link rel="alternate" hreflang="de" href="https://arctastiere.it/de/restaurierung-klaviaturen.html">
+    <link rel="alternate" hreflang="es" href="https://arctastiere.it/es/restauracion-teclados.html">
+    <link rel="alternate" hreflang="x-default" href="https://arctastiere.it/restauro-tastiere.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:site_name" content="A.R.C. S.n.c.">
+    <meta property="og:title" content="Restauración de teclados | A.R.C.">
+    <meta property="og:description" content="Restauración conservativa de teclados antiguos para órganos, pianos, clavecines y espinetas.">
+    <meta property="og:url" content="https://arctastiere.it/es/restauracion-teclados.html">
+    <meta property="og:image" content="https://arctastiere.it/restauro-dopo.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/extra.css">
+    <script src="/lingue.js" defer></script>
+    <script src="/header.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Restauración de teclados",
+        "serviceType": "Restauración de teclados antiguos para órganos, pianos, clavecines y espinetas",
+        "description": "Restauración conservativa de teclados existentes: nuevos recubrimientos, reparación de palancas y balancines, limpieza o sustitución de los pernos, construcción de las teclas que faltan, blanqueo y pulido del marfil.",
+        "url": "https://arctastiere.it/es/restauracion-teclados.html",
+        "inLanguage": "es",
+        "provider": { "@id": "https://arctastiere.it/#azienda" },
+        "areaServed": "IT"
+    }
+    </script>
+    <style>
+        section#restauro-tastiere {
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section p + p { margin-top: 12px; }
+        section h3 { margin-top: 28px; margin-bottom: 8px; text-transform: uppercase; font-size: 18px; }
+        .logo .link-home {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        .logo .link-home:hover { text-decoration: underline; }
+
+        /* Testo a sinistra, foto a lato */
+        .testo-con-foto {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 28px;
+            align-items: start;
+            margin-top: 12px;
+        }
+        .colonna-testo > h3:first-child { margin-top: 0; }
+
+        /* Prima / Dopo in colonna */
+        .prima-dopo {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 0;
+        }
+        .prima-dopo figure {
+            position: relative;
+            margin: 0;
+            border: 1px solid #000000;
+            background-color: rgba(255, 255, 255, 0.88);
+        }
+        .prima-dopo img { width: 100%; height: auto; cursor: zoom-in; display: block; }
+        .prima-dopo .etichetta {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+        }
+        .didascalia-coppia {
+            margin: 0;
+            padding: 10px 12px;
+            font-size: 14px;
+            color: #111111;
+            border: 1px solid #000000;
+            border-top: none;
+            background-color: rgba(255, 255, 255, 0.88);
+        }
+
+        @media (max-width: 800px) {
+            .testo-con-foto {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.94);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        #lightbox.aperto { display: flex; }
+        #lightbox img {
+            max-width: 100%;
+            max-height: 80vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        #lightbox-didascalia {
+            color: #ffffff;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 14px;
+            max-width: 600px;
+        }
+        #lightbox-chiudi {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 36px;
+            line-height: 1;
+            cursor: pointer;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/es/index.html"><img src="/logo.png" alt="Logotipo de A.R.C." class="logo-header"></a>
+                <a href="/es/index.html" class="link-home">Home</a>
+            </div>
+            <ul>
+                <li><a href="/es/quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="/es/servicios.html">Servicios</a></li>
+                <li><a href="/es/galeria.html">Galería</a></li>
+                <li><a href="/es/contacto.html">Contacto</a></li>
+                <li><a href="/es/noticias.html" class="voce-news"><span class="emoji">📣</span> Noticias y extras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="restauro-tastiere">
+        <h2>Restauración de teclados</h2>
+        <p>Recuperación de teclados antiguos y desgastados por el tiempo: nuevos recubrimientos, reparación de palancas y balancines, limpieza o sustitución de los pernos y reparaciones en general.</p>
+
+        <div class="testo-con-foto">
+            <!-- TESTO CONTINUO -->
+            <div class="colonna-testo">
+                <h3>Trabajos que realizamos</h3>
+                <p>Según el estado del teclado y las necesidades del cliente, restauramos los teclados existentes sustituyendo componentes, guarniciones de paño de lana, recubrimientos, pernos u otros elementos.</p>
+
+                <p>Abordamos la restauración respetando la construcción original de cada componente, interviniendo, siempre que sea posible, de forma conservativa.</p>
+
+                <p>Es posible blanquear los antiguos teclados de marfil y devolverles su brillo, o bien valorar la sustitución parcial o completa de los componentes.</p>
+            </div>
+
+            <!-- FOTO A LATO DEL TESTO -->
+            <div class="colonna-foto">
+                <div class="prima-dopo">
+                    <figure>
+                        <span class="etichetta">Antes</span>
+                        <img src="/restauro-prima.jpg" data-ruota="-90" alt="Teclado antiguo de órgano antes de la restauración, con teclas que faltan y la mecánica deteriorada" data-didascalia="Antes: construcción de las teclas que faltan y restauración del teclado">
+                    </figure>
+                    <figure>
+                        <span class="etichetta">Después</span>
+                        <img src="/restauro-dopo.jpg" alt="El mismo teclado después de la restauración, con las teclas que faltaban reconstruidas" data-didascalia="Después: construcción de las teclas que faltan y restauración del teclado">
+                    </figure>
+                </div>
+                <p class="didascalia-coppia">Construcción de las teclas que faltan y restauración del teclado</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 28px;"><a href="/es/contacto.html">Solicitar información</a> · <a href="/es/servicios.html">← Todos los servicios</a></p>
+    </section>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto a pantalla completa">
+        <button id="lightbox-chiudi" aria-label="Cerrar">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-didascalia"></p>
+    </div>
+
+    <footer id="contatti">
+        <h2>Contacto y sedes</h2>
+        <div class="contatti-container">
+            <div class="info-blocco">
+                <h3>Datos de contacto</h3>
+                <p><strong>Teléfono:</strong> <a href="tel:+393402621634">+39 340 2621634</a></p>
+                <p><strong>Correo electrónico:</strong> <a href="mailto:Arctastiere@gmail.com">Arctastiere@gmail.com</a></p>
+                <p><strong>PEC (correo certificado):</strong> <a href="mailto:arctastiere@pec.it">arctastiere@pec.it</a></p>
+            </div>
+            <div class="info-blocco">
+                <h3>Sedes</h3>
+                <p><strong>Taller:</strong> Piobesi Torinese, Via Galimberti 67</p>
+                <p><strong>Domicilio social:</strong> Vinovo, Via Parisetto 31</p>
+            </div>
+        </div>
+        <div class="dati-regolamentari">
+            <p><strong>A.R.C S.n.c di Andrea Colina &amp; Co.</strong></p>
+            <p>N.º IVA: IT12884500013</p>
+            <p>© 2026 A.R.C. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var box = document.getElementById('lightbox');
+            var img = document.getElementById('lightbox-img');
+            var did = document.getElementById('lightbox-didascalia');
+
+            /* Ruota le foto con attributo data-ruota (gradi: -90 = a sinistra, 90 = a destra) */
+            function ruota(foto) {
+                var gradi = parseInt(foto.getAttribute('data-ruota'), 10);
+                if (!gradi) return;
+                var originale = new Image();
+                originale.onload = function () {
+                    try {
+                        var w = originale.naturalWidth;
+                        var h = originale.naturalHeight;
+                        var scala = Math.min(1, 2000 / Math.max(w, h));
+                        var sw = Math.round(w * scala);
+                        var sh = Math.round(h * scala);
+                        var c = document.createElement('canvas');
+                        c.width = sh;
+                        c.height = sw;
+                        var ctx = c.getContext('2d');
+                        if (gradi < 0) {
+                            ctx.translate(0, c.height);
+                            ctx.rotate(-Math.PI / 2);
+                        } else {
+                            ctx.translate(c.width, 0);
+                            ctx.rotate(Math.PI / 2);
+                        }
+                        ctx.drawImage(originale, 0, 0, sw, sh);
+                        foto.src = c.toDataURL('image/jpeg', 0.92);
+                    } catch (e) {
+                        /* se la rotazione non riesce, resta la foto originale */
+                    }
+                };
+                originale.src = foto.src;
+            }
+
+            function apri(foto) {
+                var testo = foto.getAttribute('data-didascalia') || '';
+                img.src = foto.src;
+                img.alt = foto.alt;
+                did.textContent = testo;
+                did.style.display = testo ? 'block' : 'none';
+                box.classList.add('aperto');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function chiudi() {
+                box.classList.remove('aperto');
+                document.body.style.overflow = '';
+                img.src = '';
+            }
+
+            document.querySelectorAll('.prima-dopo img').forEach(function (f) {
+                ruota(f);
+                f.addEventListener('click', function () { apri(f); });
+            });
+
+            box.addEventListener('click', function (e) {
+                if (e.target === img) return;
+                chiudi();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') chiudi();
+            });
+        })();
+    </script>
+</body>
+    </html>
